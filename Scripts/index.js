@@ -1,92 +1,69 @@
-// testimonial starts
-// document.addEventListener("DOMContentLoaded", () => {
-//   let currentSlideIndex = 0;
-//   const slides = document.querySelectorAll(".testimonial-slide");
-//   const dots = document.querySelectorAll(".testimonial-dot");
-//   const totalSlides = slides.length;
-
-//   function showSlide(n) {
-//     if (n >= totalSlides) n = 0;
-//     if (n < 0) n = totalSlides - 1;
-//     currentSlideIndex = n;
-
-//     slides.forEach((slide) => slide.classList.remove("active"));
-//     // dots.forEach((dot) => dot.classList.remove("active"));
-
-//     slides[currentSlideIndex].classList.add("active");
-//     // dots[currentSlideIndex].classList.add("active");
-//   }
-
-//   function changeSlide(direction) {
-//     showSlide(currentSlideIndex + direction);
-//   }
-
-//   function currentSlide(n) {
-//     showSlide(n);
-//   }
-
-//   let autoSlideInterval;
-
-//   function startAutoSlide() {
-//     autoSlideInterval = setInterval(() => {
-//       showSlide(currentSlideIndex + 1);
-//     }, 5000);
-//   }
-
-//   function stopAutoSlide() {
-//     clearInterval(autoSlideInterval);
-//   }
-
-//   showSlide(currentSlideIndex);
-//   startAutoSlide();
-
-//   // button listeners
-//   document.getElementById("prevBtn").addEventListener("click", () => changeSlide(-1));
-//   document.getElementById("nextBtn").addEventListener("click", () => changeSlide(1));
-
-//   // Hover listeners
-//   const testimonialSection = document.querySelector(".testimonial-section");
-//   testimonialSection.addEventListener("mouseenter", stopAutoSlide);
-//   testimonialSection.addEventListener("mouseleave", startAutoSlide);
-
-//   // Touch swipe
-//   let touchStartX = 0;
-//   let touchEndX = 0;
-
-//   testimonialSection.addEventListener("touchstart", (e) => {
-//     touchStartX = e.changedTouches[0].screenX;
-//   });
-
-//   testimonialSection.addEventListener("touchend", (e) => {
-//     touchEndX = e.changedTouches[0].screenX;
-//     if (touchEndX < touchStartX - 50) changeSlide(1);
-//     if (touchEndX > touchStartX + 50) changeSlide(-1);
-//   });
-// });
-// testimonial ends
-
-// hero seciton card
  const slider = document.getElementById("cardSlider");
-  const cards = document.querySelectorAll(".card-item");
-  let currentIndex = 0;
+        const cards = document.querySelectorAll(".card-item");
+        let currentIndex = 0;
 
-  function slide(direction) {
-    // Remove current active
-    cards[currentIndex].classList.remove("active");
+        function slide(direction) {
+            // Remove current active
+            cards[currentIndex].classList.remove("active");
 
-    currentIndex += direction;
-    if (currentIndex < 0) currentIndex = cards.length - 1;
-    if (currentIndex >= cards.length) currentIndex = 0;
+            currentIndex += direction;
+            if (currentIndex < 0) currentIndex = cards.length - 1;
+            if (currentIndex >= cards.length) currentIndex = 0;
 
-    // Add active class to new card
-    cards[currentIndex].classList.add("active");
+            // Add active class to new card
+            cards[currentIndex].classList.add("active");
 
-    // Scroll to correct position
-    const cardWidth = cards[0].offsetWidth + 20;
-    slider.style.transform = `translateX(-${cardWidth * currentIndex}px)`;
-  }
+            // Enhanced responsive card width calculation
+            const cardWidth = getCardWidth();
+            slider.style.transform = `translateX(-${cardWidth * currentIndex}px)`;
+        }
 
-  // Initial setup
-  window.addEventListener("load", () => {
-    cards[currentIndex].classList.add("active");
-  });
+        function getCardWidth() {
+            const card = cards[0];
+            const cardStyle = window.getComputedStyle(card);
+            const cardWidth = card.offsetWidth;
+            const marginLeft = parseInt(cardStyle.marginLeft) || 0;
+            const marginRight = parseInt(cardStyle.marginRight) || 0;
+            return cardWidth + marginLeft + marginRight;
+        }
+
+        // Initial setup
+        window.addEventListener("load", () => {
+            cards[currentIndex].classList.add("active");
+        });
+
+        // Handle window resize to recalculate positions
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                // Recalculate slider position after resize
+                const cardWidth = getCardWidth();
+                slider.style.transform = `translateX(-${cardWidth * currentIndex}px)`;
+            }, 250);
+        });
+
+        // Touch/swipe support for mobile devices
+        let startX = 0;
+        let startY = 0;
+        let isDragging = false;
+
+        slider.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+            startY = e.touches[0].clientY;
+            isDragging = true;
+        });
+
+        slider.addEventListener('touchmove', (e) => {
+            if (!isDragging) return;
+            
+            const currentX = e.touches[0].clientX;
+            const currentY = e.touches[0].clientY;
+            const diffX = Math.abs(currentX - startX);
+            const diffY = Math.abs(currentY - startY);
+            
+            // If horizontal swipe is more significant than vertical, prevent scrolling
+            if (diffX > diffY) {
+                e.preventDefault();
+            }
+        });
