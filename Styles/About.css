@@ -16,14 +16,16 @@
 }
 
 .img-container {
-    background-image: url("../Images/aboutUs-bg.png");
+    background-image: url("../Images/aboutUs-bg-2.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
+    /* filter: blur(1px); */
+    background-color: rgba(226, 11, 11, 0.4);
 }
 
 /* what we do section */
-.what-we-do-text{
+.what-we-do-text {
     font-size: 1.5rem;
 }
