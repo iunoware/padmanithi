@@ -1,0 +1,169 @@
+/* .hero-section{
+    background-image: url('../Images/hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+.card-bg{
+    background-color: #1d1df1;
+    border-radius: 40px;
+} */
+*{
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+}
+/* hero section */
+  .hero-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: #f5f5f5;
+      padding: 60px 0;
+    }
+
+    .slider-container {
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    margin: 10px;
+  }
+
+  .card-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+  }
+
+.card-item {
+  flex: 0 0 40%;
+  margin-right: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #eee;
+  color: #000;
+  transition: all 0.3s ease;
+  min-height: 220px;
+  transform: scale(1); /* Base scale */
+  z-index: 1;
+}
+.card-item a{
+  color: white;
+  background-color: #0000FF;
+  padding: 5px;
+  border-radius: 10px;
+}
+.card-item.active {
+  background-color: blue;
+  color: white;
+  transform: scale(1.25); /* Slightly enlarge */
+  z-index: 2;
+}
+.card-item.active a{
+  color: blue;
+  background-color: white;
+}
+
+  .slider-buttons button {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .card-item {
+      flex: 0 0 80%;
+    }
+  }
+/* Hero section end*/
+
+/* overview seciton start */
+ .act-container{
+  background-color: #1D1DFF;
+  border-radius: 30px;
+  color: white;
+}
+.img-block-1{
+  margin-left: -40px;
+  margin-top: 30px;
+}
+.img-block-2{
+  margin-left: 90px; 
+  margin-bottom: 20px;
+}
+.op-img2{
+  width: 600px;
+  height: 750px;
+}
+.op-img1{
+  width: 600px;
+  height: 750px;
+}
+@media (max-width: 430){
+  .op-img1{
+    height: 200px !important;
+    width: 300px !important;
+  }
+}
+
+/* trust section */
+.trust-card{
+  color: white;
+  height: 400px;
+  padding: 40px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.card-1{
+  background-image: url(../Images/Trust-1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card-2{
+  background-image: url(../Images/Trust-2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card-3{
+  background-image: url(../Images/Trust-3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card-4{
+  background-image: url(../Images/Trust-4.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#myBtn{
+  background-color: #22AF00;
+}
+.myBtn2{
+  color: azure !important;
+  width: 350px !important;
+  height: auto !important;
+  background-color: #1D1DFF !important;
+}
+.connection-img{
+  height: 700px;
+  /* width: 400px; */
+}
+/* property and legal section */
+.card-Img{
+  height: 300px;
+  width: 200px;
+}
+.card-text{
+  color: #1D1DFF;
+}
