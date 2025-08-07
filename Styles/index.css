@@ -85,33 +85,85 @@
 /* Hero section end*/
 
 /* overview seciton start */
- .act-container{
-  background-color: #1D1DFF;
-  border-radius: 30px;
-  color: white;
-}
-.img-block-1{
-  margin-left: -40px;
-  margin-top: 30px;
-}
-.img-block-2{
-  margin-left: 90px; 
-  margin-bottom: 20px;
-}
-.op-img2{
-  width: 600px;
-  height: 750px;
-}
-.op-img1{
-  width: 600px;
-  height: 750px;
-}
-@media (max-width: 430){
-  .op-img1{
-    height: 200px !important;
-    width: 300px !important;
-  }
-}
+ .act-container {
+            background-color: #1D1DFF;
+            border-radius: 30px;
+            color: white;
+            overflow: hidden;
+        }
+        
+        .overview-img {
+            width: 100%;
+            height: auto;
+            max-width: 500px;
+            border-radius: 15px;
+        }
+        
+        /* Remove negative margins and use proper spacing */
+        .content-section {
+            padding: 2rem 1rem;
+        }
+        
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .overview-img {
+                max-width: 100%;
+                height: auto;
+            }
+            
+            .content-section {
+                padding: 1.5rem 0.5rem;
+                text-align: center !important;
+            }
+            
+            .act-container {
+                margin: 0 10px;
+            }
+            
+            h2 {
+                font-size: 1.8rem !important;
+            }
+            
+            .fs-3 {
+                font-size: 1.2rem !important;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .overview-img {
+                max-width: 90%;
+            }
+            
+            .content-section {
+                padding: 1rem 0.5rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem !important;
+            }
+            
+            .fs-3 {
+                font-size: 1.1rem !important;
+            }
+            body{
+              overflow-x: hidden;
+            }
+        }
+        
+        /* Alternative layout for better mobile experience */
+        @media (max-width: 768px) {
+            .mobile-reverse {
+                flex-direction: column-reverse;
+                display: flex;
+            }
+        }
 
 /* trust section */
 .trust-card{
