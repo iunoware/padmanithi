@@ -3,9 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="../Styles/About.css" />
     <title>About us</title>
   </head>
   <body>
-    <h1>about us page</h1>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 70px">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold fs-3" href="#">Iunoware</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav fs-5">
+            <a class="nav-link active px-4" aria-current="page" href="#">Home</a>
+            <a class="nav-link px-4" href="#">About</a>
+            <a class="nav-link px-4" href="#">Service</a>
+            <a class="nav-link px-4" href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+    <div class="hero-section">
+      <div class="img-container">
+        <h1 class="text-white hero-text">About Us</h1>
+        <!-- <img
+          src="../Images/aboutUs-bg.png"
+          alt="hero-section-bg"
+          class="img-fluid hero-img"
+        /> -->
+      </div>
+    </div>
+
+    <!-- what we do -->
+    <h2 class="text-center my-5">What We Do</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 col-md-7 col-sm-12">
+          <p class="what-we-do-text">
+            We specialize in designing and implementing compliance solutions for
+            Organizations, with an aim to bring a seamless integration of legal &
+            statutory requirements of a company, using the latest information technology
+            platforms, so that companies of today and tomorrow can become more compliant
+            and transparent. We carry with us over 10+ years of experience in managing
+            legal compliance audits for large and small companies across most industries
+            including health care, IT, food and beverages, manufacturing, hospitality,
+            automotive etc. With our vast experience, we understand that each organization
+            is unique and different in its own way and so are their needs. Therefore the
+            only way to define us is - 'We are who the organization is!
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-5 col-sm-12"></div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../Scripts/About.js"></script>
   </body>
 </html>
