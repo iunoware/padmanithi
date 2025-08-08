@@ -52,17 +52,30 @@
 }
 
 /* who we are */
+.who-we-are-dad {
+    width: 1100px;
+}
+
 .who-we-are-container {
     background-color: rgb(34, 175, 0);
 }
 
 .who-we-are-content {
-    max-width: 500px;
+    max-width: 750px;
     font-size: 1.3rem;
     color: white;
 }
 
-.who-we-are-img{
+.who-we-are-img {
     position: absolute;
-    transform: translate(550px, -750px);
+    transform: translate(800px, -650px);
+}
+
+.who-we-are-list::before{
+    content: "☑️";
+}
+
+/* who we serve */
+.who-we-serve-title{
+    font-size: 1.5rem;
 }
