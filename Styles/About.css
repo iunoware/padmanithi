@@ -4,14 +4,16 @@
     font-style: normal;
 }
 
-/* @media (max-width: 3000px){
-    *{
+@media (max-width: 3000px) {
+
+    html,
+    body {
         overflow-x: hidden;
     }
-} */
+}
 
 
-/* hero section */
+/* hero section ⬇️⬇️ */
 .hero-text {
     font-size: 5rem;
     position: absolute;
@@ -37,7 +39,7 @@
     background-color: rgba(0, 0, 0, 0.521);
     height: 100%;
     width: 100%;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 
@@ -51,13 +53,13 @@
     font-size: 1.5rem;
 }
 
-/* who we are */
+
+
+/* who we are ⬇️⬇️ */
 .who-we-are-dad {
     width: 1100px;
-}
-
-.who-we-are-container {
     background-color: rgb(34, 175, 0);
+    border-radius: .5rem;
 }
 
 .who-we-are-content {
@@ -67,15 +69,102 @@
 }
 
 .who-we-are-img {
+    height: 550px;
+    padding-top: 1rem;
     position: absolute;
-    transform: translate(800px, -650px);
+    transform: translate(800px, -80px);
 }
 
-.who-we-are-list::before{
+.who-we-are-list::before {
     content: "☑️";
 }
 
-/* who we serve */
-.who-we-serve-title{
+@media (max-width: 1000px) {
+    .who-we-are-img {
+        height: 550px;
+        position: relative;
+        transform: translate(0px, 0px);
+    }
+
+    .who-we-are-img-container {
+        text-align: center;
+    }
+}
+
+
+
+/* who we serve ⬇️⬇️*/
+.who-we-serve-container {
+    margin-top: 20rem;
+}
+
+.who-we-serve-title-container {
+    background-color: rgb(34, 175, 0);
+    height: 600px;
+    width: 600px;
+    border-radius: .8rem;
+}
+
+.who-we-serve-title {
+    font-family: "poppins";
+    font-size: 3rem;
+    padding-left: 4rem;
+}
+
+.who-we-serve-span {
+    font-family: "poppins";
+    font-size: 4rem;
+}
+
+.wws-img {
+    position: absolute;
+}
+
+.wws-img-1 {
+    transform: translate(-250px, -350px);
+}
+
+.wws-img-2 {
+    transform: translate(200px, -480px);
+}
+
+.wws-img-3 {
+    height: 300px;
+    transform: translate(-180px, 100px);
+}
+
+.wws-img-4 {
+    transform: translate(280px, 100px);
+}
+
+.blue-container {
+    height: 430px;
+    width: 1200px;
+    background-color: #1d1dff;
+    color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.blue-box-list {
     font-size: 1.5rem;
+    padding: .3rem;
+}
+
+@media (max-width: 1000px) {
+
+    .who-we-serve-title-container{
+        display: block;
+    }
+
+    .wws-img{
+        position: relative;
+        transform: translate(0px, 0px);
+        height: 150px;
+        /* width: 80px; */
+    }
+
+    .who-we-serve-container {
+        margin-top: 4rem;
+    }
 }
