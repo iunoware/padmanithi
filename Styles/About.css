@@ -12,6 +12,10 @@
     }
 }
 
+:root {
+    --blue-color: #1d1dff;
+}
+
 
 /* hero section ⬇️⬇️ */
 .hero-text {
@@ -79,7 +83,7 @@
     content: "☑️";
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1300px) {
     .who-we-are-img {
         height: 550px;
         position: relative;
@@ -95,12 +99,12 @@
 
 /* who we serve ⬇️⬇️*/
 .who-we-serve-container {
-    margin-top: 20rem;
+    margin-top: 15rem;
 }
 
 .who-we-serve-title-container {
     background-color: rgb(34, 175, 0);
-    height: 600px;
+    min-height: 600px;
     width: 600px;
     border-radius: .8rem;
 }
@@ -153,18 +157,177 @@
 
 @media (max-width: 1000px) {
 
-    .who-we-serve-title-container{
-        display: block;
+    .who-we-serve-title-container {
+        height: auto;
+        flex-direction: column-reverse;
     }
 
-    .wws-img{
-        position: relative;
-        transform: translate(0px, 0px);
-        height: 150px;
-        /* width: 80px; */
+    .who-we-serve-title {
+        padding: 0;
+        padding-bottom: 1rem;
+    }
+
+    .wws-img-2 {
+        position: static;
+        transform: none;
+        height: auto;
+        max-width: 90%;
+        margin: 1rem;
+    }
+
+    .wws-img-1,
+    .wws-img-3,
+    .wws-img-4 {
+        display: none;
     }
 
     .who-we-serve-container {
         margin-top: 4rem;
     }
+
+    .blue-container {
+        align-items: center !important;
+    }
+
+    .blue-box-list-1 {
+        margin-top: 0 !important;
+    }
+
+    .blue-box {
+        margin-top: 1rem;
+    }
+}
+
+
+
+
+/* mission, vision, and goals ⬇️⬇️ */
+.mission-box {
+    height: 300px;
+    width: 420px;
+    background-color: #1d1dff;
+    color: white;
+    border-radius: 1rem;
+    border: 7px solid white;
+}
+
+.mvg-img {
+    transform: translate(10px, 10px);
+}
+
+.green-box {
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background-color: rgb(34, 175, 0);
+    transform: translateY(100px);
+}
+
+@media (max-width: 800px) {
+    .mvg-box {
+        flex-direction: column;
+    }
+
+    .mission-box-2 {
+        margin-top: 2.8rem;
+    }
+
+    .green-box {
+        display: none;
+    }
+}
+
+
+
+
+/* rewards and recognition ⬇️⬇️ */
+.rewards-content-box {
+    width: 500px;
+}
+
+.rewards-title {
+    font-size: 2rem;
+}
+
+.rewards-text {
+    font-size: 1.3rem;
+}
+
+@media (max-width: 650px) {
+    .rewards-content {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .rewards-content-box {
+        width: 400px;
+    }
+
+    .rewards-content-box {
+        padding: 0;
+        padding-top: 3rem;
+    }
+
+    .rewards-text {
+        padding: 0;
+        /* text-align: center !important; */
+    }
+
+    .rewards-img {
+        width: 100%;
+        text-align: center !important;
+    }
+}
+
+
+
+/* why us ⬇️⬇️ */
+.why-us-title {
+    color: var(--blue-color);
+}
+
+.why-us-content {
+    font-size: 1.3rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+hr {
+    border: none;
+    border-top: 3px solid black;
+}
+
+.why-us-xp {
+    border-left: 1px solid hsla(0, 0%, 0%, 0.687);
+    border-right: 1px solid hsla(0, 0%, 0%, 0.687);
+}
+
+@media (max-width: 1000px) {
+    .why-us-xp{
+        border: none;
+        border-top: 1px solid hsla(0, 0%, 0%, 0.687);
+        border-bottom: 1px solid hsla(0, 0%, 0%, 0.687);
+    }
+}
+
+
+
+/* dedicated team ⬇️⬇️ */
+.team-box{
+    width: 200px;
+    margin: 1rem;
+    text-align: center;
+    /* background-color: hsl(0, 0%, 90%); */
+    padding: 2rem;
+    border-radius: .8rem;
+    box-shadow: 0px 0px 20px hsla(0, 0%, 0%, 0.495);
+}
+
+.team-title{
+    font-size: 2.5rem;
+}
+
+.team-parent-container{
+    flex-wrap: wrap;
 }
