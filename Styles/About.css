@@ -1,5 +1,5 @@
 * {
-    font-family: "Lora", serif;
+    font-family: "poppins", serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
@@ -14,11 +14,13 @@
 
 :root {
     --blue-color: #1d1dff;
+    --green-color: #22af00;
 }
 
 
 /* hero section ⬇️⬇️ */
 .hero-text {
+    font-family: 'Lora';
     font-size: 5rem;
     position: absolute;
     display: flex;
@@ -48,6 +50,10 @@
 
 
 /* what we do section */
+.what-we-do-title {
+    font-family: 'lora';
+}
+
 .what-we-do-text {
     font-size: 1.5rem;
     text-align: center;
@@ -57,12 +63,20 @@
     font-size: 1.5rem;
 }
 
+.ocs-title {
+    font-family: 'Lora';
+
+}
 
 
 /* who we are ⬇️⬇️ */
+.wwa-title {
+    font-family: 'Lora';
+}
+
 .who-we-are-dad {
     width: 1100px;
-    background-color: rgb(34, 175, 0);
+    background-color: var(--green-color);
     border-radius: .5rem;
 }
 
@@ -103,22 +117,23 @@
 }
 
 .who-we-serve-title-container {
-    background-color: rgb(34, 175, 0);
+    background-color: var(--green-color);
     min-height: 600px;
     width: 600px;
     border-radius: .8rem;
 }
 
 .who-we-serve-title {
-    font-family: "poppins";
+    font-family: "lora";
     font-size: 3rem;
     padding-left: 4rem;
 }
 
 .who-we-serve-span {
-    font-family: "poppins";
+    font-family: "lora";
     font-size: 4rem;
 }
+
 
 .wws-img {
     position: absolute;
@@ -127,6 +142,7 @@
 .wws-img-1 {
     transform: translate(-250px, -350px);
 }
+
 
 .wws-img-2 {
     transform: translate(200px, -480px);
@@ -144,7 +160,7 @@
 .blue-container {
     height: 430px;
     width: 1200px;
-    background-color: #1d1dff;
+    background-color: var(--blue-color);
     color: white;
     border-radius: 1rem;
     padding: 1rem;
@@ -202,13 +218,23 @@
 
 
 /* mission, vision, and goals ⬇️⬇️ */
+.mvg-title {
+    font-family: 'Lora';
+}
+
 .mission-box {
     height: 300px;
     width: 420px;
-    background-color: #1d1dff;
+    background-color: var(--blue-color);
     color: white;
     border-radius: 1rem;
     border: 7px solid white;
+    transition: all .3s ease;
+}
+
+.mission-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 15px hsla(0, 0%, 0%, 0.521);
 }
 
 .mvg-img {
@@ -220,7 +246,7 @@
     width: 100%;
     position: absolute;
     z-index: -1;
-    background-color: rgb(34, 175, 0);
+    background-color: var(--green-color);
     transform: translateY(100px);
 }
 
@@ -247,11 +273,20 @@
 }
 
 .rewards-title {
+    font-family: 'lora';
     font-size: 2rem;
 }
 
 .rewards-text {
     font-size: 1.3rem;
+}
+
+.rewards-img {
+    transition: all .3s ease;
+}
+
+.rewards-img:hover {
+    transform: scale(1.05);
 }
 
 @media (max-width: 650px) {
@@ -283,6 +318,10 @@
 
 
 /* why us ⬇️⬇️ */
+.why-us-heading {
+    font-family: 'Lora';
+}
+
 .why-us-title {
     color: var(--blue-color);
 }
@@ -304,7 +343,7 @@ hr {
 }
 
 @media (max-width: 1000px) {
-    .why-us-xp{
+    .why-us-xp {
         border: none;
         border-top: 1px solid hsla(0, 0%, 0%, 0.687);
         border-bottom: 1px solid hsla(0, 0%, 0%, 0.687);
@@ -314,20 +353,204 @@ hr {
 
 
 /* dedicated team ⬇️⬇️ */
-.team-box{
+.team-heading {
+    font-family: 'Lora';
+}
+
+.team-box {
     width: 200px;
     margin: 1rem;
     text-align: center;
     /* background-color: hsl(0, 0%, 90%); */
     padding: 2rem;
     border-radius: .8rem;
-    box-shadow: 0px 0px 20px hsla(0, 0%, 0%, 0.495);
+    box-shadow: 0px 0px 15px hsla(0, 0%, 0%, 0.495);
+    transition: all .3s ease;
 }
 
-.team-title{
+.team-box:hover {
+    transform: scale(1.05);
+    /* box-shadow: inset 0px 0px 20px hsla(0, 0%, 0%, 0.495); */
+}
+
+.team-title {
     font-size: 2.5rem;
 }
 
-.team-parent-container{
+.team-parent-container {
     flex-wrap: wrap;
+}
+
+.team-parent-container:has(.team-box:hover) .team-box:not(:hover) {
+    filter: blur(1.5px);
+}
+
+
+
+/* legal support ⬇️⬇️ */
+.legal-support-heading{
+    font-family: 'lora';
+}
+
+.legal-box {
+    background-image: linear-gradient(to right, var(--blue-color), var(--green-color));
+    padding: 2rem;
+    color: white;
+    width: 90%;
+    border-radius: 1rem;
+}
+
+.legal-btn {
+    background-color: white;
+    color: var(--blue-color);
+    padding: 1rem 2rem;
+    border-radius: .8rem;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    transition: all .3s ease;
+}
+
+.legal-btn:hover {
+    box-shadow: 0px 0px 15px hsla(0, 0%, 0%, 0.626);
+    transform: scale(1.02);
+}
+
+.legal-content {
+    font-size: 1.2rem;
+}
+
+
+
+/* testimonial section */
+.testimonial-heading{
+    font-family: 'lora';
+}
+
+.testi-box {
+    border: 3px solid hsla(0, 0%, 63%, 0.753);
+    border-radius: .8rem;
+    padding: 1rem;
+    margin: 1rem;
+    transition: all .3s ease;
+}
+
+.testi-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.411);
+}
+
+
+
+
+/* meet our people ⬇️⬇️ */
+.people-heading{
+    font-family: 'lora';
+}
+
+.people-container {
+    margin: 1rem;
+    width: 350px;
+    transition: all .3s ease;
+    border-radius: 1.5rem 1.5rem .8rem .8rem;
+}
+
+.people-content {
+    height: 160px;
+    border-left: 2px solid hsl(0, 0%, 80%);
+    border-bottom: 2px solid hsl(0, 0%, 80%);
+    border-right: 2px solid hsl(0, 0%, 80%);
+    border-radius: 0rem 0rem .8rem .8rem;
+}
+
+.people-btn {
+    background-color: var(--green-color);
+    color: white;
+    border-radius: .5rem;
+    outline: none;
+    border: none;
+    transition: all .3s ease;
+    padding: 5px 10px;
+}
+
+.people-btn:hover {
+    transform: translateY(-5px);
+
+}
+
+.people-img-box {
+    overflow: hidden;
+    border-radius: 1.5rem 1.5rem 0rem 0rem;
+}
+
+.people-img {
+    transition: all .3s ease;
+}
+
+.people-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 15px hsla(0, 0%, 0%, 0.432);
+}
+
+.people-container:hover .people-img {
+    transform: scale(1.1);
+    border-radius: 1.5rem;
+}
+
+.people-parent-container:has(.people-container:hover) .people-container:not(:hover) {
+    filter: blur(1.5px);
+}
+
+
+
+
+/* full team btn ⬇️⬇️ */
+.full-team-btn {
+    width: 350px;
+    font-size: 1.5rem;
+    /* margin: 2rem; */
+    padding: 1rem 2.5rem;
+    border: none;
+    outline: none;
+    background-color: #4f4fff;
+    color: white;
+    border-radius: 1rem;
+    transition: all .3s ease;
+}
+
+.full-team-btn:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 15px hsl(0, 0%, 20%);
+}
+
+
+
+/* footer */
+footer {
+    background-color: var(--blue-color);
+}
+
+.gray-txt {
+    color: hsl(0, 0%, 85%) !important;
+}
+
+.logo {
+    height: 80px;
+    width: 180px;
+    background-color: blanchedalmond;
+    color: black;
+    /* margin-left: 1rem; */
+}
+
+.a-tag-link{
+    transition: all .3s ease;
+}
+
+.a-tag-link:active, .a-tag-link:focus{
+    color: white !important;
+}
+
+.a-tag-link:hover{
+    color: white;
+    filter: drop-shadow(0px 0px 5px white);
 }

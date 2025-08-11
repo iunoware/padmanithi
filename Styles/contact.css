@@ -1,0 +1,91 @@
+* {
+    font-family: "poppins";
+}
+
+:root {
+    --blue-color: #1d1dff;
+    --green-color: #22af00;
+}
+
+
+/* hero section */
+.img-container {
+    background-image: url("../Images/contact-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.img-container::before {
+    content: '';
+    inset: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.521);
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.hero-text {
+    font-family: 'Lora';
+    font-size: 5rem;
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+}
+
+
+
+
+/* form section ⬇️⬇️ */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-box {
+    padding: 1rem;
+    border-radius: .5rem;
+    outline: none;
+    border: 2px solid transparent;
+    background-color: hsl(0, 0%, 82%);
+    box-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.447);
+    transition: all .3s ease;
+}
+
+.input-box:focus {
+    border: 2px solid var(--blue-color);
+    box-shadow: 0px 0px 10px var(--blue-color);
+}
+
+.submit-btn {
+    padding: .8rem 3rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: var(--blue-color);
+    border-radius: .5rem;
+}
+
+.submit-btn:hover {
+    background-color: hsl(240, 100%, 50%);
+    color: white;
+}
+
+.submit-btn:active,
+.submit-btn:focus {
+    color: white;
+    background-color: hsl(240, 100%, 45%);
+}
+
+
+/* calender */
+#calendar {
+    max-width: 900px;
+    margin: 0 auto;
+}
