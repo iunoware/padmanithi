@@ -658,3 +658,8 @@ object-position: center;
 .item8 {
   animation-delay: calc(30s / 8 * (8 - 8) * -1);
 }
+
+/* footer */
+.footer-container{
+    background-color: #1D1DFF;
+}
