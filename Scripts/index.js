@@ -1,4 +1,6 @@
- const slider = document.getElementById("cardSlider");
+AOS.init();
+// hero section
+const slider = document.getElementById("cardSlider");
         const cards = document.querySelectorAll(".card-item");
         let currentIndex = 0;
 
@@ -42,6 +44,28 @@
                 slider.style.transform = `translateX(-${cardWidth * currentIndex}px)`;
             }, 250);
         });
+        // for auto slide functionality
+        // Auto-slide every 3 seconds
+let autoSlideInterval = setInterval(() => {
+    slide(1); // move to the next card
+}, 3000);
+
+// Optional: Reset auto-slide timer when user clicks or swipes
+function resetAutoSlide() {
+    clearInterval(autoSlideInterval);
+    autoSlideInterval = setInterval(() => {
+        slide(1);
+    }, 3000);
+}
+
+// Example: If you have next/prev buttons
+document.querySelectorAll('.next-btn, .prev-btn').forEach(btn => {
+    btn.addEventListener('click', resetAutoSlide);
+});
+
+// Swipe end — resume auto-slide
+slider.addEventListener('touchend', resetAutoSlide);
+//  auto slide ends
 
         // Touch/swipe support for mobile devices
         let startX = 0;
