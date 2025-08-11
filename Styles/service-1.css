@@ -1,0 +1,31 @@
+* {
+    font-family: "poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+@media (max-width: 3000px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+}
+:root {
+    --blue-color: #1d1dff;
+    --green-color: #22af00;
+}
+.lora{
+    font-family: "lora", sans;
+}
+/* hero section */
+
+.hero-title{
+    font-size: 4.5rem !important;
+}
+.landc-img{
+    height: 24rem !important;
+    object-fit: cover;
+}
+.landc-sh{
+    color: var(--blue-color) !important;
+}
