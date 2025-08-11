@@ -1,5 +1,5 @@
 * {
-    font-family: "Lora", serif;
+    font-family: "poppins", serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
@@ -20,6 +20,7 @@
 
 /* hero section ⬇️⬇️ */
 .hero-text {
+    font-family: 'Lora';
     font-size: 5rem;
     position: absolute;
     display: flex;
@@ -49,6 +50,10 @@
 
 
 /* what we do section */
+.what-we-do-title {
+    font-family: 'lora';
+}
+
 .what-we-do-text {
     font-size: 1.5rem;
     text-align: center;
@@ -58,9 +63,17 @@
     font-size: 1.5rem;
 }
 
+.ocs-title {
+    font-family: 'Lora';
+
+}
 
 
 /* who we are ⬇️⬇️ */
+.wwa-title {
+    font-family: 'Lora';
+}
+
 .who-we-are-dad {
     width: 1100px;
     background-color: var(--green-color);
@@ -111,13 +124,13 @@
 }
 
 .who-we-serve-title {
-    font-family: "poppins";
+    font-family: "lora";
     font-size: 3rem;
     padding-left: 4rem;
 }
 
 .who-we-serve-span {
-    font-family: "poppins";
+    font-family: "lora";
     font-size: 4rem;
 }
 
@@ -205,6 +218,10 @@
 
 
 /* mission, vision, and goals ⬇️⬇️ */
+.mvg-title {
+    font-family: 'Lora';
+}
+
 .mission-box {
     height: 300px;
     width: 420px;
@@ -256,6 +273,7 @@
 }
 
 .rewards-title {
+    font-family: 'lora';
     font-size: 2rem;
 }
 
@@ -300,6 +318,10 @@
 
 
 /* why us ⬇️⬇️ */
+.why-us-heading {
+    font-family: 'Lora';
+}
+
 .why-us-title {
     color: var(--blue-color);
 }
@@ -331,6 +353,10 @@ hr {
 
 
 /* dedicated team ⬇️⬇️ */
+.team-heading {
+    font-family: 'Lora';
+}
+
 .team-box {
     width: 200px;
     margin: 1rem;
@@ -362,6 +388,10 @@ hr {
 
 
 /* legal support ⬇️⬇️ */
+.legal-support-heading{
+    font-family: 'lora';
+}
+
 .legal-box {
     background-image: linear-gradient(to right, var(--blue-color), var(--green-color));
     padding: 2rem;
@@ -393,6 +423,10 @@ hr {
 
 
 /* testimonial section */
+.testimonial-heading{
+    font-family: 'lora';
+}
+
 .testi-box {
     border: 3px solid hsla(0, 0%, 63%, 0.753);
     border-radius: .8rem;
@@ -410,6 +444,10 @@ hr {
 
 
 /* meet our people ⬇️⬇️ */
+.people-heading{
+    font-family: 'lora';
+}
+
 .people-container {
     margin: 1rem;
     width: 350px;
@@ -468,8 +506,9 @@ hr {
 
 /* full team btn ⬇️⬇️ */
 .full-team-btn {
-    font-size: 3rem;
-    margin: 3rem;
+    width: 350px;
+    font-size: 1.5rem;
+    /* margin: 2rem; */
     padding: 1rem 2.5rem;
     border: none;
     outline: none;
@@ -482,4 +521,36 @@ hr {
 .full-team-btn:hover {
     transform: translateY(-10px);
     box-shadow: 0px 0px 15px hsl(0, 0%, 20%);
+}
+
+
+
+/* footer */
+footer {
+    background-color: var(--blue-color);
+}
+
+.gray-txt {
+    color: hsl(0, 0%, 85%) !important;
+}
+
+.logo {
+    height: 80px;
+    width: 180px;
+    background-color: blanchedalmond;
+    color: black;
+    /* margin-left: 1rem; */
+}
+
+.a-tag-link{
+    transition: all .3s ease;
+}
+
+.a-tag-link:active, .a-tag-link:focus{
+    color: white !important;
+}
+
+.a-tag-link:hover{
+    color: white;
+    filter: drop-shadow(0px 0px 5px white);
 }
