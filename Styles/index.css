@@ -1,18 +1,10 @@
-/* .hero-section{
-    background-image: url('../Images/hero-bg.png');
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-}
-.card-bg{
-    background-color: #1d1df1;
-    border-radius: 40px;
-} */
 *{
-  font-family: "Lora", serif;
+  font-family: "Poppins", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-
+}
+.lora{
+    font-family: "lora", sans;
 }
 /* hero section */
 .hero-section {
@@ -22,8 +14,6 @@
             background: #f5f5f5;
             padding: 60px 0;
         }
-
-        /* Your existing slider styles with responsive enhancements */
         .slider-container {
             position: relative;
             width: 100%;
@@ -159,14 +149,14 @@
         }
         
         .overview-img {
-            height: 750px !important;
-            max-width: 500px;
+            height: 650px !important;
+            max-width: 450px;
             border-radius: 15px;
         }
         
         /* Remove negative margins and use proper spacing */
         .content-section {
-            padding: 2rem 1rem;
+             padding: 1.2rem 1rem;
         }
         
         .image-container {
@@ -176,11 +166,11 @@
             padding: 1rem;
         }
         .img-offset-left {
-          transform: translateX(-120px) translateY(20px);
+          transform: translateX(-150px) translateY(20px);
         }
 
         .img-offset-right {
-            transform: translateX(120px) translateY(-20px);
+            transform: translateX(150px) translateY(-20px);
         }
         
         /* Responsive adjustments */
@@ -309,8 +299,12 @@
 }
 /* connection section */
 .connection-img{
-  height: 600px;
+  height: 500px;
   /* width: 400px; */
+}
+.connection-img-container:hover{
+  transform: scale(1.03);
+  transition: all 0.3s ease;
 }
  @media (max-width: 768px) {
   .connection-img{
@@ -330,12 +324,20 @@
 .pl-card {
   height: 300px !important;
   width: 250px !important;
+  border-radius: 20px !important;
 }
 .card-Img{
   height: 300px;
   width: 200px;
 }
-
+.pl-card:hover{
+    background-color: #00ff00;
+    color: white !important;
+    transition: all 0.3s ease-in-out;
+    border-radius: 20px;
+    transform: scale(1.07);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
 /* Journey with us */
 
 .image-box-1{
@@ -473,7 +475,7 @@
     transition: transform 0.3s, box-shadow 0.3s;
 }
 .card-lt:hover {
-    transform: translateY(-10px) scale(1.03);
+    transform:scale(1.05);
     box-shadow: 0 8px 32px black;
 }
 /* .card:hover .card-icon {
@@ -543,6 +545,10 @@
     border-radius: 20px;
     background-color: #dddddd;
 } */
+ .img-container:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+ }
 textarea:focus{
     border: none !important;
 }
@@ -590,7 +596,7 @@ textarea:focus{
   max-width: 1536px;
   margin-inline: auto;
   position: relative;
-  height: 280px;
+  height: 200px;
   margin-top: 5rem;
   overflow: hidden;
   mask-image: linear-gradient(to right,
@@ -605,25 +611,36 @@ textarea:focus{
     left: -200px;
   }
 }
-
+@keyframes scrollRight {
+  to {
+    right: -200px;
+  }
+}
 .item {
   display: block;
-  /* width: 420px !important;
-  height: 280px !important; */
+  width: 200px;
+  height: 200px;
   position: absolute;
   left: max(calc(200px * 8), 100%);
   animation: scrollLeft 30s linear infinite;
 }
-.item, .logo-img {
-  width: 20vw;  /* scales with screen width */
-  height: auto;
+.item-2{
+  display: block;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  right: max(calc(200px * 8), 100%);
+  animation: scrollRight 30s linear infinite;
 }
 .logo-img {
-/* width: 420px !important;
-height: 280px !important; */
+  height: 180px;
+}
+ /* .logo-img {
+width: 420px !important;
+height: 280px !important;
 object-fit: contain;
 object-position: center;
-}
+} */
 
 .item1 {
   animation-delay: calc(30s / 8 * (8 - 1) * -1);
@@ -657,4 +674,33 @@ object-position: center;
 
 .item8 {
   animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+/* footer */
+footer {
+    background-color: #1D1DFF;
+}
+
+.gray-txt {
+    color: hsl(0, 0%, 85%) !important;
+}
+
+.logo {
+    height: 80px;
+    width: 180px;
+    background-color: blanchedalmond !important;
+    color: black;
+    /* margin-left: 1rem; */
+}
+
+.a-tag-link{
+    transition: all .3s ease;
+}
+
+.a-tag-link:active, .a-tag-link:focus{
+    color: white !important;
+}
+
+.a-tag-link:hover{
+    color: white;
+    filter: drop-shadow(0px 0px 5px white);
 }
