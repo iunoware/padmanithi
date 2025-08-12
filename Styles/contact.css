@@ -11,6 +11,24 @@
     font-family: 'lora';
 }
 
+/* navbar */
+.collapse {
+    background-color: #f8f9fa;
+    border-radius: 1rem;
+    /* padding: .5rem; */
+    z-index: 10;
+    transition: all .3s ease;
+}
+
+.navbar-nav > :first-child{
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+
+
+
+
 /* hero section */
 .img-container {
     background-image: url("../Images/contact-bg.png");

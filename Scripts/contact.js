@@ -56,7 +56,7 @@ messageBtn.addEventListener("click", (event) => {
   let phone = document.getElementById("phone").value.trim();
 
   if (name && phone) {
-    const message = `Hi, I'm ${name},\nthis is my mobile number: ${phone}.\n And I would like to book an appointment on ${meetingDate} \n\nThank you!`;
+    const message = `Hi, I'm ${name},\nthis is my mobile number: ${phone}.\nAnd I would like to book an appointment on ${meetingDate} \n\nThank you!`;
     const enCoded = encodeURIComponent(message);
     url = `https://wa.me/${myNum}?text=${enCoded}`;
     window.open(url);

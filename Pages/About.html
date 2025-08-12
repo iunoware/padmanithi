@@ -30,28 +30,62 @@
     <title>About us</title>
   </head>
   <body>
-    <!-- nav bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 50px">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-light" style="height: 50px">
       <div class="container-fluid">
-        <a class="navbar-brand fw-bold fs-3" href="#">Iunoware</a>
+        <a class="navbar-brand fw-bold fs-3 lora" href="#"> Iunoware </a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav fs-5">
-            <a class="nav-link px-4" aria-current="page" href="../index.html">Home</a>
-            <a class="nav-link active px-4" href="#">About</a>
-            <a class="nav-link px-4" href="#">Service</a>
-            <a class="nav-link px-4" href="./contact.html">Contact</a>
-          </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav fs-5">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown px-4">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./service-1.html">Legal Compliances</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./service-2.html"
+                    >Property management & services</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./service-3.html">Business Management</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./service-2.html"
+                    >Tax Compliance and Auditing</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link active" href="./about.html">About</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -418,10 +452,9 @@
     </div>
 
     <!-- testimonial -->
-    <div class="container mt-5">
+    <!-- <div class="container mt-5">
       <h2 class="text-center my-5 testimonial-heading">What our client says</h2>
       <div class="row">
-        <!-- testimonial 1 -->
         <div class="col-lg-6 col-md-6 col-sm-12">
           <div class="testi-box">
             <div class="mb-3">
@@ -474,7 +507,6 @@
           </div>
         </div>
 
-        <!-- testimonial 2 -->
         <div class="col-lg-6 col-md-6 col-sm-12">
           <div class="testi-box">
             <div class="mb-3">
@@ -528,7 +560,6 @@
           </div>
         </div>
 
-        <!-- testimonial 3 -->
         <div class="col-lg-6 col-md-6 col-sm-12">
           <div class="testi-box">
             <div class="mb-3">
@@ -579,7 +610,6 @@
           </div>
         </div>
 
-        <!-- testimonial 4 -->
         <div class="col-lg-6 col-md-6 col-sm-12">
           <div class="testi-box">
             <div class="mb-3">
@@ -631,13 +661,12 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- meet our people -->
-    <div class="container people-parent-container mb-5">
+    <!-- <div class="container people-parent-container mb-5">
       <h2 class="my-5 text-center people-heading">Meet our people</h2>
       <div class="row">
-        <!-- people 1 -->
         <div class="col-lg-4 col-md-6 col-sm-12">
           <div class="people-container mx-auto">
             <div class="people-img-box">
@@ -660,7 +689,6 @@
           </div>
         </div>
 
-        <!-- people 2 -->
         <div class="col-lg-4 col-md-6 col-sm-12">
           <div class="people-container mx-auto">
             <div class="people-img-box">
@@ -675,7 +703,6 @@
             <div class="p-2 people-content">
               <h6 class="m-1 fw-bold">RAKESH SHARMA</h6>
               <p class="m-1">Lead civil lawyer</p>
-              <!-- <p class="m-1">immigration law</p> -->
               <div class="d-flex justify-content-center mt-5">
                 <button class="px-4 people-btn">View profile</button>
               </div>
@@ -683,7 +710,6 @@
           </div>
         </div>
 
-        <!-- people 3 -->
         <div class="col-lg-4 col-md-6 col-sm-12">
           <div class="people-container mx-auto">
             <div class="people-img-box">
@@ -706,7 +732,6 @@
           </div>
         </div>
 
-        <!-- people 4 -->
         <div class="col-lg-4 col-md-6 col-sm-12">
           <div class="people-container mx-auto">
             <div class="people-img-box">
@@ -729,7 +754,6 @@
           </div>
         </div>
 
-        <!-- people 5 -->
         <div class="col-lg-4 col-md-6 col-sm-12">
           <div class="people-container mx-auto">
             <div class="people-img-box">
@@ -744,7 +768,6 @@
             <div class="p-2 people-content">
               <h6 class="m-1 fw-bold">ASHWIN KUMAR</h6>
               <p class="m-1">Chief criminal lawyer</p>
-              <!-- <p class="m-1">Auditor</p> -->
               <div class="d-flex justify-content-center mt-5">
                 <button class="px-4 people-btn">View profile</button>
               </div>
@@ -752,7 +775,6 @@
           </div>
         </div>
 
-        <!-- people 6 -->
         <div class="col-lg-4 col-md-6 col-sm-12">
           <div class="people-container mx-auto">
             <div class="people-img-box">
@@ -775,7 +797,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- view full team -->
     <!-- <div class="d-flex justify-content-center align-items-center">
