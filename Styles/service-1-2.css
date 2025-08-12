@@ -1,0 +1,130 @@
+* {
+    font-family: "poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+@media (max-width: 3000px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+}
+:root {
+    --blue-color: #1d1dff;
+    --green-color: #22af00;
+}
+.lora{
+    font-family: "lora", sans;
+}
+/* navbar */
+.collapse {
+    background-color: #f8f9fa;
+    border-radius: 1rem;
+    /* padding: .5rem; */
+    z-index: 10;
+    transition: all .3s ease;
+}
+
+.navbar-nav > :first-child{
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+
+/* footer */
+footer {
+    background-color: var(--blue-color);
+}
+
+.gray-txt {
+    color: hsl(0, 0%, 85%) !important;
+}
+
+.logo {
+    height: 80px;
+    width: 180px;
+    background-color: blanchedalmond !important;
+    color: black;
+    /* margin-left: 1rem; */
+}
+.a-tag-link{
+    transition: all .3s ease;
+}
+
+.a-tag-link:active, .a-tag-link:focus{
+    color: white !important;
+}
+
+.a-tag-link:hover{
+    color: white;
+    filter: drop-shadow(0px 0px 5px white);
+}
+/* hero section */
+
+.hero-title{
+    font-size: 4.5rem !important;
+}
+.landc-img{
+    max-height: 20rem !important;
+    object-fit: cover;
+    transition: all .3s ease;
+}
+.landc-img:hover{
+    transform: scale(1.05);
+}
+.landc-sh{
+    color: var(--blue-color) !important;
+}
+ /* trusted legal council section  */
+ .content{
+    border-radius: 20px;
+    position: relative;
+    background-color: whitesmoke;
+    z-index: 1;
+ }
+ .trusted-legal-sec{
+    background-color: transparent;
+    position: relative;
+ }
+ .trusted-legal-sec::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 900px;
+  background-color: var(--green-color);
+  z-index: -1;
+}
+.trusted-legal-sec::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    background-color: var(--green-color);
+    z-index: -1;
+}
+.trusted-legal-sec::before{
+    top: 0;
+}
+.trusted-legal-sec::after{
+    bottom: 0;
+}
+.img-container{
+    overflow: hidden;
+    border-radius: 1rem;
+}
+/* how we work section */
+.green-font{
+    color: var(--green-color) !important;
+}
+.blue-font{
+    color: var(--blue-color) !important;
+}
+.hww-img{
+    transition: all .3s ease;
+}
+.hww-img:hover{
+    transform: rotate(8deg) scale(1.05);
+}
