@@ -6,6 +6,19 @@
 .lora{
     font-family: "lora", sans;
 }
+/* navbar */
+.collapse {
+    background-color: #f8f9fa;
+    border-radius: 1rem;
+    /* padding: .5rem; */
+    z-index: 10;
+    transition: all .3s ease;
+}
+
+.navbar-nav > :first-child{
+    padding-left: 24px;
+    padding-right: 24px;
+}
 /* hero section */
 .hero-section {
             min-height: 100vh;
