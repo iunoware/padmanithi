@@ -1,9 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <link rel="stylesheet" href="./Styles/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-light" style="height: 50px">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold fs-3 lora" href="#"> Iunoware </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav fs-5">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" href="./Pages/About.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./Pages/service-1.html"
+                    >Legal Compliances</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Property management & services</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Business Management</a></li>
+                <li><a class="dropdown-item" href="#">Tax Compliance and Auditing</a></li>
+              </ul>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" href="./Pages/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <link rel="stylesheet" href="./Styles/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -65,615 +134,780 @@
       </div>
     </nav>
 
-<!-- Hero Section -->
-<section class="hero-section" style="background-image: url('./Images/hero-bg.png'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 100vh;">
-        <div class="container-fluid m-0 hero-container d-flex align-items-center justify-content-center" style="width: 100%; min-height: 100vh;">
-            <div class="row align-items-center justify-content-between w-100">
-                <!-- Left Column -->
-                <div class="col-md-6 mb-4 mb-md-0 text-start">
-                    <h1 class="display-5 text-light lora">Comprehensive legal audits and advisory services designed to ensure regulatory compliance, safeguard your rights, and deliver strategic dispute resolution</h1>
-                    <p class="lead text-light fs-5 lora pt-2">Expert solutions tailored to your legal and financial needs.</p>
-                    <a href="#" class="btn mt-3 btn-lg text-center" style="background-color: #22AF00; color: antiquewhite; width: 280px;">Know more</a>
+    <!-- Hero Section -->
+    <section
+      class="hero-section"
+      style="
+        background-image: url('./Images/hero-bg.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+      "
+    >
+      <div
+        class="container-fluid m-0 hero-container d-flex align-items-center justify-content-center"
+        style="width: 100%; min-height: 100vh"
+      >
+        <div class="row align-items-center justify-content-between w-100">
+          <!-- Left Column -->
+          <div class="col-md-6 mb-4 mb-md-0 text-start">
+            <h1 class="display-5 text-light lora">
+              Comprehensive legal audits and advisory services designed to ensure
+              regulatory compliance, safeguard your rights, and deliver strategic dispute
+              resolution
+            </h1>
+            <p class="lead text-light fs-5 lora pt-2">
+              Expert solutions tailored to your legal and financial needs.
+            </p>
+            <a
+              href="#"
+              class="btn mt-3 btn-lg text-center"
+              style="background-color: #22af00; color: antiquewhite; width: 280px"
+              >Know more</a
+            >
+          </div>
+
+          <!-- Right Column -->
+          <div class="col-md-6 mb-4 mb-md-0">
+            <div class="slider-container position-relative overflow-hidden">
+              <div class="card-slider d-flex" id="cardSlider">
+                <!-- 4 Cards -->
+                <div class="card-item m-5 align-items-center">
+                  <h5 class="">LEGAL COMPLIANCES</h5>
+                  <p>Includes legal documentation and Agreements, business compliance.</p>
+                  <a href="#" class="text-decoration-none">Read more →</a>
                 </div>
-                
-                <!-- Right Column -->
-                <div class="col-md-6 mb-4 mb-md-0">
-                    <div class="slider-container position-relative overflow-hidden">
-                        <div class="card-slider d-flex" id="cardSlider">
-                            <!-- 4 Cards -->
-                            <div class="card-item m-5 align-items-center">
-                                <h5 class="">LEGAL COMPLIANCES</h5>
-                                <p>Includes legal documentation and Agreements, business compliance.</p>
-                                <a href="#" class="text-decoration-none">Read more →</a>
-                            </div>
 
-                            <div class="card-item m-5">
-                                <h5>TAX COMPLIANCES & AUDITING</h5>
-                                <p>Income tax, GST filing, legal assistance, audits, property tax.</p>
-                                <a href="#" class="text-decoration-none">Read more →</a>
-                            </div>
-
-                            <div class="card-item m-5">
-                                <h5>PROPERTY DOCUMENTATION</h5>
-                                <p>Land verification, fencing, demarcation, title collection.</p>
-                                <a href="#" class="text-decoration-none">Read more →</a>
-                            </div>
-
-                            <div class="card-item m-5">
-                                <h5>BUSINESS REGISTRATION</h5>
-                                <p>Company/LLP registration, PAN, GST, MSME, FSSAI etc.</p>
-                                <a href="#" class="text-decoration-none">Read more →</a>
-                            </div>
-                        </div>
-
-                        <!-- Arrow Buttons -->
-                        <div class="slider-buttons mt-3 text-center">
-                            <button onclick="slide(-1)" class="prevBtn">←</button>
-                            <button onclick="slide(1)" class="nextBtn">→</button>
-                        </div>
-                    </div>
+                <div class="card-item m-5">
+                  <h5>TAX COMPLIANCES & AUDITING</h5>
+                  <p>Income tax, GST filing, legal assistance, audits, property tax.</p>
+                  <a href="#" class="text-decoration-none">Read more →</a>
                 </div>
+
+                <div class="card-item m-5">
+                  <h5>PROPERTY DOCUMENTATION</h5>
+                  <p>Land verification, fencing, demarcation, title collection.</p>
+                  <a href="#" class="text-decoration-none">Read more →</a>
+                </div>
+
+                <div class="card-item m-5">
+                  <h5>BUSINESS REGISTRATION</h5>
+                  <p>Company/LLP registration, PAN, GST, MSME, FSSAI etc.</p>
+                  <a href="#" class="text-decoration-none">Read more →</a>
+                </div>
+              </div>
+
+              <!-- Arrow Buttons -->
+              <div class="slider-buttons mt-3 text-center">
+                <button onclick="slide(-1)" class="prevBtn">←</button>
+                <button onclick="slide(1)" class="nextBtn">→</button>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
-<!-- overview section -->
- <section class="overview-section py-5">
-    <div class="container">
-        <h2 class="text-center py-5 fw-bold fs-1 lora" data-aos="fade-right">Welcome to Our Name Services Overview</h2>
-        
+
+    <!-- overview section -->
+    <section class="overview-section py-5">
+      <div class="container">
+        <h2 class="text-center py-5 fw-bold fs-1 lora" data-aos="fade-right">
+          Welcome to Our Name Services Overview
+        </h2>
+
         <div class="act-container" data-aos="fade-up">
-            <!-- First Row - Image Left, Text Right -->
-            <div class="row align-items-center g-0">
-                <div class="col-lg-6 col-md-6 order-1 order-md-1">
-                    <div class="image-container img-offset-left">
-                        <img src="./Images/op-img1.png" 
-                             alt="office image" 
-                             class="img-fluid overview-img">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 order-2 order-md-2">
-                    <div class="content-section text-center text-md-start" data-aos="fade-up">
-                        <h2 class="pb-3 fw-bold fs-1 lora">Auditing Services</h2>
-                        <p class="fs-4 lh-lg">At Our Company, we specialize in delivering reliable and accurate auditing solutions tailored to meet regulatory standards and business needs. From internal audits to tax and compliance reviews, our team ensures transparency, accountability, and financial integrity at every level. Helping you make informed decisions with clarity and confidence.</p>
-                    </div>
-                </div>
+          <!-- First Row - Image Left, Text Right -->
+          <div class="row align-items-center g-0">
+            <div class="col-lg-6 col-md-6 order-1 order-md-1">
+              <div class="image-container img-offset-left">
+                <img
+                  src="./Images/op-img1.png"
+                  alt="office image"
+                  class="img-fluid overview-img"
+                />
+              </div>
             </div>
-            
-            <!-- Second Row - Text Left, Image Right -->
-            <div class="row align-items-center g-0">
-                <div class="col-lg-6 col-md-6 order-2 order-md-1">
-                    <div class="content-section text-center text-md-start" data-aos="fade-up">
-                        <h2 class="pb-3 fw-bold fs-1 lora">Legal & Auditing Services You Can Trust</h2>
-                        <p class="fs-4 lh-lg">At Our Company, we specialize in delivering reliable and accurate auditing solutions tailored to meet regulatory standards and business needs. From internal audits to tax and compliance reviews, our team ensures transparency, accountability, and financial integrity at every level. Helping you make informed decisions with clarity and confidence.</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 order-1 order-md-2">
-                    <div class="image-container img-offset-right">
-                        <img src="./Images/op-img2.png" 
-                             alt="Office image 2" 
-                             class="img-fluid overview-img">
-                    </div>
-                </div>
+            <div class="col-lg-6 col-md-6 order-2 order-md-2">
+              <div class="content-section text-center text-md-start" data-aos="fade-up">
+                <h2 class="pb-3 fw-bold fs-1 lora">Auditing Services</h2>
+                <p class="fs-4 lh-lg">
+                  At Our Company, we specialize in delivering reliable and accurate
+                  auditing solutions tailored to meet regulatory standards and business
+                  needs. From internal audits to tax and compliance reviews, our team
+                  ensures transparency, accountability, and financial integrity at every
+                  level. Helping you make informed decisions with clarity and confidence.
+                </p>
+              </div>
             </div>
-        </div>
-    </div>
-</section>
-<!-- trust section -->
- <section class="trust-section pb-5">
-  <h2 class="text-center fw-bold fs-1 lora" data-aos="fade-right">Trusted Legal, Tax, and Audit Solutions in Action</h2>
-  <div class="container">
-    <!-- 1st row -->
-    <div class="row py-5 t-row">
-      <div class="col-md-6" data-aos="flip-right">
-        <div class="trust-card d-flex flex-column justify-content-between px-5 card-1">
-          <div class="pandh">
-          <p>01</p>
-          <h3 class="lora">Legal Compliances</h3>
           </div>
-          <div class="panda">
-          <p>We specialize in legal compliance services, helping businesses meet statutory regulations, manage legal risks, and stay up to date with evolving laws across sectors</p>
-          <a class="btn btn-md text-light" id="myBtn">LEARN MORE →</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6" data-aos="flip-left">
-        <div class="trust-card d-flex flex-column justify-content-between px-5 card-2">
-          <div class="pandh">
-            <p>02</p>
-            <h3 class="lora">Tax Compliances & Auditing</h3>
-          </div>
-          <div class="panda">
-            <p>We offer specialized tax compliance and auditing services, including NRI taxation, sector-specific audits, and regulatory reporting-ensuring transparency, accuracy, and full legal adherence.</p>
-            <a class="btn btn-md text-light" id="myBtn">LEARN MORE →</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- 2nd row -->
-    <div class="row t-row">
-      <div class="col-lg-6" data-aos="flip-right">
-        <div class="trust-card d-flex flex-column justify-content-between px-5 card-3">
-          <div class="pandh">
-            <p>03</p>
-            <h3 class="lora">Legal Compliances</h3>
-          </div>
-          <div class="panda">
-            <p>Our business management solutions support strategic planning, regulatory compliance, and operational efficiency—empowering businesses to grow sustainably and make informed decisions</p>
-            <a class="btn btn-md text-light" id="myBtn">LEARN MORE →</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6" data-aos="flip-left">
-        <div class="trust-card d-flex flex-column justify-content-between px-5 card-4">
-          <div class="pandh">
-            <p>04</p>
-            <h3 class="lora">Property Management & Services</h3>
-          </div>
-          <div class="panda">
-            <p>We offer end-to-end property management services, including legal verification, documentation, NRI support, and dispute resolution—ensuring secure and hassle-free ownership.</p>
-            <a class="btn btn-md text-light" id="myBtn">LEARN MORE →</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <a href="#" class="btn mx-auto d-block mt-3 myBtn2">View All Services →</a>
-  </div>
- </section>
-<!-- connection section -->
-  <div class="container-fluid pb-5">
-    <h2 class="fw-bold fs-1 text-center lora" data-aos="fade-right">Connecting You to Trusted Solutions Back Home</h2>
-    <div class="row align-items-center justify-content-center mt-5">
-      <div class="col-md-5 ps-5">
-        <p class="fs-3 ms-3 lh-base" data-aos="fade-up-right">
-          We offer reliable and result-driven legal services for individuals, businesses, and especially Non-Resident Indians (NRIs) seeking trusted representation in India. From civil and commercial litigation to corporate legal advisory, our experienced team is committed to delivering strategic support with professionalism and care.
-          Protecting your rights, wherever you are
-        </p>
-      </div>
-      <div class="col-md-5 ps-5 connection-img-container" data-aos="fade-up-left">
-        <!-- <div id="connection-img"> -->
-          <img src="./Images/connection-img.png" alt="connection-img" class="image-fluid connection-img" data-aos="fade-up-left">
-        <!-- </div> -->
-      </div>
-    </div>
-  </div>
-<!-- property and legal section -->
-<section class="prop-leg-section py-5 bg-light" id="prop-leg-section">
-  <div class="container text-center">
-    <h2 class="fw-bold fs-1 text-success mb-5 lora" data-aos="fade-right">Property & Legal Protection in One Secure App</h2>
-    
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 justify-content-center pandl-container" data-aos="fade-up">
-      
-      <!-- Card Item -->
-      <div class="col">
-        <div class="card shadow-sm pl-card mx-auto">
-          <div class="card-body d-flex flex-column align-items-center justify-content-center">
-            <img src="./Images/prop-legal-1.png" alt="legal and property image" class="mb-3 img-fluid" style="max-width:120px;">
-            <p class="card-text fs-4 pt-5">Be a business of Integrity</p>
-          </div>
-        </div>
-      </div>
 
-      <div class="col">
-        <div class="card shadow-sm pl-card mx-auto">
-          <div class="card-body d-flex flex-column align-items-center justify-content-center">
-            <img src="./Images/prop-legal-2.png" alt="legal and property image" class="mb-3 img-fluid" style="max-width:120px;">
-            <p class="card-text fs-4 pt-5">Keep your books up to date</p>
+          <!-- Second Row - Text Left, Image Right -->
+          <div class="row align-items-center g-0">
+            <div class="col-lg-6 col-md-6 order-2 order-md-1">
+              <div class="content-section text-center text-md-start" data-aos="fade-up">
+                <h2 class="pb-3 fw-bold fs-1 lora">
+                  Legal & Auditing Services You Can Trust
+                </h2>
+                <p class="fs-4 lh-lg">
+                  At Our Company, we specialize in delivering reliable and accurate
+                  auditing solutions tailored to meet regulatory standards and business
+                  needs. From internal audits to tax and compliance reviews, our team
+                  ensures transparency, accountability, and financial integrity at every
+                  level. Helping you make informed decisions with clarity and confidence.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 order-1 order-md-2">
+              <div class="image-container img-offset-right">
+                <img
+                  src="./Images/op-img2.png"
+                  alt="Office image 2"
+                  class="img-fluid overview-img"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="col">
-        <div class="card shadow-sm pl-card mx-auto">
-          <div class="card-body d-flex flex-column align-items-center justify-content-center">
-            <img src="./Images/prop-legal-3.png" alt="legal and property image" class="mb-3 img-fluid" style="max-width:120px;">
-            <p class="card-text fs-4 pt-5">Prevent Fraud</p>
+    <!-- trust section -->
+    <section class="trust-section pb-5">
+      <h2 class="text-center fw-bold fs-1 lora" data-aos="fade-right">
+        Trusted Legal, Tax, and Audit Solutions in Action
+      </h2>
+      <div class="container">
+        <!-- 1st row -->
+        <div class="row py-5 t-row">
+          <div class="col-md-6" data-aos="flip-right">
+            <div
+              class="trust-card d-flex flex-column justify-content-between px-5 card-1"
+            >
+              <div class="pandh">
+                <p>01</p>
+                <h3 class="lora">Legal Compliances</h3>
+              </div>
+              <div class="panda">
+                <p>
+                  We specialize in legal compliance services, helping businesses meet
+                  statutory regulations, manage legal risks, and stay up to date with
+                  evolving laws across sectors
+                </p>
+                <a class="btn btn-md text-light" id="myBtn">LEARN MORE →</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="flip-left">
+            <div
+              class="trust-card d-flex flex-column justify-content-between px-5 card-2"
+            >
+              <div class="pandh">
+                <p>02</p>
+                <h3 class="lora">Tax Compliances & Auditing</h3>
+              </div>
+              <div class="panda">
+                <p>
+                  We offer specialized tax compliance and auditing services, including NRI
+                  taxation, sector-specific audits, and regulatory reporting-ensuring
+                  transparency, accuracy, and full legal adherence.
+                </p>
+                <a class="btn btn-md text-light" id="myBtn">LEARN MORE →</a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="col">
-        <div class="card shadow-sm pl-card mx-auto">
-          <div class="card-body d-flex flex-column align-items-center justify-content-center">
-            <img src="./Images/prop-legal-4.png" alt="legal and property image" class="mb-3 img-fluid" style="max-width:120px;">
-            <p class="card-text fs-4 pt-5">Maintain Compliance</p>
+        <!-- 2nd row -->
+        <div class="row t-row">
+          <div class="col-lg-6" data-aos="flip-right">
+            <div
+              class="trust-card d-flex flex-column justify-content-between px-5 card-3"
+            >
+              <div class="pandh">
+                <p>03</p>
+                <h3 class="lora">Legal Compliances</h3>
+              </div>
+              <div class="panda">
+                <p>
+                  Our business management solutions support strategic planning, regulatory
+                  compliance, and operational efficiency—empowering businesses to grow
+                  sustainably and make informed decisions
+                </p>
+                <a class="btn btn-md text-light" id="myBtn">LEARN MORE →</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="flip-left">
+            <div
+              class="trust-card d-flex flex-column justify-content-between px-5 card-4"
+            >
+              <div class="pandh">
+                <p>04</p>
+                <h3 class="lora">Property Management & Services</h3>
+              </div>
+              <div class="panda">
+                <p>
+                  We offer end-to-end property management services, including legal
+                  verification, documentation, NRI support, and dispute
+                  resolution—ensuring secure and hassle-free ownership.
+                </p>
+                <a class="btn btn-md text-light" id="myBtn">LEARN MORE →</a>
+              </div>
+            </div>
           </div>
         </div>
+        <a href="#" class="btn mx-auto d-block mt-3 myBtn2">View All Services →</a>
       </div>
+    </section>
 
-      <div class="col">
-        <div class="card shadow-sm pl-card mx-auto">
-          <div class="card-body d-flex flex-column align-items-center justify-content-center">
-            <img src="./Images/prop-legal-5.png" alt="legal and property image" class="mb-3 img-fluid" style="max-width:120px;">
-            <p class="card-text fs-4 pt-5">Assess and mitigate risks</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- journey with us section -->
-<section class="py-5">
-  <div class="container">
-    <h2 class="text-center fw-bold fs-1 mb-5 text-success lora" data-aos="fade-right">Journey With Us</h2>
-    <div class="row align-items-center text-center text-lg-start">
-      <!-- Column 1: Step Number + Title -->
-      <div class="col-12 col-lg-3 mb-3 mb-lg-0 order-lg-1 order-2">
-        <div class="jwu-h">
-          <h2 class="fw-bold display-6">01</h2>
-          <p class="mb-0 jwu-h fw-bold fs-4">Initial Consultation – Understand your needs</p>
-        </div>
-      </div>
-
-      <!-- Column 2: Image -->
-      <div class="col-12 col-lg-4 mb-3 mb-lg-0 order-lg-2 order-1">
-        <div class="image-box-1"> 
-          <img src="./Images/jwu-1.png" alt="Step 1" class="img-fluid rounded" data-aos="fade-up-left">
-        </div>
-      </div>
-
-      <!-- Column 3: Description -->
-      <div class="col-12 col-lg-5 order-lg-3 order-3">
-        <p class="jwu-p fs-4">
-          We assess your requirements, identify any compliance gaps, and offer tailored guidance — ensuring you’re on the right path from day one.
-        </p>
-      </div>
-  </div>
-  <!-- 2nd Row -->
-    <div class="row align-items-center text-center text-lg-start">
-      <!-- Column 1: Step Number + Title -->
-      <div class="col-12 col-lg-3 mb-3 mb-lg-0 order-lg-3 order-2">
-        <div class="jwu-h">
-          <h2 class="fw-bold display-6">02</h2>
-          <p class="mb-0 jwu-h fw-bold fs-4">Document & Case Review – Our experts assess</p>
-        </div>  
-      </div>
-
-      <!-- Column 2: Image -->
-      <div class="col-12 col-lg-4 mb-3 mb-lg-0 order-lg-2 order-1">
-        <div class="image-box-2">
-          <img src="./Images/jwu-2.png" alt="Step 1" class="img-fluid rounded" data-aos="fade-up-right">
-        </div>
-      </div>
-
-      <!-- Column 3: Description -->
-      <div class="col-12 col-lg-5 order-lg-1 order-3">
-        <p class="jwu-p fs-4">
-          We verify accuracy, assess legal and financial implications, and ensure all materials align with current regulatory standards—setting the stage for precise, compliant action.
-        </p>
-      </div>
-  </div>
-<!-- 3rd -->
-  <div class="row align-items-center text-center text-lg-start">
-        <!-- Column 1: Step Number + Title -->
-        <div class="col-12 col-lg-3 mb-3 mb-lg-0 order-lg-1 order-2">
-          <div class="jwu-h">
-            <h2 class="fw-bold display-6">03</h2>
-            <p class="mb-0 jwu-h fw-bold fs-4">Action Plan – Tailored solution shared</p>
-          </div>
-        </div>
-
-        <!-- Column 2: Image -->
-        <div class="col-12 col-lg-4 mb-3 mb-lg-0 order-lg-2 order-1">
-          <div class="image-box-3">
-            <img src="./Images/jwu-3.png" alt="Step 1" class="img-fluid rounded" data-aos="fade-up-left">
-          </div>
-        </div>
-
-        <!-- Column 3: Description -->
-        <div class="col-12 col-lg-5 order-lg-3 order-3">
-          <p class="jwu-p fs-4">
-            Based on our detailed review, we create a customized action plan aligned with your goals and compliance requirements.
+    <!-- connection section -->
+    <div class="container-fluid pb-5">
+      <h2 class="fw-bold fs-1 text-center lora" data-aos="fade-right">
+        Connecting You to Trusted Solutions Back Home
+      </h2>
+      <div class="row align-items-center justify-content-center mt-5">
+        <div class="col-md-5 ps-5">
+          <p class="fs-3 ms-3 lh-base" data-aos="fade-up-right">
+            We offer reliable and result-driven legal services for individuals,
+            businesses, and especially Non-Resident Indians (NRIs) seeking trusted
+            representation in India. From civil and commercial litigation to corporate
+            legal advisory, our experienced team is committed to delivering strategic
+            support with professionalism and care. Protecting your rights, wherever you
+            are
           </p>
         </div>
-    </div>
-  <!-- 4th -->
-   <div class="row align-items-center text-center text-lg-start">
-      <!-- Column 1: Step Number + Title -->
-      <div class="col-12 col-lg-3 mb-3 mb-lg-0 order-lg-3 order-2">
-        <div class="jwu-h">
-          <h2 class="fw-bold display-6">04</h2>
-          <p class="mb-0 jwu-h fw-bold fs-4">Execution & Filing – We complete and file documents</p>
-        </div>  
-      </div>
-
-      <!-- Column 2: Image -->
-      <div class="col-12 col-lg-4 mb-3 mb-lg-0 order-lg-2 order-1">
-        <div class="image-box-4">
-          <img src="./Images/jwu-4.png" alt="Step 1" class="img-fluid rounded" data-aos="fade-up-right">
+        <div class="col-md-5 ps-5 connection-img-container" data-aos="fade-up-left">
+          <!-- <div id="connection-img"> -->
+          <img
+            src="./Images/connection-img.png"
+            alt="connection-img"
+            class="image-fluid connection-img"
+            data-aos="fade-up-left"
+          />
+          <!-- </div> -->
         </div>
       </div>
+    </div>
 
-      <!-- Column 3: Description -->
-      <div class="col-12 col-lg-5 order-lg-1 order-3">
-        <p class="jwu-p fs-4">
-          With your approval, our team proceeds to execute the planned actions—drafting, finalizing, and securely filing all required legal, tax, or compliance documents.
-        </p>
-      </div>
-  </div>
-<!-- 5th -->
-  <div class="row align-items-center text-center text-lg-start">
-        <!-- Column 1: Step Number + Title -->
-        <div class="col-12 col-lg-3 mb-3 mb-lg-0 order-lg-1 order-2">
-          <div class="jwu-h">
-            <h2 class="fw-bold display-6">05</h2>
-            <p class="mb-0 jwu-h fw-bold fs-4">Ongoing Support – We provide regular updates and follow-ups</p>
+    <!-- property and legal section -->
+    <section class="prop-leg-section py-5 bg-light" id="prop-leg-section">
+      <div class="container text-center">
+        <h2 class="fw-bold fs-1 text-success mb-5 lora" data-aos="fade-right">
+          Property & Legal Protection in One Secure App
+        </h2>
+
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 justify-content-center pandl-container"
+          data-aos="fade-up"
+        >
+          <!-- Card Item -->
+          <div class="col">
+            <div class="card shadow-sm pl-card mx-auto">
+              <div
+                class="card-body d-flex flex-column align-items-center justify-content-center"
+              >
+                <img
+                  src="./Images/prop-legal-1.png"
+                  alt="legal and property image"
+                  class="mb-3 img-fluid"
+                  style="max-width: 120px"
+                />
+                <p class="card-text fs-4 pt-5">Be a business of Integrity</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm pl-card mx-auto">
+              <div
+                class="card-body d-flex flex-column align-items-center justify-content-center"
+              >
+                <img
+                  src="./Images/prop-legal-2.png"
+                  alt="legal and property image"
+                  class="mb-3 img-fluid"
+                  style="max-width: 120px"
+                />
+                <p class="card-text fs-4 pt-5">Keep your books up to date</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm pl-card mx-auto">
+              <div
+                class="card-body d-flex flex-column align-items-center justify-content-center"
+              >
+                <img
+                  src="./Images/prop-legal-3.png"
+                  alt="legal and property image"
+                  class="mb-3 img-fluid"
+                  style="max-width: 120px"
+                />
+                <p class="card-text fs-4 pt-5">Prevent Fraud</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm pl-card mx-auto">
+              <div
+                class="card-body d-flex flex-column align-items-center justify-content-center"
+              >
+                <img
+                  src="./Images/prop-legal-4.png"
+                  alt="legal and property image"
+                  class="mb-3 img-fluid"
+                  style="max-width: 120px"
+                />
+                <p class="card-text fs-4 pt-5">Maintain Compliance</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm pl-card mx-auto">
+              <div
+                class="card-body d-flex flex-column align-items-center justify-content-center"
+              >
+                <img
+                  src="./Images/prop-legal-5.png"
+                  alt="legal and property image"
+                  class="mb-3 img-fluid"
+                  style="max-width: 120px"
+                />
+                <p class="card-text fs-4 pt-5">Assess and mitigate risks</p>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Column 2: Image -->
-        <div class="col-12 col-lg-4 mb-3 mb-lg-0 order-lg-2 order-1">
-          <div class="image-box-5" >
-            <img src="./Images/jwu-5.png" alt="Step 1" class="img-fluid rounded" data-aos="fade-up-left">
+    <!-- journey with us section -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center fw-bold fs-1 mb-5 text-success lora" data-aos="fade-right">
+          Journey With Us
+        </h2>
+        <div class="row align-items-center text-center text-lg-start">
+          <!-- Column 1: Step Number + Title -->
+          <div class="col-12 col-lg-3 mb-3 mb-lg-0 order-lg-1 order-2">
+            <div class="jwu-h">
+              <h2 class="fw-bold display-6">01</h2>
+              <p class="mb-0 jwu-h fw-bold fs-4">
+                Initial Consultation – Understand your needs
+              </p>
+            </div>
+          </div>
+
+          <!-- Column 2: Image -->
+          <div class="col-12 col-lg-4 mb-3 mb-lg-0 order-lg-2 order-1">
+            <div class="image-box-1">
+              <img
+                src="./Images/jwu-1.png"
+                alt="Step 1"
+                class="img-fluid rounded"
+                data-aos="fade-up-left"
+              />
+            </div>
+          </div>
+
+          <!-- Column 3: Description -->
+          <div class="col-12 col-lg-5 order-lg-3 order-3">
+            <p class="jwu-p fs-4">
+              We assess your requirements, identify any compliance gaps, and offer
+              tailored guidance — ensuring you’re on the right path from day one.
+            </p>
           </div>
         </div>
+        <!-- 2nd Row -->
+        <div class="row align-items-center text-center text-lg-start">
+          <!-- Column 1: Step Number + Title -->
+          <div class="col-12 col-lg-3 mb-3 mb-lg-0 order-lg-3 order-2">
+            <div class="jwu-h">
+              <h2 class="fw-bold display-6">02</h2>
+              <p class="mb-0 jwu-h fw-bold fs-4">
+                Document & Case Review – Our experts assess
+              </p>
+            </div>
+          </div>
 
-        <!-- Column 3: Description -->
-        <div class="col-12 col-lg-5 order-lg-3 order-3">
-          <p class="jwu-p fs-4">
-            Whether it's responding to queries or assisting with future requirements, we ensure you stay informed and legally aligned at all times.
-          </p>
+          <!-- Column 2: Image -->
+          <div class="col-12 col-lg-4 mb-3 mb-lg-0 order-lg-2 order-1">
+            <div class="image-box-2">
+              <img
+                src="./Images/jwu-2.png"
+                alt="Step 1"
+                class="img-fluid rounded"
+                data-aos="fade-up-right"
+              />
+            </div>
+          </div>
+
+          <!-- Column 3: Description -->
+          <div class="col-12 col-lg-5 order-lg-1 order-3">
+            <p class="jwu-p fs-4">
+              We verify accuracy, assess legal and financial implications, and ensure all
+              materials align with current regulatory standards—setting the stage for
+              precise, compliant action.
+            </p>
+          </div>
         </div>
-    </div>
-</div>
-</section>
+        <!-- 3rd -->
+        <div class="row align-items-center text-center text-lg-start">
+          <!-- Column 1: Step Number + Title -->
+          <div class="col-12 col-lg-3 mb-3 mb-lg-0 order-lg-1 order-2">
+            <div class="jwu-h">
+              <h2 class="fw-bold display-6">03</h2>
+              <p class="mb-0 jwu-h fw-bold fs-4">
+                Action Plan – Tailored solution shared
+              </p>
+            </div>
+          </div>
 
-<!-- lets talk section -->
- <section class="lets-talk-section py-5 text-light" data-aos="fade-up-right" style="background-image: url('./Images/lets-talk-bg.png'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 100vh;">
-  <div class="container">
-    <div class="row row-cols-1 row-cols-lg-2">
-      <div class="col order-lg-1 order-2">
-        <h2 class="lets-talk-h lora">We're ready</h2>
+          <!-- Column 2: Image -->
+          <div class="col-12 col-lg-4 mb-3 mb-lg-0 order-lg-2 order-1">
+            <div class="image-box-3">
+              <img
+                src="./Images/jwu-3.png"
+                alt="Step 1"
+                class="img-fluid rounded"
+                data-aos="fade-up-left"
+              />
+            </div>
+          </div>
+
+          <!-- Column 3: Description -->
+          <div class="col-12 col-lg-5 order-lg-3 order-3">
+            <p class="jwu-p fs-4">
+              Based on our detailed review, we create a customized action plan aligned
+              with your goals and compliance requirements.
+            </p>
+          </div>
+        </div>
+        <!-- 4th -->
+        <div class="row align-items-center text-center text-lg-start">
+          <!-- Column 1: Step Number + Title -->
+          <div class="col-12 col-lg-3 mb-3 mb-lg-0 order-lg-3 order-2">
+            <div class="jwu-h">
+              <h2 class="fw-bold display-6">04</h2>
+              <p class="mb-0 jwu-h fw-bold fs-4">
+                Execution & Filing – We complete and file documents
+              </p>
+            </div>
+          </div>
+
+          <!-- Column 2: Image -->
+          <div class="col-12 col-lg-4 mb-3 mb-lg-0 order-lg-2 order-1">
+            <div class="image-box-4">
+              <img
+                src="./Images/jwu-4.png"
+                alt="Step 1"
+                class="img-fluid rounded"
+                data-aos="fade-up-right"
+              />
+            </div>
+          </div>
+
+          <!-- Column 3: Description -->
+          <div class="col-12 col-lg-5 order-lg-1 order-3">
+            <p class="jwu-p fs-4">
+              With your approval, our team proceeds to execute the planned
+              actions—drafting, finalizing, and securely filing all required legal, tax,
+              or compliance documents.
+            </p>
+          </div>
+        </div>
+        <!-- 5th -->
+        <div class="row align-items-center text-center text-lg-start">
+          <!-- Column 1: Step Number + Title -->
+          <div class="col-12 col-lg-3 mb-3 mb-lg-0 order-lg-1 order-2">
+            <div class="jwu-h">
+              <h2 class="fw-bold display-6">05</h2>
+              <p class="mb-0 jwu-h fw-bold fs-4">
+                Ongoing Support – We provide regular updates and follow-ups
+              </p>
+            </div>
+          </div>
+
+          <!-- Column 2: Image -->
+          <div class="col-12 col-lg-4 mb-3 mb-lg-0 order-lg-2 order-1">
+            <div class="image-box-5">
+              <img
+                src="./Images/jwu-5.png"
+                alt="Step 1"
+                class="img-fluid rounded"
+                data-aos="fade-up-left"
+              />
+            </div>
+          </div>
+
+          <!-- Column 3: Description -->
+          <div class="col-12 col-lg-5 order-lg-3 order-3">
+            <p class="jwu-p fs-4">
+              Whether it's responding to queries or assisting with future requirements, we
+              ensure you stay informed and legally aligned at all times.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="col order-lg-2 order-1">
-        <p class="fs-3 lets-talk-p">Call us, Email us, or use the form below . We’ll get back to you quickly - and connect you with the right legal professional.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <h2 class="fw-bold lets-talk-h2 lora"> When You are </h2>
-      </div>
-    </div>
-    <div class="row my-3 ms-4">
-      <div class="col">
-        <a href="#" class="btn btn-lg lets-btn">Let's Talk</a>
-      </div>
-    </div>
-    <div class="row pt-5 card-section">
+    </section>
+
+    <!-- lets talk section -->
+    <section
+      class="lets-talk-section py-5 text-light"
+      data-aos="fade-up-right"
+      style="
+        background-image: url('./Images/lets-talk-bg.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+      "
+    >
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-2">
+          <div class="col order-lg-1 order-2">
+            <h2 class="lets-talk-h lora">We're ready</h2>
+          </div>
+          <div class="col order-lg-2 order-1">
+            <p class="fs-3 lets-talk-p">
+              Call us, Email us, or use the form below . We’ll get back to you quickly -
+              and connect you with the right legal professional.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h2 class="fw-bold lets-talk-h2 lora">When You are</h2>
+          </div>
+        </div>
+        <div class="row my-3 ms-4">
+          <div class="col">
+            <a href="#" class="btn btn-lg lets-btn">Let's Talk</a>
+          </div>
+        </div>
+        <div class="row pt-5 card-section">
           <div class="grid grid-3 pt-5">
-          <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=terraloom@gmail.com"
-            target="_blank"
-            style="text-decoration: none"
-          >
-            <div class="card-lt" data-aos="flip-right">
-              <div class="card-icon m-0 mb-5">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-envelope-check-fill" viewBox="0 0 16 16">
-                 <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 4.697v4.974A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-1.965.45l-.338-.207z"/>
-                 <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686"/>
-                </svg>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=terraloom@gmail.com"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <div class="card-lt" data-aos="flip-right">
+                <div class="card-icon m-0 mb-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="bi bi-envelope-check-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 4.697v4.974A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-1.965.45l-.338-.207z"
+                    />
+                    <path
+                      d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686"
+                    />
+                  </svg>
+                </div>
+                <h3>General Inquiries</h3>
+                <p>name11@gmail.com</p>
               </div>
-              <h3>General Inquiries</h3>
-              <p>name11@gmail.com</p>
-            </div>
-          </a>
-          <a href="tel:" target="_blank" style="text-decoration: none">
-            <div class="card-lt" data-aos="flip-down">
-              <div class="card-icon m-0 mb-5">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                 fill="currentColor"
-                 class="bi bi-telephone-fill"
-                 viewBox="0 0 16 16">
-                 <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-               </svg>
+            </a>
+            <a href="tel:" target="_blank" style="text-decoration: none">
+              <div class="card-lt" data-aos="flip-down">
+                <div class="card-icon m-0 mb-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="bi bi-telephone-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
+                    />
+                  </svg>
+                </div>
+                <h3>Phone</h3>
+                <p>8695325611, 403-001-965832</p>
               </div>
-              <h3>Phone</h3>
-              <p>8695325611,  403-001-965832</p>
-            </div>
-          </a>
-          <a
-            href="https://maps.app.goo.gl/DmKuoAazEehXG2f47"
-            target="_blank"
-            style="text-decoration: none"
-          >
-            <div class="card-lt" data-aos="flip-left">
-              <div class="card-icon m-0 mb-5">
-               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
-                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
-               </svg>
+            </a>
+            <a
+              href="https://maps.app.goo.gl/DmKuoAazEehXG2f47"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <div class="card-lt" data-aos="flip-left">
+                <div class="card-icon m-0 mb-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="bi bi-clock-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"
+                    />
+                  </svg>
+                </div>
+                <h3>Working Hours</h3>
+                <p>MON - FRI, 8:30AM-6:00PM</p>
               </div>
-              <h3>Working Hours</h3>
-              <p>MON - FRI, 8:30AM-6:00PM</p>
-            </div>
-          </a>
-        </div>
-      </div>
-  </div>
- </section>
-
- <!-- form section -->
-  <section class="form-section my-5">
-    <div class="container">
-      <div class="row row-cols-lg-2 row-cols-1">
-        <!-- left Column -->
-        <div class="col text-center d-flex align-items-center justify-content-center">
-          <div class="img-container">
-            <img src="./Images/form-img.png" alt="person speaking in a phone" class="img-fluid" class="form-img" loading="lazy" style="max-height: 75vh;">
+            </a>
           </div>
         </div>
-        <!-- right column -->
-        <div class="col form-col">
-             <div class="row justify-content-center">
-          <div class="col-lg-12 p-3 new-form" style="border-radius: 20px; background-color: #dddddd;">
-            <div class="p-3 contact-card rounded-3">
+      </div>
+    </section>
+
+    <!-- form section -->
+    <section class="form-section my-5">
+      <div class="container">
+        <div class="row row-cols-lg-2 row-cols-1">
+          <!-- left Column -->
+          <div class="col text-center d-flex align-items-center justify-content-center">
+            <div class="img-container">
+              <img
+                src="./Images/form-img.png"
+                alt="person speaking in a phone"
+                class="img-fluid"
+                class="form-img"
+                loading="lazy"
+                style="max-height: 75vh"
+              />
+            </div>
+          </div>
+          <!-- right column -->
+          <div class="col form-col">
+            <div class="row justify-content-center">
+              <div
+                class="col-lg-12 p-3 new-form"
+                style="border-radius: 20px; background-color: #dddddd"
+              >
+                <div class="p-3 contact-card rounded-3">
                   <h2 class="text-start lora">Reach Out Directly</h2>
                   <p class="text-start mt-3 fs-5">
-                    Let us know a few details, and we’ll make sure the right person follows up Promptly 
+                    Let us know a few details, and we’ll make sure the right person
+                    follows up Promptly
                   </p>
-              <form class="row g-3 my-form">
-                <div class="col-md-6 col-form-label col-form-label-lg">
-                  <input type="text" class="form-control" placeholder="First name">
+                  <form class="row g-3 my-form">
+                    <div class="col-md-6 col-form-label col-form-label-lg">
+                      <input type="text" class="form-control" placeholder="First name" />
+                    </div>
+                    <div class="col-md-6 col-form-label-lg">
+                      <input
+                        type="password"
+                        class="form-control"
+                        placeholder="Last name"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Email Address"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <input type="text" class="form-control" placeholder="Subject" />
+                    </div>
+                    <div class="col-md-12">
+                      <textarea
+                        type="text"
+                        placeholder="Your message"
+                        class="form-control"
+                        style="
+                          padding: 10px;
+                          height: 8rem;
+                          width: 100%;
+                          border: none;
+                          border-radius: 15px;
+                        "
+                      ></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="form-btn">Sign in</button>
+                    </div>
+                  </form>
                 </div>
-                <div class="col-md-6 col-form-label-lg">
-                  <input type="password" class="form-control" placeholder="Last name">
-                </div>
-                <div class="col-12">
-                  <input type="text" class="form-control" placeholder="Email Address">
-                </div>
-                <div class="col-12">
-                  <input type="text" class="form-control" placeholder="Subject">
-                </div>
-                <div class="col-md-12">
-                  <textarea type="text" placeholder="Your message" class="form-control" style="padding: 10px; height: 8rem; width: 100%; border: none; border-radius: 15px;"></textarea>
-                </div>
-                <div class="col-12">
-                  <button type="submit" class="form-btn">Sign in</button>
-                </div>
-              </form>
+                <!-- main section ends -->
+              </div>
             </div>
-            <!-- main section ends -->
           </div>
         </div>
-        </div>       
       </div>
-    </div>
-  </section>
+    </section>
 
-<!-- slider section -->
-<section class="slider-section">
-    <h2 class="fw-bold fs-1 text-center lora">Our Clients</h2>
-    <div class="wrapper">
-      <div class="item item1">
-        <img
-          src="./Images/slide-1.png"
-          alt="zomato"
-          class="logo-img"
-        />
-      </div>
+    <!-- slider section -->
+    <section class="slider-section">
+      <h2 class="fw-bold fs-1 text-center lora">Our Clients</h2>
+      <div class="wrapper">
+        <div class="item item1">
+          <img src="./Images/slide-1.png" alt="zomato" class="logo-img" />
+        </div>
 
-      <div class="item item2">
-        <img
-          src="./Images/slide-2.png"
-          alt="swiggy"
-          class="logo-img"
-        />
-      </div>
+        <div class="item item2">
+          <img src="./Images/slide-2.png" alt="swiggy" class="logo-img" />
+        </div>
 
-      <div class="item item3">
-        <img
-          src="./Images/slide-3.png"
-          alt="zepto"
-          class="logo-img"
-        />
-      </div>
+        <div class="item item3">
+          <img src="./Images/slide-3.png" alt="zepto" class="logo-img" />
+        </div>
 
-      <div class="item item4">
-        <img
-          src="./Images/slide-4.png"
-          alt="blinkit"
-          class="logo-img"
-        />
-      </div>
+        <div class="item item4">
+          <img src="./Images/slide-4.png" alt="blinkit" class="logo-img" />
+        </div>
 
-      <div class="item item5">
-        <img
-          src="./Images/slide-1.png"
-          alt="zomato"
-          class="logo-img"
-        />
-      </div>
+        <div class="item item5">
+          <img src="./Images/slide-1.png" alt="zomato" class="logo-img" />
+        </div>
 
-      <div class="item item6">
-        <img
-          src="./Images/slide-2.png"
-          alt="swiggy"
-          class="logo-img"
-        />
-      </div>
+        <div class="item item6">
+          <img src="./Images/slide-2.png" alt="swiggy" class="logo-img" />
+        </div>
 
-      <div class="item item7">
-        <img
-          src="./Images/slide-3.png"
-          alt="zepto"
-          class="logo-img"
-        />
-      </div>
+        <div class="item item7">
+          <img src="./Images/slide-3.png" alt="zepto" class="logo-img" />
+        </div>
 
-      <div class="item item8">
-        <img
-          src="./Images/slide-4.png"
-          alt="blinkit"
-          class="logo-img"
-        />
+        <div class="item item8">
+          <img src="./Images/slide-4.png" alt="blinkit" class="logo-img" />
+        </div>
       </div>
-    </div>
+    </section>
+    
+    <!-- slider section 2 -->
+    <section class="slider-section">
+      <div class="wrapper">
+        <div class="item-2 item1">
+          <img src="./Images/2jwu-1.png" alt="zomato" class="logo-img" />
+        </div>
+        <div class="item-2 item2">
+          <img src="./Images/2jwu-2.png" alt="swiggy" class="logo-img" />
+        </div>
+        <div class="item-2 item3">
+          <img src="./Images/2jwu-3.png" alt="zepto" class="logo-img" />
+        </div>
+        <div class="item-2 item4">
+          <img src="./Images/2jwu-4.png" alt="blinkit" class="logo-img" />
+        </div>
+        <div class="item-2 item5">
+          <img src="./Images/2jwu-1.png" alt="zomato" class="logo-img" />
+        </div>
+        <div class="item-2 item6">
+          <img src="./Images/2jwu-2.png" alt="swiggy" class="logo-img" />
+        </div>
+        <div class="item-2 item7">
+          <img src="./Images/2jwu-3.png" alt="zepto" class="logo-img" />
+        </div>
+        <div class="item-2 item8">
+          <img src="./Images/2jwu-4.png" alt="blinkit" class="logo-img" />
+        </div>
+      </div>
+    </section>
 
-</section>
-<!-- slider section 2 -->
- <section class="slider-section">
-    <div class="wrapper">
-      <div class="item-2 item1">
-        <img
-          src="./Images/2jwu-1.png"
-          alt="zomato"
-          class="logo-img"
-        />
-      </div>
-      <div class="item-2 item2">
-        <img
-          src="./Images/2jwu-2.png"
-          alt="swiggy"
-          class="logo-img"
-        />
-      </div>
-      <div class="item-2 item3">
-        <img
-          src="./Images/2jwu-3.png"
-          alt="zepto"
-          class="logo-img"
-        />
-      </div>
-      <div class="item-2 item4">
-        <img
-          src="./Images/2jwu-4.png"
-          alt="blinkit"
-          class="logo-img"
-        />
-      </div>
-      <div class="item-2 item5">
-        <img
-          src="./Images/2jwu-1.png"
-          alt="zomato"
-          class="logo-img"
-        />
-      </div>
-      <div class="item-2 item6">
-        <img
-          src="./Images/2jwu-2.png"
-          alt="swiggy"
-          class="logo-img"
-        />
-      </div>
-      <div class="item-2 item7">
-        <img
-          src="./Images/2jwu-3.png"
-          alt="zepto"
-          class="logo-img"
-        />
-      </div>
-      <div class="item-2 item8">
-        <img
-          src="./Images/2jwu-4.png"
-          alt="blinkit"
-          class="logo-img"
-        />
-      </div>
-    </div>
-
-</section>
-
-<!-- footer -->
+    <!-- footer -->
     <div class="container-fluid footer-container gray-txt">
       <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5 border-top">
         <div class="col mb-3 d-flex justify-content-center align-items-start">
@@ -875,9 +1109,13 @@
       </footer>
     </div>
 
-<!-- scripts -->
- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="./Scripts/index.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-</body>
+    <!-- scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./Scripts/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

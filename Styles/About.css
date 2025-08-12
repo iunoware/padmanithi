@@ -4,6 +4,10 @@
     font-style: normal;
 }
 
+.lora {
+    font-family: 'lora';
+}
+
 @media (max-width: 3000px) {
 
     html,
@@ -16,6 +20,21 @@
     --blue-color: #1d1dff;
     --green-color: #22af00;
 }
+
+/* navbar */
+.collapse {
+    background-color: #f8f9fa;
+    border-radius: 1rem;
+    /* padding: .5rem; */
+    z-index: 10;
+    transition: all .3s ease;
+}
+
+.navbar-nav> :first-child {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
 
 
 /* hero section ⬇️⬇️ */
@@ -388,7 +407,7 @@ hr {
 
 
 /* legal support ⬇️⬇️ */
-.legal-support-heading{
+.legal-support-heading {
     font-family: 'lora';
 }
 
@@ -423,7 +442,7 @@ hr {
 
 
 /* testimonial section */
-.testimonial-heading{
+.testimonial-heading {
     font-family: 'lora';
 }
 
@@ -444,7 +463,7 @@ hr {
 
 
 /* meet our people ⬇️⬇️ */
-.people-heading{
+.people-heading {
     font-family: 'lora';
 }
 
@@ -542,15 +561,16 @@ footer {
     /* margin-left: 1rem; */
 }
 
-.a-tag-link{
+.a-tag-link {
     transition: all .3s ease;
 }
 
-.a-tag-link:active, .a-tag-link:focus{
+.a-tag-link:active,
+.a-tag-link:focus {
     color: white !important;
 }
 
-.a-tag-link:hover{
+.a-tag-link:hover {
     color: white;
     filter: drop-shadow(0px 0px 5px white);
 }
