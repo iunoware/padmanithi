@@ -1,17 +1,66 @@
+let dateNotifier = document.getElementById("date-notifier");
+
+let today = new Date();
+
+let year = today.getFullYear();
+let month = String(today.getMonth() + 1).padStart(2, "0");
+let day = String(today.getDate()).padStart(2, "0");
+
+var formattedDate = `${year}-${month}-${day}`;
+// var indianFormat = `${day}-${month}-${year}`;
+var meetingDate;
+
 document.addEventListener("DOMContentLoaded", function () {
-  let calendarEl = document.getElementById("calendar");
+  let calendarNew = document.getElementById("calendar");
 
-  let currentDate = new Date().toLocaleString();
+  // console.log(`${year}-${month}-${day}`);
 
-  console.log(currentDate);
-
-  let calendar = new FullCalendar.Calendar(calendarEl, {
+  let calendar = new FullCalendar.Calendar(calendarNew, {
     initialView: "dayGridMonth",
-    events: [
-      { title: "Meeting", start: "2025-08-12" },
-      { title: "Conference", start: "2025-08-15", end: "2025-08-17" },
-    ],
+    validRange: {
+      start: new Date()
+    },
+    dateClick: function (info) {
+      // alert("You clicked on: " + info.dateStr);
+      meetingDate = info.dateStr;
+      openPopup(info);
+    },
+    events: [{ title: "TODAY", start: formattedDate }],
   });
 
   calendar.render();
+});
+
+// for popup
+function openPopup(info) {
+  document.getElementById("popupForm").style.display = "block";
+  dateNotifier.textContent = info.dateStr;
+}
+
+function closePopup() {
+  document.getElementById("popupForm").style.display = "none";
+  document.querySelector(".warning-message").style.display = "none";
+  document.getElementById("name").value = "";
+  document.getElementById("phone").value = "";
+}
+
+// for message
+const messageBtn = document.getElementById("sendMessageBtn");
+const myNum = "";
+let url;
+
+messageBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  let name = document.getElementById("name").value.trim();
+  let phone = document.getElementById("phone").value.trim();
+
+  if (name && phone) {
+    const message = `Hi, I'm ${name},\nthis is my mobile number: ${phone}.\n And I would like to book an appointment on ${meetingDate} \n\nThank you!`;
+    const enCoded = encodeURIComponent(message);
+    url = `https://wa.me/${myNum}?text=${enCoded}`;
+    window.open(url);
+  } else {
+    document.querySelector(".warning-message").style.display = "block";
+  }
 });
