@@ -72,17 +72,89 @@ footer {
 
 /* hero section */
 .hero-title {
-    font-size: 4.5rem !important;
+    font-size: 4rem !important;
 }
+
+/* hero 2 */
+/* .hero-text {
+    font-family: 'Lora';
+    font-size: 2rem;
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    height: 100%;
+    width: 100%;
+} */
+
+/* .hero-heading{
+    font-size: 4rem;
+} */
+
+/* @media (max-width: 600px){
+    .hero-heading{
+        width: 425px;
+    }
+} */
+
+
+
+
+
+.img-container {
+    background-image: url("../Images/service-4-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.img-container::before {
+    content: '';
+    inset: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.521);
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+}
+
 
 .landc-img {
     max-height: 20rem !important;
     object-fit: cover;
+    transition: all .5s ease;
+}
+
+.img-parent-container {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    width: 320px;
+}
+
+.landc-img:hover {
+    transform: scale(1.1);
 }
 
 .landc-sh {
     color: var(--blue-color) !important;
 }
+
+
+
+
+/* how we work ⬇️⬇️ */
+.hww-img {
+    transition: all .3s ease;
+}
+
+.hww-img:hover {
+    transform: rotate(8deg) scale(1.05);
+}
+
+
+
+
 
 /* trusted legal council section  */
 .content {
