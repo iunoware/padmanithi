@@ -829,34 +829,55 @@
                     Let us know a few details, and we’ll make sure the right
                     person follows up Promptly
                   </p>
-                  <form class="row g-3 my-form">
+                  <form class="row g-3 my-form" id="whatsappForm">
                     <div class="col-md-6 col-form-label col-form-label-lg">
                       <input
                         type="text"
                         class="form-control"
-                        placeholder="First name"
+                        placeholder="First name*"
+                        required
+                        id="firstName"
                       />
                     </div>
                     <div class="col-md-6 col-form-label-lg">
                       <input
-                        type="password"
+                        type="text"
                         class="form-control"
-                        placeholder="Last name"
+                        placeholder="Last name*"
+                        required
+                        id="lastName"
                       />
                     </div>
                     <div class="col-12">
                       <input
                         type="text"
                         class="form-control"
-                        placeholder="Email Address"
+                        placeholder="Email Address*"
+                        required
+                        id="emailAddress"
                       />
                     </div>
                     <div class="col-12">
-                      <input
-                        type="text"
+                      <select
                         class="form-control"
-                        placeholder="Subject"
-                      />
+                        aria-label="subject"
+                        required
+                        id="subject"
+                      >
+                        <option selected disabled>Subject*</option>
+                        <option value="Legal Compliances">
+                          Legal Compliances
+                        </option>
+                        <option value="Property Management & Services">
+                          Property Management & Services
+                        </option>
+                        <option value="Business management">
+                          Business management
+                        </option>
+                        <option value="Tax Compliance & Auditing">
+                          Tax Compliance & Auditing
+                        </option>
+                      </select>
                     </div>
                     <div class="col-md-12">
                       <textarea
@@ -870,6 +891,7 @@
                           border: none;
                           border-radius: 15px;
                         "
+                        id="message"
                       ></textarea>
                     </div>
                     <div class="col-12">
