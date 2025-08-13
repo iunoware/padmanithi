@@ -10,17 +10,28 @@
 .lora {
   font-family: "lora";
 }
+
 /* cursor animation */
 #heading::after {
   content: "|";
   margin-left: 3px;
   animation: blink 0.7s step-end infinite;
 }
+
 @keyframes blink {
   50% {
     opacity: 0;
   }
 }
+
+@media (max-width: 3000px) {
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
 /* navbar */
 .collapse {
   background-color: #f8f9fa;
@@ -30,9 +41,13 @@
   transition: all 0.3s ease;
 }
 
-.navbar-nav > :first-child {
+.navbar-nav> :first-child {
   padding-left: 24px;
   padding-right: 24px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 /* hero section */
@@ -51,7 +66,7 @@
   background-color: rgba(0, 0, 0, 0.521);
   height: 100%;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .hero-text {
@@ -121,11 +136,6 @@ input::-webkit-inner-spin-button {
   width: 600px;
   margin: auto;
 }
-
-/* 
-.fc-day {
-    border: none !important;
-} */
 
 .fc-today-button {
   background-color: var(--green-color) !important;
