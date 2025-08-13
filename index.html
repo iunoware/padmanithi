@@ -11,12 +11,21 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <!-- font-1 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
       rel="stylesheet"
     />
+    <!-- font 2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
@@ -114,13 +123,8 @@
               Expert solutions tailored to your legal and financial needs.
             </p>
             <a
-              href="#"
-              class="btn mt-3 btn-lg text-center"
-              style="
-                background-color: #22af00;
-                color: antiquewhite;
-                width: 280px;
-              "
+              href="./Pages/service-1.html"
+              class="btn mt-3 btn-lg text-center km-btn"
               >Know more</a
             >
           </div>
@@ -136,7 +140,9 @@
                     Includes legal documentation and Agreements, business
                     compliance.
                   </p>
-                  <a href="#" class="text-decoration-none">Read more →</a>
+                  <a href="./Pages/service-1.html" class="text-decoration-none"
+                    >Read more →</a
+                  >
                 </div>
 
                 <div class="card-item m-5">
@@ -145,7 +151,9 @@
                     Income tax, GST filing, legal assistance, audits, property
                     tax.
                   </p>
-                  <a href="#" class="text-decoration-none">Read more →</a>
+                  <a href="./Pages/service-4.html" class="text-decoration-none"
+                    >Read more →</a
+                  >
                 </div>
 
                 <div class="card-item m-5">
@@ -153,13 +161,17 @@
                   <p>
                     Land verification, fencing, demarcation, title collection.
                   </p>
-                  <a href="#" class="text-decoration-none">Read more →</a>
+                  <a href="./Pages/service-2.html" class="text-decoration-none"
+                    >Read more →</a
+                  >
                 </div>
 
                 <div class="card-item m-5">
                   <h5>BUSINESS REGISTRATION</h5>
                   <p>Company/LLP registration, PAN, GST, MSME, FSSAI etc.</p>
-                  <a href="#" class="text-decoration-none">Read more →</a>
+                  <a href="./Pages/service-3.html" class="text-decoration-none"
+                    >Read more →</a
+                  >
                 </div>
               </div>
 
@@ -390,7 +402,10 @@
 
     <!-- connection section -->
     <div class="container-fluid pb-5">
-      <h2 class="fw-bold fs-1 text-center lora" data-aos="fade-right">
+      <h2
+        class="fw-bold fs-1 text-center lora hover-underline"
+        data-aos="fade-right"
+      >
         Connecting You to Trusted Solutions Back Home
       </h2>
       <div class="row align-items-center justify-content-center mt-5">
@@ -408,14 +423,12 @@
           class="col-md-5 ps-5 connection-img-container"
           data-aos="fade-up-left"
         >
-          <!-- <div id="connection-img"> -->
           <img
             src="./Images/connection-img.png"
             alt="connection-img"
             class="image-fluid connection-img"
             data-aos="fade-up-left"
           />
-          <!-- </div> -->
         </div>
       </div>
     </div>
@@ -834,7 +847,7 @@
                       <input
                         type="text"
                         class="form-control"
-                        placeholder="First name*"
+                        placeholder="First name *"
                         required
                         id="firstName"
                       />
@@ -843,7 +856,7 @@
                       <input
                         type="text"
                         class="form-control"
-                        placeholder="Last name*"
+                        placeholder="Last name *"
                         required
                         id="lastName"
                       />
@@ -852,7 +865,7 @@
                       <input
                         type="text"
                         class="form-control"
-                        placeholder="Email Address*"
+                        placeholder="Email Address *"
                         required
                         id="emailAddress"
                       />
@@ -864,7 +877,9 @@
                         required
                         id="subject"
                       >
-                        <option selected disabled>Subject*</option>
+                        <option selected disabled>
+                          Select from drop down *
+                        </option>
                         <option value="Legal Compliances">
                           Legal Compliances
                         </option>
@@ -895,7 +910,9 @@
                       ></textarea>
                     </div>
                     <div class="col-12">
-                      <button type="submit" class="form-btn">Sign in</button>
+                      <button type="submit" class="form-btn">
+                        Send messsage
+                      </button>
                     </div>
                   </form>
                 </div>
