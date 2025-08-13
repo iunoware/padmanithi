@@ -1,576 +1,557 @@
 * {
-    font-family: "poppins", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+  font-family: "poppins", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .lora {
-    font-family: 'lora';
+  font-family: "lora";
 }
 
 @media (max-width: 3000px) {
-
-    html,
-    body {
-        overflow-x: hidden;
-    }
+  html,
+  body {
+    overflow-x: hidden;
+  }
 }
-
+/* cursor animation */
+#heading::after {
+  content: "|";
+  margin-left: 3px;
+  animation: blink 0.7s step-end infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
 :root {
-    --blue-color: #1d1dff;
-    --green-color: #22af00;
+  --blue-color: #1d1dff;
+  --green-color: #22af00;
 }
 
 /* navbar */
 .collapse {
-    background-color: #f8f9fa;
-    border-radius: 1rem;
-    /* padding: .5rem; */
-    z-index: 10;
-    transition: all .3s ease;
+  background-color: #f8f9fa;
+  border-radius: 1rem;
+  /* padding: .5rem; */
+  z-index: 10;
+  transition: all 0.3s ease;
 }
 
-.navbar-nav> :first-child {
-    padding-left: 24px;
-    padding-right: 24px;
+.navbar-nav > :first-child {
+  padding-left: 24px;
+  padding-right: 24px;
 }
-
-
 
 /* hero section ⬇️⬇️ */
 .hero-text {
-    font-family: 'Lora';
-    font-size: 5rem;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
+  font-family: "Lora";
+  font-size: 5rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .img-container {
-    background-image: url("../Images/aboutUs-bg-2.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
+  background-image: url("../Images/aboutUs-bg-2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 .img-container::before {
-    content: '';
-    inset: 0;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.521);
-    height: 100%;
-    width: 100%;
-    margin-top: 50px;
+  content: "";
+  inset: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.521);
+  height: 100%;
+  width: 100%;
+  margin-top: 50px;
 }
-
 
 /* what we do section */
 .what-we-do-title {
-    font-family: 'lora';
+  font-family: "lora";
 }
 
 .what-we-do-text {
-    font-size: 1.5rem;
-    text-align: center;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .our-service-lists {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .ocs-title {
-    font-family: 'Lora';
-
+  font-family: "Lora";
 }
-
 
 /* who we are ⬇️⬇️ */
 .wwa-title {
-    font-family: 'Lora';
+  font-family: "Lora";
 }
 
 .who-we-are-dad {
-    width: 1100px;
-    background-color: var(--green-color);
-    border-radius: .5rem;
+  width: 1100px;
+  background-color: var(--green-color);
+  border-radius: 0.5rem;
 }
 
 .who-we-are-content {
-    max-width: 750px;
-    font-size: 1.3rem;
-    color: white;
+  max-width: 750px;
+  font-size: 1.3rem;
+  color: white;
 }
 
 .who-we-are-img {
-    height: 550px;
-    padding-top: 1rem;
-    position: absolute;
-    transform: translate(800px, -80px);
+  height: 550px;
+  padding-top: 1rem;
+  position: absolute;
+  transform: translate(800px, -80px);
 }
 
 .who-we-are-list::before {
-    content: "☑️";
+  content: "☑️";
 }
 
 @media (max-width: 1300px) {
-    .who-we-are-img {
-        height: 550px;
-        position: relative;
-        transform: translate(0px, 0px);
-    }
+  .who-we-are-img {
+    height: 550px;
+    position: relative;
+    transform: translate(0px, 0px);
+  }
 
-    .who-we-are-img-container {
-        text-align: center;
-    }
+  .who-we-are-img-container {
+    text-align: center;
+  }
 }
-
-
 
 /* who we serve ⬇️⬇️*/
 .who-we-serve-container {
-    margin-top: 15rem;
+  margin-top: 15rem;
 }
 
 .who-we-serve-title-container {
-    background-color: var(--green-color);
-    min-height: 600px;
-    width: 600px;
-    border-radius: .8rem;
+  background-color: var(--green-color);
+  min-height: 600px;
+  width: 600px;
+  border-radius: 0.8rem;
 }
 
 .who-we-serve-title {
-    font-family: "lora";
-    font-size: 3rem;
-    padding-left: 4rem;
+  font-family: "lora";
+  font-size: 3rem;
+  padding-left: 4rem;
 }
 
 .who-we-serve-span {
-    font-family: "lora";
-    font-size: 4rem;
+  font-family: "lora";
+  font-size: 4rem;
 }
 
-
 .wws-img {
-    position: absolute;
+  position: absolute;
 }
 
 .wws-img-1 {
-    transform: translate(-250px, -350px);
+  transform: translate(-250px, -350px);
 }
 
-
 .wws-img-2 {
-    transform: translate(200px, -480px);
+  transform: translate(200px, -480px);
 }
 
 .wws-img-3 {
-    height: 300px;
-    transform: translate(-180px, 100px);
+  height: 300px;
+  transform: translate(-180px, 100px);
 }
 
 .wws-img-4 {
-    transform: translate(280px, 100px);
+  transform: translate(280px, 100px);
 }
 
 .blue-container {
-    height: 430px;
-    width: 1200px;
-    background-color: var(--blue-color);
-    color: white;
-    border-radius: 1rem;
-    padding: 1rem;
+  height: 430px;
+  width: 1200px;
+  background-color: var(--blue-color);
+  color: white;
+  border-radius: 1rem;
+  padding: 1rem;
 }
 
 .blue-box-list {
-    font-size: 1.5rem;
-    padding: .3rem;
+  font-size: 1.5rem;
+  padding: 0.3rem;
 }
 
 @media (max-width: 1000px) {
+  .who-we-serve-title-container {
+    height: auto;
+    flex-direction: column-reverse;
+  }
 
-    .who-we-serve-title-container {
-        height: auto;
-        flex-direction: column-reverse;
-    }
+  .who-we-serve-title {
+    padding: 0;
+    padding-bottom: 1rem;
+  }
 
-    .who-we-serve-title {
-        padding: 0;
-        padding-bottom: 1rem;
-    }
+  .wws-img-2 {
+    position: static;
+    transform: none;
+    height: auto;
+    max-width: 90%;
+    margin: 1rem;
+  }
 
-    .wws-img-2 {
-        position: static;
-        transform: none;
-        height: auto;
-        max-width: 90%;
-        margin: 1rem;
-    }
+  .wws-img-1,
+  .wws-img-3,
+  .wws-img-4 {
+    display: none;
+  }
 
-    .wws-img-1,
-    .wws-img-3,
-    .wws-img-4 {
-        display: none;
-    }
+  .who-we-serve-container {
+    margin-top: 4rem;
+  }
 
-    .who-we-serve-container {
-        margin-top: 4rem;
-    }
+  .blue-container {
+    align-items: center !important;
+  }
 
-    .blue-container {
-        align-items: center !important;
-    }
+  .blue-box-list-1 {
+    margin-top: 0 !important;
+  }
 
-    .blue-box-list-1 {
-        margin-top: 0 !important;
-    }
-
-    .blue-box {
-        margin-top: 1rem;
-    }
+  .blue-box {
+    margin-top: 1rem;
+  }
 }
-
-
-
 
 /* mission, vision, and goals ⬇️⬇️ */
 .mvg-title {
-    font-family: 'Lora';
+  font-family: "Lora";
 }
 
 .mission-box {
-    height: 300px;
-    width: 420px;
-    background-color: var(--blue-color);
-    color: white;
-    border-radius: 1rem;
-    border: 7px solid white;
-    transition: all .3s ease;
+  height: 300px;
+  width: 420px;
+  background-color: var(--blue-color);
+  color: white;
+  border-radius: 1rem;
+  border: 7px solid white;
+  transition: all 0.3s ease;
 }
 
 .mission-box:hover {
-    transform: scale(1.03);
-    box-shadow: 0px 0px 15px hsla(0, 0%, 0%, 0.521);
+  transform: scale(1.03);
+  box-shadow: 0px 0px 15px hsla(0, 0%, 0%, 0.521);
 }
 
 .mvg-img {
-    transform: translate(10px, 10px);
+  transform: translate(10px, 10px);
 }
 
 .green-box {
-    height: 400px;
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-    background-color: var(--green-color);
-    transform: translateY(100px);
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background-color: var(--green-color);
+  transform: translateY(100px);
 }
 
 @media (max-width: 800px) {
-    .mvg-box {
-        flex-direction: column;
-    }
+  .mvg-box {
+    flex-direction: column;
+  }
 
-    .mission-box-2 {
-        margin-top: 2.8rem;
-    }
+  .mission-box-2 {
+    margin-top: 2.8rem;
+  }
 
-    .green-box {
-        display: none;
-    }
+  .green-box {
+    display: none;
+  }
 }
-
-
-
 
 /* rewards and recognition ⬇️⬇️ */
 .rewards-content-box {
-    width: 500px;
+  width: 500px;
 }
 
 .rewards-title {
-    font-family: 'lora';
-    font-size: 2rem;
+  font-family: "lora";
+  font-size: 2rem;
 }
 
 .rewards-text {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
 .rewards-img {
-    transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .rewards-img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 @media (max-width: 650px) {
-    .rewards-content {
-        flex-direction: column;
-        justify-content: center;
-    }
+  .rewards-content {
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    .rewards-content-box {
-        width: 400px;
-    }
+  .rewards-content-box {
+    width: 400px;
+  }
 
-    .rewards-content-box {
-        padding: 0;
-        padding-top: 3rem;
-    }
+  .rewards-content-box {
+    padding: 0;
+    padding-top: 3rem;
+  }
 
-    .rewards-text {
-        padding: 0;
-        /* text-align: center !important; */
-    }
+  .rewards-text {
+    padding: 0;
+    /* text-align: center !important; */
+  }
 
-    .rewards-img {
-        width: 100%;
-        text-align: center !important;
-    }
+  .rewards-img {
+    width: 100%;
+    text-align: center !important;
+  }
 }
-
-
 
 /* why us ⬇️⬇️ */
 .why-us-heading {
-    font-family: 'Lora';
+  font-family: "Lora";
 }
 
 .why-us-title {
-    color: var(--blue-color);
+  color: var(--blue-color);
 }
 
 .why-us-content {
-    font-size: 1.3rem;
-    padding: 1rem;
-    text-align: center;
+  font-size: 1.3rem;
+  padding: 1rem;
+  text-align: center;
 }
 
 hr {
-    border: none;
-    border-top: 3px solid black;
+  border: none;
+  border-top: 3px solid black;
 }
 
 .why-us-xp {
-    border-left: 1px solid hsla(0, 0%, 0%, 0.687);
-    border-right: 1px solid hsla(0, 0%, 0%, 0.687);
+  border-left: 1px solid hsla(0, 0%, 0%, 0.687);
+  border-right: 1px solid hsla(0, 0%, 0%, 0.687);
 }
 
 @media (max-width: 1000px) {
-    .why-us-xp {
-        border: none;
-        border-top: 1px solid hsla(0, 0%, 0%, 0.687);
-        border-bottom: 1px solid hsla(0, 0%, 0%, 0.687);
-    }
+  .why-us-xp {
+    border: none;
+    border-top: 1px solid hsla(0, 0%, 0%, 0.687);
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.687);
+  }
 }
-
-
 
 /* dedicated team ⬇️⬇️ */
 .team-heading {
-    font-family: 'Lora';
+  font-family: "Lora";
 }
 
 .team-box {
-    width: 200px;
-    margin: 1rem;
-    text-align: center;
-    /* background-color: hsl(0, 0%, 90%); */
-    padding: 2rem;
-    border-radius: .8rem;
-    box-shadow: 0px 0px 15px hsla(0, 0%, 0%, 0.495);
-    transition: all .3s ease;
+  width: 200px;
+  margin: 1rem;
+  text-align: center;
+  /* background-color: hsl(0, 0%, 90%); */
+  padding: 2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0px 0px 15px hsla(0, 0%, 0%, 0.495);
+  transition: all 0.3s ease;
 }
 
 .team-box:hover {
-    transform: scale(1.05);
-    /* box-shadow: inset 0px 0px 20px hsla(0, 0%, 0%, 0.495); */
+  transform: scale(1.05);
+  /* box-shadow: inset 0px 0px 20px hsla(0, 0%, 0%, 0.495); */
 }
 
 .team-title {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .team-parent-container {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .team-parent-container:has(.team-box:hover) .team-box:not(:hover) {
-    filter: blur(1.5px);
+  filter: blur(1.5px);
 }
-
-
 
 /* legal support ⬇️⬇️ */
 .legal-support-heading {
-    font-family: 'lora';
+  font-family: "lora";
 }
 
 .legal-box {
-    background-image: linear-gradient(to right, var(--blue-color), var(--green-color));
-    padding: 2rem;
-    color: white;
-    width: 90%;
-    border-radius: 1rem;
+  background-image: linear-gradient(
+    to right,
+    var(--blue-color),
+    var(--green-color)
+  );
+  padding: 2rem;
+  color: white;
+  width: 90%;
+  border-radius: 1rem;
 }
 
 .legal-btn {
-    background-color: white;
-    color: var(--blue-color);
-    padding: 1rem 2rem;
-    border-radius: .8rem;
-    outline: none;
-    border: none;
-    font-size: 1.5rem;
-    transition: all .3s ease;
+  background-color: white;
+  color: var(--blue-color);
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
 }
 
 .legal-btn:hover {
-    box-shadow: 0px 0px 15px hsla(0, 0%, 0%, 0.626);
-    transform: scale(1.02);
+  box-shadow: 0px 0px 15px hsla(0, 0%, 0%, 0.626);
+  transform: scale(1.02);
 }
 
 .legal-content {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
-
-
 
 /* testimonial section */
 .testimonial-heading {
-    font-family: 'lora';
+  font-family: "lora";
 }
 
 .testi-box {
-    border: 3px solid hsla(0, 0%, 63%, 0.753);
-    border-radius: .8rem;
-    padding: 1rem;
-    margin: 1rem;
-    transition: all .3s ease;
+  border: 3px solid hsla(0, 0%, 63%, 0.753);
+  border-radius: 0.8rem;
+  padding: 1rem;
+  margin: 1rem;
+  transition: all 0.3s ease;
 }
 
 .testi-box:hover {
-    transform: scale(1.02);
-    box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.411);
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.411);
 }
-
-
-
 
 /* meet our people ⬇️⬇️ */
 .people-heading {
-    font-family: 'lora';
+  font-family: "lora";
 }
 
 .people-container {
-    margin: 1rem;
-    width: 350px;
-    transition: all .3s ease;
-    border-radius: 1.5rem 1.5rem .8rem .8rem;
+  margin: 1rem;
+  width: 350px;
+  transition: all 0.3s ease;
+  border-radius: 1.5rem 1.5rem 0.8rem 0.8rem;
 }
 
 .people-content {
-    height: 160px;
-    border-left: 2px solid hsl(0, 0%, 80%);
-    border-bottom: 2px solid hsl(0, 0%, 80%);
-    border-right: 2px solid hsl(0, 0%, 80%);
-    border-radius: 0rem 0rem .8rem .8rem;
+  height: 160px;
+  border-left: 2px solid hsl(0, 0%, 80%);
+  border-bottom: 2px solid hsl(0, 0%, 80%);
+  border-right: 2px solid hsl(0, 0%, 80%);
+  border-radius: 0rem 0rem 0.8rem 0.8rem;
 }
 
 .people-btn {
-    background-color: var(--green-color);
-    color: white;
-    border-radius: .5rem;
-    outline: none;
-    border: none;
-    transition: all .3s ease;
-    padding: 5px 10px;
+  background-color: var(--green-color);
+  color: white;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  transition: all 0.3s ease;
+  padding: 5px 10px;
 }
 
 .people-btn:hover {
-    transform: translateY(-5px);
-
+  transform: translateY(-5px);
 }
 
 .people-img-box {
-    overflow: hidden;
-    border-radius: 1.5rem 1.5rem 0rem 0rem;
+  overflow: hidden;
+  border-radius: 1.5rem 1.5rem 0rem 0rem;
 }
 
 .people-img {
-    transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .people-container:hover {
-    transform: scale(1.03);
-    box-shadow: 0px 0px 15px hsla(0, 0%, 0%, 0.432);
+  transform: scale(1.03);
+  box-shadow: 0px 0px 15px hsla(0, 0%, 0%, 0.432);
 }
 
 .people-container:hover .people-img {
-    transform: scale(1.1);
-    border-radius: 1.5rem;
+  transform: scale(1.1);
+  border-radius: 1.5rem;
 }
 
-.people-parent-container:has(.people-container:hover) .people-container:not(:hover) {
-    filter: blur(1.5px);
+.people-parent-container:has(.people-container:hover)
+  .people-container:not(:hover) {
+  filter: blur(1.5px);
 }
-
-
-
 
 /* full team btn ⬇️⬇️ */
 .full-team-btn {
-    width: 350px;
-    font-size: 1.5rem;
-    /* margin: 2rem; */
-    padding: 1rem 2.5rem;
-    border: none;
-    outline: none;
-    background-color: #4f4fff;
-    color: white;
-    border-radius: 1rem;
-    transition: all .3s ease;
+  width: 350px;
+  font-size: 1.5rem;
+  /* margin: 2rem; */
+  padding: 1rem 2.5rem;
+  border: none;
+  outline: none;
+  background-color: #4f4fff;
+  color: white;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
 }
 
 .full-team-btn:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 0px 15px hsl(0, 0%, 20%);
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 15px hsl(0, 0%, 20%);
 }
-
-
 
 /* footer */
 footer {
-    background-color: var(--blue-color);
+  background-color: var(--blue-color);
 }
 
 .gray-txt {
-    color: hsl(0, 0%, 85%) !important;
+  color: hsl(0, 0%, 85%) !important;
 }
 
 .logo {
-    height: 80px;
-    width: 180px;
-    background-color: blanchedalmond;
-    color: black;
-    /* margin-left: 1rem; */
+  height: 80px;
+  width: 180px;
+  background-color: blanchedalmond;
+  color: black;
+  /* margin-left: 1rem; */
 }
 
 .a-tag-link {
-    transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .a-tag-link:active,
 .a-tag-link:focus {
-    color: white !important;
+  color: white !important;
 }
 
 .a-tag-link:hover {
-    color: white;
-    filter: drop-shadow(0px 0px 5px white);
+  color: white;
+  filter: drop-shadow(0px 0px 5px white);
 }
