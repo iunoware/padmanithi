@@ -36,6 +36,9 @@
   z-index: 10;
   transition: all 0.3s ease;
 }
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
 
 .navbar-nav > :first-child {
   padding-left: 24px;
@@ -59,7 +62,7 @@ footer {
   /* margin-left: 1rem; */
 }
 .a-tag-link {
-  transition: all 0.3s ease;
+  transition: all 0.3s ease !important;
 }
 
 .a-tag-link:active,
@@ -79,10 +82,10 @@ footer {
 .landc-img {
   max-height: 20rem !important;
   object-fit: cover;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 .landc-img:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 .landc-sh {
   color: var(--blue-color) !important;
@@ -124,7 +127,8 @@ footer {
 }
 .img-container {
   overflow: hidden;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
+  width: 320px;
 }
 /* how we work section */
 .green-font {
@@ -138,4 +142,9 @@ footer {
 }
 .hww-img:hover {
   transform: rotate(8deg) scale(1.05);
+}
+@media (max-width: 450px) {
+  .hero-title {
+    font-size: 4rem !important;
+  }
 }
