@@ -36,9 +36,13 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-light" style="height: 50px">
+    <nav class="navbar navbar-expand-lg bg-light" style="height: 70px">
       <div class="container-fluid">
-        <a class="navbar-brand fw-bold fs-3 lora" href="#"> Iunoware </a>
+        <a
+          class="navbar-brand fw-bold fs-3 lora d-flex justify-content-center align-items-center"
+          href="#"
+          ><img src="../Images/logo.png" alt="Padmanidhi" style="width: 200px"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -50,15 +54,10 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNavDropdown"
-        >
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
           <ul class="navbar-nav fs-5">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="../index.html"
-                >Home</a
-              >
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
             </li>
             <li class="nav-item dropdown px-4">
               <a
@@ -72,9 +71,7 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="./service-1.html"
-                    >Legal Compliances</a
-                  >
+                  <a class="dropdown-item" href="./service-1.html">Legal Compliances</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="./service-2.html"
@@ -82,9 +79,7 @@
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="./service-3.html"
-                    >Business Management</a
-                  >
+                  <a class="dropdown-item" href="./service-3.html">Business Management</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="./service-4.html"
@@ -128,6 +123,7 @@
                 id="fName"
                 class="input-box"
                 placeholder="First name"
+                required
               />
             </form>
           </div>
@@ -145,6 +141,7 @@
                 id="lName"
                 class="input-box"
                 placeholder="Last name"
+                required
               />
             </form>
           </div>
@@ -162,6 +159,7 @@
                 id="email-form"
                 class="input-box"
                 placeholder="Email address"
+                required
               />
             </form>
           </div>
@@ -179,6 +177,7 @@
                 id="phoneNum-form"
                 class="input-box"
                 placeholder="phone number"
+                required
               />
             </form>
           </div>
@@ -197,6 +196,7 @@
                 id="companyName"
                 class="input-box"
                 placeholder="Company's name"
+                required
               />
             </form>
           </div>
@@ -214,6 +214,7 @@
                 id="location"
                 class="input-box"
                 placeholder="Your location"
+                required
               />
             </form>
           </div>
@@ -253,9 +254,7 @@
     <div class="container mb-5">
       <h2 class="lora mb-5" style="color: #22af00">BOOK A CONSULTANT</h2>
       <div class="d-flex justify-content-center gap-5 appointment-container">
-        <div
-          class="appointment-box d-flex flex-column justify-content-start mt-5 ms-5"
-        >
+        <div class="appointment-box d-flex flex-column justify-content-start mt-5 ms-5">
           <div>
             <h3 class="lora">Book an appointment</h3>
           </div>
@@ -305,8 +304,7 @@
         <div>
           <h4>
             You selected
-            <span id="date-notifier" class="text-primary"></span> for an
-            appointment
+            <span id="date-notifier" class="text-primary"></span> for an appointment
           </h4>
         </div>
 
@@ -320,6 +318,7 @@
             name="name"
             placeholder="Enter your name"
             class="my-2 form-input"
+            required
           />
 
           <label for="phone" class="mt-2 mb-0 form-label"
@@ -331,6 +330,7 @@
             name="phone"
             placeholder="Enter your phone number"
             class="my-2 form-input"
+            required
           />
 
           <!-- <label for="address" class="mt-2 mb-0 form-label"
@@ -350,9 +350,7 @@
             </h4>
           </div>
 
-          <a class="btn btn-primary mt-3" id="sendMessageBtn"
-            >Book an appointment</a
-          >
+          <a class="btn btn-primary mt-3" id="sendMessageBtn">Book an appointment</a>
           <small style="color: hsla(0, 0%, 0%, 0.607)"
             ><span class="text-primary me-2">*</span>You will be redirected to
             whatsapp</small
@@ -367,13 +365,9 @@
 
     <!-- footer -->
     <div class="container-fluid footer-container gray-txt">
-      <footer
-        class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5 border-top"
-      >
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5 border-top">
         <div class="col mb-3 d-flex justify-content-center align-items-start">
-          <p class="logo d-flex justify-content-center align-items-center">
-            LOGO
-          </p>
+          <p class="logo d-flex justify-content-center align-items-center">LOGO</p>
         </div>
         <div class="col mb-3">
           <h5 class="mb-4">Company</h5>
@@ -382,24 +376,16 @@
               <a href="#" class="nav-link a-tag-link p-0 gray-txt">About Us</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link a-tag-link p-0 gray-txt"
-                >Leadership</a
-              >
+              <a href="#" class="nav-link a-tag-link p-0 gray-txt">Leadership</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link a-tag-link p-0 gray-txt"
-                >Work with us</a
-              >
+              <a href="#" class="nav-link a-tag-link p-0 gray-txt">Work with us</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link a-tag-link p-0 gray-txt"
-                >Privacy & Policy</a
-              >
+              <a href="#" class="nav-link a-tag-link p-0 gray-txt">Privacy & Policy</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link a-tag-link p-0 gray-txt"
-                >Terms of Uses</a
-              >
+              <a href="#" class="nav-link a-tag-link p-0 gray-txt">Terms of Uses</a>
             </li>
           </ul>
         </div>
@@ -434,9 +420,7 @@
           <h5 class="mb-4">Services</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link a-tag-link p-0 gray-txt"
-                >Legal Compliances</a
-              >
+              <a href="#" class="nav-link a-tag-link p-0 gray-txt">Legal Compliances</a>
             </li>
             <li class="nav-item mb-2">
               <a href="#" class="nav-link a-tag-link p-0 gray-txt"
@@ -444,9 +428,7 @@
               >
             </li>
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link a-tag-link p-0 gray-txt"
-                >Business Solutions</a
-              >
+              <a href="#" class="nav-link a-tag-link p-0 gray-txt">Business Solutions</a>
             </li>
             <li class="nav-item mb-2">
               <a href="#" class="nav-link a-tag-link p-0 gray-txt"
@@ -579,9 +561,7 @@
             />
           </svg>
         </div>
-        <p class="text-center footer-end border-top w-100 pt-2">
-          © 2025 Company, Inc
-        </p>
+        <p class="text-center footer-end border-top w-100 pt-2">© 2025 Company, Inc</p>
       </footer>
     </div>
 
