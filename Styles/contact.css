@@ -7,7 +7,7 @@
     --green-color: #22af00;
 }
 
-.lora{
+.lora {
     font-family: 'lora';
 }
 
@@ -20,7 +20,7 @@
     transition: all .3s ease;
 }
 
-.navbar-nav > :first-child{
+.navbar-nav> :first-child {
     padding-left: 24px;
     padding-right: 24px;
 }
@@ -110,7 +110,7 @@ input::-webkit-inner-spin-button {
 
 
 /* calender */
-.calendar-container{
+.calendar-container {
     margin: 1rem;
     background-color: white;
     padding: 1.5rem;
@@ -121,6 +121,7 @@ input::-webkit-inner-spin-button {
     width: 600px;
     margin: auto;
 }
+
 /* 
 .fc-day {
     border: none !important;
@@ -147,25 +148,25 @@ input::-webkit-inner-spin-button {
 
 
 /* appointment container */
-.appointment-container{
+.appointment-container {
     background-color: hsla(0, 0%, 50%, 0.413);
     border-radius: 1rem;
 }
 
 
-@media (max-width: 1100px){
-    .appointment-container{
+@media (max-width: 1100px) {
+    .appointment-container {
         flex-direction: column !important;
     }
 }
 
-@media (max-width: 770px){
-    #calendar{
+@media (max-width: 770px) {
+    #calendar {
         width: 350px !important;
         margin: auto !important;
     }
 
-    .fc-toolbar-title{
+    .fc-toolbar-title {
         font-size: 1.3rem !important;
     }
 }
@@ -223,6 +224,40 @@ input::-webkit-inner-spin-button {
     box-shadow: 0px 0px 10px var(--blue-color);
 }
 
+
+/* popup for form input ⬇️⬇️ */
+.warning-message-form{
+    display: none;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.708);
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
 
 
 
