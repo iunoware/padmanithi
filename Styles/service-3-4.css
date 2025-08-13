@@ -45,6 +45,12 @@
   padding-left: 24px;
 }
 
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+
+
+
 /* footer */
 footer {
   background-color: var(--blue-color);
@@ -81,29 +87,7 @@ footer {
   font-size: 4rem !important;
 }
 
-/* hero 2 */
-/* .hero-text {
-    font-family: 'Lora';
-    font-size: 2rem;
-    position: absolute;
-    display: flex;
-    justify-content: start;
-    align-items: end;
-    height: 100%;
-    width: 100%;
-} */
-
-/* .hero-heading{
-    font-size: 4rem;
-} */
-
-/* @media (max-width: 600px){
-    .hero-heading{
-        width: 425px;
-    }
-} */
-
-.img-container {
+/* .img-container {
   background-image: url("../Images/service-4-bg.png");
   background-size: cover;
   background-position: center;
@@ -119,7 +103,7 @@ footer {
   height: 100%;
   width: 100%;
   margin-top: 50px;
-}
+} */
 
 .landc-img {
   max-height: 20rem !important;
