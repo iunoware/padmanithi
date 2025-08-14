@@ -539,13 +539,13 @@ footer {
   color: hsl(0, 0%, 85%) !important;
 }
 
-.logo {
+/* .logo {
   height: 80px;
   width: 180px;
   background-color: blanchedalmond;
   color: black;
-  /* margin-left: 1rem; */
-}
+  margin-left: 1rem;
+} */
 
 .a-tag-link {
   transition: all 0.3s ease;
