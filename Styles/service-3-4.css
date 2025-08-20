@@ -42,7 +42,8 @@
 }
 
 .navbar-nav > :first-child {
-  padding-left: 24px;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
 }
 
 .dropdown:hover .dropdown-menu{
