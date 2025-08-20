@@ -50,7 +50,7 @@ let autoSlideInterval = setInterval(() => {
   slide(1); // move to the next card
 }, 3000);
 
-// Optional: Reset auto-slide timer when user clicks or swipes
+// Reset auto-slide timer when user clicks or swipes
 function resetAutoSlide() {
   clearInterval(autoSlideInterval);
   autoSlideInterval = setInterval(() => {
@@ -58,7 +58,7 @@ function resetAutoSlide() {
   }, 3000);
 }
 
-// Example: If you have next/prev buttons
+// next/prev buttons
 document.querySelectorAll(".next-btn, .prev-btn").forEach((btn) => {
   btn.addEventListener("click", resetAutoSlide);
 });
@@ -107,9 +107,9 @@ whatsappForm.addEventListener("submit", function (event) {
   const subject = document.getElementById("subject").value;
   const message = document.getElementById("message").value;
 
-  let phoneNumber = "919047812365";
+  let phoneNumber = "918220442273";
 
-  // Build the raw message
+  // the raw message
   let rawMessage = `Hi I'm ${fullName},
 Email: ${email},
 and I would like to discuss about ${subject}
