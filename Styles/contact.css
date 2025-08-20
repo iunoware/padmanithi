@@ -168,12 +168,18 @@ input::-webkit-inner-spin-button {
 
 @media (max-width: 770px) {
   #calendar {
-    width: 350px !important;
+    width: 320px !important;
+    /* width: 350px !important; */
     margin: auto !important;
+    /* padding: none !important; */
+  }
+
+  .calendar-container {
+    padding: 1.5rem 0 !important;
   }
 
   .fc-toolbar-title {
-    font-size: 1.3rem !important;
+    font-size: 1rem !important;
   }
 }
 
