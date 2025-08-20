@@ -88,13 +88,13 @@
 }
 
 .what-we-do-text {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   text-align: center;
 }
 
-.our-service-lists {
+/* .our-service-lists {
   font-size: 1.5rem;
-}
+} */
 
 .ocs-title {
   font-family: "Lora";
@@ -432,9 +432,9 @@ hr {
   transform: scale(1.02);
 }
 
-.legal-content {
+/* .legal-content {
   font-size: 1.2rem;
-}
+} */
 
 /* testimonial section */
 .testimonial-heading {

@@ -46,7 +46,7 @@ function closePopup() {
 
 // for calender
 const messageBtn = document.getElementById("sendMessageBtn");
-const myNum = "";
+const myNum = "918220442273";
 let url;
 
 messageBtn.addEventListener("click", (event) => {
@@ -59,6 +59,7 @@ messageBtn.addEventListener("click", (event) => {
     const message = `Hi, I'm ${name},\nthis is my mobile number: ${phone}.\nAnd I would like to book an appointment on ${meetingDate} \n\nThank you!`;
     const enCoded = encodeURIComponent(message);
     url = `https://wa.me/${myNum}?text=${enCoded}`;
+    // url = `https://api.whatsapp.com/send?phone=${myNum}&text=${enCoded}`;
     window.open(url);
   } else {
     document.querySelector(".warning-message").style.display = "block";
