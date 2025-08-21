@@ -9,7 +9,6 @@
 }
 
 @media (max-width: 3000px) {
-
   html,
   body {
     overflow-x: hidden;
@@ -35,6 +34,9 @@
 }
 
 /* navbar */
+.my-nav {
+  box-shadow: 0 0 10px black;
+}
 .collapse {
   background-color: #f8f9fa;
   border-radius: 1rem;
@@ -43,7 +45,7 @@
   transition: all 0.3s ease;
 }
 
-.navbar-nav> :first-child {
+.navbar-nav > :first-child {
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -79,7 +81,7 @@
   background-color: rgba(0, 0, 0, 0.521);
   height: 100%;
   width: 100%;
-  margin-top: 70px;
+  /* margin-top: 70px; */
 }
 
 /* what we do section */
@@ -422,9 +424,11 @@ hr {
 }
 
 .legal-box {
-  background-image: linear-gradient(to right,
-      var(--blue-color),
-      var(--green-color));
+  background-image: linear-gradient(
+    to right,
+    var(--blue-color),
+    var(--green-color)
+  );
   padding: 2rem;
   color: white;
   width: 90%;
@@ -522,7 +526,8 @@ hr {
   border-radius: 1.5rem;
 }
 
-.people-parent-container:has(.people-container:hover) .people-container:not(:hover) {
+.people-parent-container:has(.people-container:hover)
+  .people-container:not(:hover) {
   filter: blur(1.5px);
 }
 
