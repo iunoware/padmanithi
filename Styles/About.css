@@ -83,8 +83,16 @@
 }
 
 /* what we do section */
-.what-we-do-title {
+.ocs-box {
   font-family: "lora";
+  display: inline-block;
+  transform: translateY(-120px);
+}
+
+@media (max-width: 1200px) {
+  .ocs-box {
+    transform: translateY(0px);
+  }
 }
 
 .what-we-do-text {
@@ -107,8 +115,15 @@
 
 .who-we-are-dad {
   width: 1100px;
+
   background-color: var(--green-color);
   border-radius: 0.5rem;
+}
+
+@media (min-width: 1400px) {
+  .who-we-are-dad {
+    margin-left: 3rem;
+  }
 }
 
 .who-we-are-content {
@@ -118,15 +133,15 @@
 }
 
 .who-we-are-img {
-  height: 550px;
+  height: 450px;
   padding-top: 1rem;
   position: absolute;
   transform: translate(800px, -80px);
 }
 
-.who-we-are-list::before {
+/* .who-we-are-list::before {
   content: "☑️";
-}
+} */
 
 @media (max-width: 1300px) {
   .who-we-are-img {
@@ -176,8 +191,8 @@
 }
 
 .wws-img-3 {
-  height: 300px;
-  transform: translate(-180px, 100px);
+  height: 380px;
+  transform: translate(-220px, 100px);
 }
 
 .wws-img-4 {
