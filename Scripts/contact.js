@@ -94,7 +94,14 @@ submitForm.addEventListener("click", (event) => {
     const enCoded = encodeURIComponent(messageNew);
     url = `https://wa.me/${myNum}?text=${enCoded}`;
     window.open(url);
-  } else if (fName && lName && emailForm && phoneNumForm && location && companyName) {
+  } else if (
+    fName &&
+    lName &&
+    emailForm &&
+    phoneNumForm &&
+    location &&
+    companyName
+  ) {
     const messageNew = `Hi, I'm ${fName} ${lName},\nThese are my details \n• Mobile: ${phoneNumForm}.\n• Email: ${emailForm}\n• location: ${location}\n• Company name: ${companyName} \n\nThank you!`;
     const enCoded = encodeURIComponent(messageNew);
     url = `https://wa.me/${myNum}?text=${enCoded}`;

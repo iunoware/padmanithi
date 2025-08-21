@@ -29,6 +29,9 @@
 }
 
 /* navbar */
+.my-nav {
+  box-shadow: 0 0 10px black;
+}
 .collapse {
   background-color: #f8f9fa;
   border-radius: 1rem;
@@ -77,7 +80,7 @@ footer {
 /* hero section */
 
 .hero-title {
-  font-size: 4.5rem !important;
+  font-size: 3.5rem !important;
 }
 .landc-img {
   max-height: 20rem !important;
@@ -89,6 +92,7 @@ footer {
 }
 .landc-sh {
   color: var(--blue-color) !important;
+  font-weight: 600;
 }
 /* trusted legal council section  */
 .content {

@@ -33,6 +33,9 @@
 }
 
 /* navbar */
+.my-nav {
+  box-shadow: 0 0 10px black;
+}
 .collapse {
   background-color: #f8f9fa;
   border-radius: 1rem;
@@ -46,11 +49,9 @@
   padding-right: 24px !important;
 }
 
-.dropdown:hover .dropdown-menu{
+.dropdown:hover .dropdown-menu {
   display: block;
 }
-
-
 
 /* footer */
 footer {
@@ -85,7 +86,7 @@ footer {
 
 /* hero section */
 .hero-title {
-  font-size: 4rem !important;
+  font-size: 3.5rem !important;
 }
 
 /* .img-container {
@@ -124,6 +125,7 @@ footer {
 
 .landc-sh {
   color: var(--blue-color) !important;
+  font-weight: 600;
 }
 
 /* how we work ⬇️⬇️ */
