@@ -108,7 +108,7 @@ footer {
 } */
 
 .landc-img {
-  max-height: 20rem !important;
+  /* max-height: 20rem !important; */
   object-fit: cover;
   transition: all 0.5s ease;
 }
@@ -116,7 +116,7 @@ footer {
 .img-parent-container {
   border-radius: 1.5rem;
   overflow: hidden;
-  width: 320px;
+  width: 280px;
 }
 
 .landc-img:hover {
@@ -143,8 +143,13 @@ footer {
   position: relative;
   background-color: whitesmoke;
   z-index: 1;
+  width: 90%;
 }
-
+@media (max-width: 768px) {
+  .content {
+    width: 100% !important;
+  }
+}
 .trusted-legal-sec {
   background-color: transparent;
   position: relative;
@@ -173,23 +178,23 @@ footer {
 
 /* green box new */
 .green-box-1 {
-  height: 800px;
+  height: 650px;
   width: 100%;
   left: 0;
   position: absolute;
   z-index: -1;
   background-color: var(--green-color);
-  transform: translateY(190px);
+  transform: translateY(230px);
 }
 
 .green-box-2 {
-  height: 800px;
+  height: 550px;
   width: 100%;
   left: 0;
   position: absolute;
   z-index: -1;
   background-color: var(--green-color);
-  transform: translateY(-740px);
+  transform: translateY(-530px);
 }
 
 .trusted-legal-sec::before {
