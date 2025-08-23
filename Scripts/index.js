@@ -122,3 +122,15 @@ ${message}`;
   let url = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
   window.open(url, "_blank");
 });
+// for enquiryBTn
+const enquiryBTn = document.getElementById("enq-btn");
+const hero = document.getElementById("hero");
+
+window.addEventListener("scroll", () => {
+  const heroBottom = hero.offsetTop + hero.offsetHeight;
+  if (window.scrollY > heroBottom) {
+    enquiryBTn.style.zIndex = "1000";
+  } else {
+    enquiryBTn.style.zIndex = "-1000";
+  }
+});

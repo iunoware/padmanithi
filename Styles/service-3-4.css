@@ -31,6 +31,68 @@
     opacity: 0;
   }
 }
+/* enquiry button */
+.btn-style5112 {
+  position: relative;
+  border-color: white;
+  background-color: #22af00;
+  color: white;
+  overflow: hidden;
+  span {
+    position: relative;
+    z-index: 2;
+  }
+  &::before,
+  &::after {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    background-color: #22af00;
+    transition: all 0.25s;
+    content: "";
+    z-index: 1;
+  }
+  &::before {
+    top: 0;
+    transform: translate(-100%, 0);
+  }
+  &::after {
+    bottom: 0;
+    transform: translate(100%, 0);
+  }
+  &:hover {
+    color: #fff;
+    &::before,
+    &::after {
+      transform: translate(0, 0);
+    }
+  }
+}
+.click-btn2 {
+  display: none;
+  width: 180px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  transform: translateY(-80%) rotate(-90deg);
+  transform-origin: right center;
+  box-shadow: 0 0 6px black;
+  background-color: #1d1dff;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  font-size: large;
+  font-weight: bold;
+  position: fixed;
+  /* bottom: 15rem; */
+  top: 50%;
+  right: 0;
+  width: 180px;
+  transition: all 0.35s;
+  z-index: 1000;
+}
 
 /* navbar */
 .my-nav {
