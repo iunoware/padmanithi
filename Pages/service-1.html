@@ -4,30 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Legal Compliances</title>
-    <link rel="icon" href="../Images/PadmanidhiLogo.png" type="image/png" />
-    <link rel="stylesheet" href="../Styles/service-1-2.css" />
+    <link rel="stylesheet" href="../Styles/service-3-4.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
-    <!-- font-1 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
       rel="stylesheet"
     />
-    <!-- font 2 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" href="../Images/PadmanidhiLogo.png" type="image/png" />
   </head>
   <body>
     <!-- navbar -->
@@ -36,9 +27,11 @@
       style="height: 70px"
     >
       <div class="container-fluid">
-        <a class="navbar-brand fw-bold fs-3 lora" href="../index.html">
-          <img src="../Images/logo.png" alt="logo image" style="width: 200px" />
-        </a>
+        <a
+          class="navbar-brand fw-bold fs-3 lora d-flex justify-content-center align-items-center"
+          href="#"
+          ><img src="../Images/logo.png" alt="Padmanidhi" style="width: 200px"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -72,7 +65,9 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item active" href="#">Legal Compliances</a>
+                  <a class="dropdown-item active" href="./service-1.html"
+                    >Legal Compliances</a
+                  >
                 </li>
                 <li>
                   <a class="dropdown-item" href="./service-2.html"
@@ -103,7 +98,7 @@
     </nav>
 
     <!-- hero section -->
-    <section
+    <div
       class="hero-section d-flex align-items-end justify-content-start h-100"
       style="
         background-image: url('../Images/legal-compliances.png');
@@ -115,8 +110,12 @@
     >
       <div class="container-fluid">
         <div class="row w-100">
-          <div class="col-lg-8 text-white p-4">
-            <h2 class="lora hero-title pb-3" id="heading"></h2>
+          <div class="col-lg-8 text-white p-3">
+            <h2
+              class="lora hero-title pb-3"
+              data-aos="fade-right"
+              id="heading"
+            ></h2>
             <p class="fs-4">
               We specialize in legal compliance services, helping businesses
               meet statutory regulations, manage legal risks, and stay up to
@@ -125,7 +124,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- trusted legal council section -->
     <div class="text-center">
@@ -133,17 +132,18 @@
         class="fw-bold fs-2 lora text-center text-uppercase border-3 border-bottom border-primary d-inline-block pt-5"
         data-aos="fade-right"
       >
-        Trusted legal council most vital legal Needs
+        trusted legal council most vital legal Needs
       </h2>
     </div>
-    <section class="trusted-legal-sec my-5 py-5">
-      <div class="container">
+    <div class="trusted-legal-sec my-5 py-5">
+      <div class="container d-flex justify-content-center">
         <div class="content bg-white p-5 rounded-5 shadow">
+          <!-- 1 -->
           <div
             class="row d-flex justify-content-center align-items-center mb-5"
           >
-            <div class="col-lg-4 col-md-4 col-sm-12">
-              <div class="img-container" data-aos="fade-up-right">
+            <div class="col-lg-4 col-md-4 col-sm-12" data-aos="fade-right">
+              <div class="img-parent-container">
                 <img
                   src="../Images/l&c-1.png"
                   alt="legal council"
@@ -152,24 +152,23 @@
                 />
               </div>
             </div>
-            <div
-              class="col-lg-8 col-md-8 col-sm-12 p-4"
-              data-aos="fade-up-left"
-            >
-              <h3 class="fs-2 mb-4 landc-sh">
-                Estate Litigation & Dispute Resolution
-              </h3>
+
+            <div class="col-lg-8 col-md-8 col-sm-12 p-4" data-aos="fade-left">
+              <h3 class="fs-3 mb-4 landc-sh">Construction Litigation</h3>
               <p class="fs-5 lh-lg">
-                We handle disputes related to wills, trusts, inheritance, and
-                estate distribution with sensitivity and legal precision.
+                We assist clients in resolving construction-related legal
+                disputes, including contract breaches, delays, defects, and
+                claims.
               </p>
             </div>
           </div>
+
+          <!-- 2 -->
           <div
             class="row d-flex justify-content-center align-items-center mb-5"
           >
-            <div class="col-lg-4 col-md-4 col-sm-12">
-              <div class="img-container" data-aos="fade-up-right">
+            <div class="col-lg-4 col-md-4 col-sm-12" data-aos="fade-right">
+              <div class="img-parent-container">
                 <img
                   src="../Images/l&c-2.png"
                   alt="legal council"
@@ -178,23 +177,23 @@
                 />
               </div>
             </div>
-            <div
-              class="col-lg-8 col-md-8 col-sm-12 p-4"
-              data-aos="fade-up-left"
-            >
-              <h3 class="fs-2 mb-4 landc-sh">Construction Litigation</h3>
+
+            <div class="col-lg-8 col-md-8 col-sm-12 p-4" data-aos="fade-left">
+              <h3 class="fs-3 mb-4 landc-sh">Civil & commercial Law</h3>
               <p class="fs-5 lh-lg">
-                We assist clients in resolving construction-related legal
-                disputes, including contract breaches, delays, defects, and
-                claims.
+                We offer legal support in civil disputes and commercial matters,
+                including contracts, property issues, business agreements, and
+                recovery claims.
               </p>
             </div>
           </div>
+
+          <!-- 3 -->
           <div
             class="row d-flex justify-content-center align-items-center mb-5"
           >
-            <div class="col-lg-4 col-md-4 col-sm-12">
-              <div class="img-container" data-aos="fade-up-right">
+            <div class="col-lg-4 col-md-4 col-sm-12" data-aos="fade-right">
+              <div class="img-parent-container">
                 <img
                   src="../Images/l&c-3.png"
                   alt="legal council"
@@ -203,23 +202,22 @@
                 />
               </div>
             </div>
-            <div
-              class="col-lg-8 col-md-8 col-sm-12 p-4"
-              data-aos="fade-up-left"
-            >
-              <h3 class="fs-2 mb-4 landc-sh">Civil & commercial Law</h3>
+
+            <div class="col-lg-8 col-md-8 col-sm-12 p-4" data-aos="fade-left">
+              <h3 class="fs-3 mb-4 landc-sh">Corporate & Commercial Law</h3>
               <p class="fs-5 lh-lg">
-                We offer legal support in civil disputes and commercial matters,
-                including contracts, property issues, business agreements, and
-                recovery claims.
+                We provide end-to-end legal support for businesses, covering
+                company formation, contracts, mergers, compliance, and
+                governance.
               </p>
             </div>
           </div>
+          <!-- 4 -->
           <div
             class="row d-flex justify-content-center align-items-center mb-5"
           >
-            <div class="col-lg-4 col-md-4 col-sm-12">
-              <div class="img-container" data-aos="fade-up-right">
+            <div class="col-lg-4 col-md-4 col-sm-12" data-aos="fade-right">
+              <div class="img-parent-container">
                 <img
                   src="../Images/l&c-4.png"
                   alt="legal council"
@@ -228,36 +226,9 @@
                 />
               </div>
             </div>
-            <div
-              class="col-lg-8 col-md-8 col-sm-12 p-4"
-              data-aos="fade-up-left"
-            >
-              <h3 class="fs-2 mb-4 landc-sh">Corporate & Commercial Law</h3>
-              <p class="fs-5 lh-lg">
-                We provide end-to-end legal support for businesses, covering
-                company formation, contracts, mergers, compliance, and
-                governance.
-              </p>
-            </div>
-          </div>
-          <div
-            class="row d-flex justify-content-center align-items-center mb-5"
-          >
-            <div class="col-lg-4 col-md-4 col-sm-12">
-              <div class="img-container" data-aos="fade-up-right">
-                <img
-                  src="../Images/l&c-5.png"
-                  alt="legal council"
-                  class="img-fluid landc-img"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-            <div
-              class="col-lg-8 col-md-8 col-sm-12 p-4"
-              data-aos="fade-up-left"
-            >
-              <h3 class="fs-2 mb-4 landc-sh">
+
+            <div class="col-lg-8 col-md-8 col-sm-12 p-4" data-aos="fade-left">
+              <h3 class="fs-3 mb-4 landc-sh">
                 Real Estate (Commercial & Development)
               </h3>
               <p class="fs-5 lh-lg">
@@ -266,51 +237,52 @@
               </p>
             </div>
           </div>
+          <!-- 5 -->
           <div
             class="row d-flex justify-content-center align-items-center mb-5"
           >
-            <div class="col-lg-4 col-md-4 col-sm-12">
-              <div class="img-container" data-aos="fade-up-right">
+            <div class="col-lg-4 col-md-4 col-sm-12" data-aos="fade-right">
+              <div class="img-parent-container">
                 <img
-                  src="../Images/l&c-6.png"
+                  src="../Images/l&c-5.png"
                   alt="legal council"
                   class="img-fluid landc-img"
                   loading="lazy"
                 />
               </div>
             </div>
-            <div
-              class="col-lg-8 col-md-8 col-sm-12 p-4"
-              data-aos="fade-up-left"
-            >
-              <h3 class="fs-2 mb-4 landc-sh">Employment & Labour Law</h3>
+
+            <div class="col-lg-8 col-md-8 col-sm-12 p-4" data-aos="fade-left">
+              <h3 class="fs-3 mb-4 landc-sh">
+                Estate Litigation & Dispute Resolution
+              </h3>
               <p class="fs-5 lh-lg">
-                We assist businesses in complying with labour laws, drafting HR
-                policies, employment contracts, and handling workplace disputes.
+                We handle disputes related to wills, trusts, inheritance, and
+                estate distribution with sensitivity and legal precision.
               </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- how we work section -->
-    <div class="container mb-5" data-aos="fade-up">
-      <h2 class="lora fs-2 text-center mb-4" data-aos="fade-right">
+    <div class="container mb-5">
+      <h2 class="fw-bold lora fs-2 text-center">
         HOW <span class="green-font lora">WE WORK</span>
       </h2>
       <div class="row">
         <div
-          class="col-lg-4 col-md-4 col-sm-12 d-flex flex-column align-items-center justify-content-center hww-col"
+          class="col-lg-4 col-md-4 col-sm-12 d-flex flex-column align-items-center justify-content-center"
         >
           <img
             src="../Images/hww-1.png"
             alt=""
-            class="img-fluid hww-img"
-            style="height: 15rem"
+            class="img-fluid hww-img text-center"
+            style="height: 11rem"
             loading="lazy"
           />
-          <h3 class="blue-font text-center fs-2 mb-3">Appointment</h3>
+          <h3 class="blue-font text-center fs-3 mb-3">Appointment</h3>
           <p class="text-center fs-5">
             Fix a consultation with our experts at your convenience. We offer
             flexible Schedule.
@@ -321,12 +293,12 @@
         >
           <img
             src="../Images/hww-2.png"
-            alt="how we work"
+            alt=""
             class="img-fluid hww-img"
-            style="height: 15rem"
+            style="height: 11rem"
             loading="lazy"
           />
-          <h3 class="blue-font text-center fs-2 mb-3">Strategic Plan</h3>
+          <h3 class="blue-font text-center fs-3 mb-3">Strategic Plan</h3>
           <p class="text-center fs-5">
             We create tailored strategic plans that align your business goals
             with market opportunities.
@@ -337,12 +309,12 @@
         >
           <img
             src="../Images/hww-3.png"
-            alt="how we work"
-            class="img-fluid hww-img"
-            style="height: 15rem"
+            alt=""
+            class="img-fluid hww-img text-center"
+            style="height: 11rem"
             loading="lazy"
           />
-          <h3 class="blue-font text-center fs-2 mb-3">Execution</h3>
+          <h3 class="blue-font text-center fs-3 mb-3">Execution</h3>
           <p class="text-center fs-5">
             We ensure seamless execution by turning plans into action with
             precision and accountability.
@@ -594,9 +566,9 @@
       </footer>
     </div>
 
-    <!-- scrript -->
+    <!-- script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="../Scripts/service-1.js"></script>
+    <!-- <script src="../Scripts/service-1.js"></script> -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"

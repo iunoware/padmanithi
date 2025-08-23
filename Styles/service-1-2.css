@@ -83,7 +83,7 @@ footer {
   font-size: 3.5rem !important;
 }
 .landc-img {
-  max-height: 20rem !important;
+  /* max-height: 20rem !important; */
   object-fit: cover;
   transition: all 0.5s ease;
 }
@@ -99,8 +99,13 @@ footer {
   border-radius: 20px;
   position: relative;
   background-color: whitesmoke;
+  width: 90%;
   z-index: 1;
 }
+@media (max-width: 768px) {
+  .content {
+    width: 150% !important;
+  }
 .trusted-legal-sec {
   background-color: transparent;
   position: relative;
@@ -132,7 +137,7 @@ footer {
 .img-container {
   overflow: hidden;
   border-radius: 1.5rem;
-  width: 320px;
+  width: 260px;
 }
 /* how we work section */
 .green-font {

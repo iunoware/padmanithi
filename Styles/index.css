@@ -232,7 +232,7 @@
   }
 }
 
-/* Prevent horizontal scrolling issues */
+/* Prevent horizontal scrolling */
 .slider-container {
   overflow-x: hidden;
   padding-left: 10px;
@@ -240,7 +240,7 @@
 }
 /* Hero section end*/
 
-/* overview seciton start */
+/* overview section start */
 .act-container {
   background-color: #1d1dff;
   border-radius: 30px;
@@ -249,12 +249,18 @@
 }
 
 .overview-img {
-  height: 600px !important;
+  height: 500px !important;
+  aspect-ratio: 1;
+  /* object-fit: cover; */
   max-width: 450px;
   border-radius: 15px;
+  transition: all 0.5s ease;
+}
+.overview-img:hover {
+  transform: scale(1.03);
 }
 
-/* Remove negative margins and use proper spacing */
+/* Remove negative margins */
 .content-section {
   padding: 1.2rem 1rem;
 }
@@ -337,7 +343,7 @@
   }
 }
 
-/* Alternative layout for better mobile experience */
+/* for better mobile experience */
 @media (max-width: 768px) {
   .mobile-reverse {
     flex-direction: column-reverse;
@@ -430,16 +436,19 @@
 }
 
 /* property and legal section */
+.pandl-container {
+  padding: 60px;
+}
 .card-text {
   color: #1d1dff;
 }
 .pl-card {
-  height: 300px !important;
-  width: 250px !important;
+  height: 260px !important;
+  width: 220px !important;
   border-radius: 20px !important;
 }
 .card-Img {
-  height: 300px;
+  /* height: 300px; */
   width: 200px;
 }
 .pl-card:hover {
@@ -451,7 +460,9 @@
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
 }
 /* Journey with us */
-
+.overAllContainer {
+  padding: 70px;
+}
 .image-box-1 {
   border-top: 10px solid #00ff00;
   border-left: 10px solid #00ff00;
@@ -464,7 +475,7 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 154%;
+  width: 165.5%;
   height: 10px;
   background-color: #00ff00;
 }
@@ -490,7 +501,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 153%;
+  width: 163.2%;
   height: 10px;
   background-color: #00ff00;
 }
@@ -505,7 +516,7 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 154%;
+  width: 165.5%;
   height: 10px;
   background-color: #00ff00;
 }
@@ -520,7 +531,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 154%;
+  width: 165.3%;
   height: 10px;
   background-color: #00ff00;
 }
@@ -572,10 +583,10 @@
   }
 }
 .lets-talk-h {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 .lets-talk-h2 {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 .lets-btn {
   background-color: #00000091 !important;
@@ -594,7 +605,7 @@
   background: #22af00;
   color: white;
   border-radius: 0.75rem;
-  padding: 2rem;
+  padding: 1rem;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
