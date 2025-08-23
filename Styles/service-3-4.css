@@ -5,6 +5,7 @@
 }
 
 @media (max-width: 3000px) {
+
   html,
   body {
     overflow-x: hidden;
@@ -26,11 +27,13 @@
   margin-left: 3px;
   animation: blink 0.7s step-end infinite;
 }
+
 @keyframes blink {
   50% {
     opacity: 0;
   }
 }
+
 /* enquiry button */
 .btn-style5112 {
   position: relative;
@@ -38,10 +41,12 @@
   background-color: #22af00;
   color: white;
   overflow: hidden;
+
   span {
     position: relative;
     z-index: 2;
   }
+
   &::before,
   &::after {
     width: 100%;
@@ -53,44 +58,49 @@
     content: "";
     z-index: 1;
   }
+
   &::before {
     top: 0;
     transform: translate(-100%, 0);
   }
+
   &::after {
     bottom: 0;
     transform: translate(100%, 0);
   }
+
   &:hover {
     color: #fff;
+
     &::before,
     &::after {
       transform: translate(0, 0);
     }
   }
 }
+
 .click-btn2 {
-  display: none;
-  width: 180px;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-  transform: translateY(-80%) rotate(-90deg);
-  transform-origin: right center;
-  box-shadow: 0 0 6px black;
-  background-color: #1d1dff;
-  font-size: 16px;
-  color: white;
-  text-decoration: none;
-  font-size: large;
-  font-weight: bold;
-  position: fixed;
+  /* display: none; */
+  width: 180px !important;
+  border-top-left-radius: 30px !important;
+  border-bottom-left-radius: 30px !important;
+  border-top-right-radius: 25px !important;
+  border-bottom-right-radius: 25px !important;
+  transform: translateY(-80%) rotate(-90deg) !important;
+  transform-origin: right center !important;
+  box-shadow: 0 0 6px black !important;
+  background-color: #1d1dff !important;
+  font-size: 16px !important;
+  color: white !important;
+  text-decoration: none !important;
+  font-size: large !important;
+  font-weight: bold !important;
+  position: fixed !important;
   /* bottom: 15rem; */
-  top: 50%;
-  right: 0;
-  width: 180px;
-  transition: all 0.35s;
+  top: 50% !important;
+  right: 0 !important;
+  width: 180px !important;
+  transition: all 0.35s !important;
   z-index: 1000;
 }
 
@@ -98,6 +108,7 @@
 .my-nav {
   box-shadow: 0 0 10px black;
 }
+
 .collapse {
   background-color: #f8f9fa;
   border-radius: 1rem;
@@ -106,7 +117,7 @@
   transition: all 0.3s ease;
 }
 
-.navbar-nav > :first-child {
+.navbar-nav> :first-child {
   padding-left: 24px !important;
   padding-right: 24px !important;
 }
@@ -207,11 +218,13 @@ footer {
   z-index: 1;
   width: 90%;
 }
+
 @media (max-width: 768px) {
   .content {
     width: 100% !important;
   }
 }
+
 .trusted-legal-sec {
   background-color: transparent;
   position: relative;
