@@ -9,11 +9,13 @@
 }
 
 @media (max-width: 3000px) {
+
   html,
   body {
     overflow-x: hidden;
   }
 }
+
 /* enquiry btn */
 .enquiryBtn {
   border-top-left-radius: 30px;
@@ -34,6 +36,7 @@
   right: 0;
   width: 180px;
 }
+
 /* enquiry button */
 .btn-style5112 {
   position: relative;
@@ -41,10 +44,12 @@
   background-color: #22af00;
   color: white;
   overflow: hidden;
+
   span {
     position: relative;
     z-index: 2;
   }
+
   &::before,
   &::after {
     width: 100%;
@@ -56,22 +61,27 @@
     content: "";
     z-index: 1;
   }
+
   &::before {
     top: 0;
     transform: translate(-100%, 0);
   }
+
   &::after {
     bottom: 0;
     transform: translate(100%, 0);
   }
+
   &:hover {
     color: #fff;
+
     &::before,
     &::after {
       transform: translate(0, 0);
     }
   }
 }
+
 .click-btn2 {
   /* display: none; */
   width: 180px;
@@ -96,6 +106,7 @@
   transition: all 0.35s;
   z-index: 1000;
 }
+
 /* hover effects :end */
 /* .half-circle-btn {
   width: 75px; 
@@ -144,6 +155,7 @@
 .my-nav {
   box-shadow: 0 0 10px black;
 }
+
 .collapse {
   background-color: #f8f9fa;
   border-radius: 1rem;
@@ -152,7 +164,7 @@
   transition: all 0.3s ease;
 }
 
-.navbar-nav > :first-child {
+.navbar-nav> :first-child {
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -242,7 +254,7 @@
 }
 
 .who-we-are-img {
-  height: 450px;
+  height: 400px;
   padding-top: 1rem;
   position: absolute;
   transform: translate(800px, -80px);
@@ -254,7 +266,7 @@
 
 @media (max-width: 1300px) {
   .who-we-are-img {
-    height: 550px;
+    height: 400px;
     position: relative;
     transform: translate(0px, 0px);
   }
@@ -370,8 +382,8 @@
 }
 
 .mission-box {
-  height: 300px;
-  width: 420px;
+  height: 320px;
+  max-width: 420px;
   background-color: var(--blue-color);
   color: white;
   border-radius: 1rem;
@@ -413,7 +425,7 @@
 
 /* rewards and recognition ⬇️⬇️ */
 .rewards-content-box {
-  width: 500px;
+  max-width: 450px;
 }
 
 .rewards-title {
@@ -440,7 +452,7 @@
   }
 
   .rewards-content-box {
-    width: 400px;
+    max-width: 400px;
   }
 
   .rewards-content-box {
@@ -531,11 +543,9 @@ hr {
 }
 
 .legal-box {
-  background-image: linear-gradient(
-    to right,
-    var(--blue-color),
-    var(--green-color)
-  );
+  background-image: linear-gradient(to right,
+      var(--blue-color),
+      var(--green-color));
   padding: 2rem;
   color: white;
   width: 90%;
@@ -633,8 +643,7 @@ hr {
   border-radius: 1.5rem;
 }
 
-.people-parent-container:has(.people-container:hover)
-  .people-container:not(:hover) {
+.people-parent-container:has(.people-container:hover) .people-container:not(:hover) {
   filter: blur(1.5px);
 }
 
