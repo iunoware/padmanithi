@@ -361,7 +361,7 @@
 }
 
 .overview-img {
-  height: 360px !important;
+  height: 400px !important;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.612);
   /* aspect-ratio: 1; */
   object-fit: cover;
@@ -471,7 +471,7 @@
 }
 
 .overview-container {
-  width: 70% !important;
+  width: 65% !important;
 }
 
 @media (max-width: 768px) {
