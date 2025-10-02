@@ -48,7 +48,7 @@ window.addEventListener("resize", () => {
 // Auto-slide every 3 seconds
 let autoSlideInterval = setInterval(() => {
   slide(1); // move to the next card
-}, 3000);
+}, 6000);
 
 // Reset auto-slide timer when user clicks or swipes
 function resetAutoSlide() {
@@ -108,6 +108,7 @@ whatsappForm.addEventListener("submit", function (event) {
   const message = document.getElementById("message").value;
 
   let phoneNumber = "918220442273";
+  // let phoneNumber = "916381246377";
 
   // the raw message
   let rawMessage = `Hi I'm ${fullName},
