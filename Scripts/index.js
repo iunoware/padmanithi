@@ -108,7 +108,7 @@ whatsappForm.addEventListener("submit", function (event) {
   const message = document.getElementById("message").value;
 
   let phoneNumber = "918220442273";
-  // let phoneNumber = "916381246377";
+  // let phoneNumber = "916381246377"; //not on whatsapp
 
   // the raw message
   let rawMessage = `Hi I'm ${fullName},

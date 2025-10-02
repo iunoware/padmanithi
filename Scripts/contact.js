@@ -47,6 +47,7 @@ function closePopup() {
 // for calender
 const messageBtn = document.getElementById("sendMessageBtn");
 const myNum = "918220442273";
+// const myNum = "916381246377";
 let url;
 
 messageBtn.addEventListener("click", (event) => {
@@ -94,14 +95,7 @@ submitForm.addEventListener("click", (event) => {
     const enCoded = encodeURIComponent(messageNew);
     url = `https://wa.me/${myNum}?text=${enCoded}`;
     window.open(url);
-  } else if (
-    fName &&
-    lName &&
-    emailForm &&
-    phoneNumForm &&
-    location &&
-    companyName
-  ) {
+  } else if (fName && lName && emailForm && phoneNumForm && location && companyName) {
     const messageNew = `Hi, I'm ${fName} ${lName},\nThese are my details \n• Mobile: ${phoneNumForm}.\n• Email: ${emailForm}\n• location: ${location}\n• Company name: ${companyName} \n\nThank you!`;
     const enCoded = encodeURIComponent(messageNew);
     url = `https://wa.me/${myNum}?text=${enCoded}`;
