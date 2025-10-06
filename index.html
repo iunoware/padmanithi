@@ -31,13 +31,14 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-light fixed-top my-nav" style="height: 70px">
+    <nav class="navbar navbar-expand-lg bg-light fixed-top my-nav" style="height: 60px">
       <div class="container-fluid">
         <a class="navbar-brand fw-bold fs-3 lora" href="./index.html">
           <img src="./Images/logo.png" alt="logo image" style="width: 200px" />
         </a>
         <button
           class="navbar-toggler"
+          id="custom-burger-btn"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavDropdown"
@@ -47,22 +48,29 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-          <ul class="navbar-nav fs-5">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          style="
+            background-color: #f8f9fa;
+            border-bottom-right-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+          "
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item dropdown px-4">
+            <li class="nav-item dropdown px-4 w-full">
               <a
                 class="nav-link dropdown-toggle"
-                href="#"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 Services
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu" id="custom-dropdown">
                 <li>
                   <a class="dropdown-item" href="./Pages/service-3.html"
                     >Business Management</a
@@ -96,24 +104,40 @@
       </div>
     </nav>
 
+    <!-- href="tel:+916381246377" -->
     <!-- .enquiry btn -->
-    <a
-      href="tel:+916381246377"
+    <div
       class="btn pb-5 btn-style5112 click-btn2"
       data-bs-toggle="tooltip"
       data-bs-placement="left"
       title="Enquiry"
       id="enq-btn"
+      onClick="openPopup()"
     >
       <span>Enquiry</span>
-    </a>
+    </div>
+
+    <!-- pop for enquiry -->
+    <div class="popup" id="popupForm">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+
+        <div>
+          <h4>We’re Just a Call or Message Away</h4>
+        </div>
+        <div>
+          <a href="tel:+916381246377" class="p-3 bg-success mt-2">phone</a>
+          <a href="https://wa.me/916381246377" class="p-3 bg-success mt-2">whatsapp</a>
+        </div>
+      </div>
+    </div>
 
     <!-- Hero Section -->
     <section
       class="hero-section"
       id="hero"
       style="
-        background-image: url('./Images/home-hero.jpg');
+        background-image: url('./Images/home-hero-2.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -231,7 +255,7 @@
                 data-aos="fade-up"
               >
                 <h2 class="pb-3 fw-bold fs-4 lora">Business Management</h2>
-                <p class="fs-6 lh-lg">
+                <p class="fs-6 lh-lg overview-content">
                   Our business management solutions support strategic planning, regulatory
                   compliance, and operational efficiency - empowering businesses to grow
                   sustainably and make informed decisions
@@ -248,7 +272,7 @@
                 data-aos="fade-up"
               >
                 <h2 class="pb-3 fw-bold fs-4 lora">Property Management & Services</h2>
-                <p class="fs-6 lh-lg">
+                <p class="fs-6 lh-lg overview-content">
                   We offer end-to-end property management services, including legal
                   verification, documentation, NRI support, and dispute resolution -
                   ensuring secure and hassle-free ownership.
@@ -285,7 +309,7 @@
                 data-aos="fade-up"
               >
                 <h2 class="pb-3 fw-bold fs-4 lora">Auditing Services</h2>
-                <p class="fs-6 lh-lg">
+                <p class="fs-6 lh-lg overview-content">
                   At Our Company, we specialize in delivering reliable and accurate
                   auditing solutions tailored to meet regulatory standards and business
                   needs. From internal audits to tax and compliance reviews, our team
@@ -305,7 +329,7 @@
                 <h2 class="pb-3 fw-bold fs-4 lora">
                   Legal & Auditing Services You Can Trust
                 </h2>
-                <p class="fs-6 lh-lg">
+                <p class="fs-6 lh-lg overview-content">
                   At Our Company, we specialize in delivering reliable and accurate
                   auditing solutions tailored to meet regulatory standards and business
                   needs. From internal audits to tax and compliance reviews, our team
@@ -428,7 +452,7 @@
           >
             Connecting You to Trusted Solutions Back Home
           </h2>
-          <p class="fs-6 mb-5 text-center" data-aos="fade-up-right">
+          <p class="fs-6 mb-5 text-left" data-aos="fade-up-right">
             We offer reliable and result-driven legal services for individuals,
             businesses, and especially Non-Resident Indians (NRIs) seeking trusted
             representation in India. From civil and commercial litigation to corporate
@@ -687,9 +711,9 @@
 
             <!-- Column 3: Description -->
             <div class="col-12 col-lg-5 order-lg-3 order-3">
-              <p class="jwu-p fs-6">
+              <p class="jwu-p fs-6 text-start">
                 We assess your requirements, identify any compliance gaps, and offer
-                tailored guidance — ensuring you're on the right path from day one.
+                tailored guidance - ensuring you're on the right path from day one.
               </p>
             </div>
           </div>
@@ -721,9 +745,9 @@
 
             <!-- Column 3: Description -->
             <div class="col-12 col-lg-5 order-lg-1 order-3">
-              <p class="jwu-p fs-6">
+              <p class="jwu-p fs-6 text-start">
                 We verify accuracy, assess legal and financial implications, and ensure
-                all materials align with current regulatory standards—setting the stage
+                all materials align with current regulatory standards - setting the stage
                 for precise, compliant action.
               </p>
             </div>
@@ -756,7 +780,7 @@
 
             <!-- Column 3: Description -->
             <div class="col-12 col-lg-5 order-lg-3 order-3">
-              <p class="jwu-p fs-6">
+              <p class="jwu-p fs-6 text-start">
                 Based on our detailed review, we create a customized action plan aligned
                 with your goals and compliance requirements.
               </p>
@@ -790,10 +814,10 @@
 
             <!-- Column 3: Description -->
             <div class="col-12 col-lg-5 order-lg-1 order-3">
-              <p class="jwu-p fs-6">
-                With your approval, our team proceeds to execute the planned
-                actions—drafting, finalizing, and securely filing all required legal, tax,
-                or compliance documents.
+              <p class="jwu-p fs-6 text-start">
+                With your approval, our team proceeds to execute the planned actions -
+                drafting, finalizing, and securely filing all required legal, tax, or
+                compliance documents.
               </p>
             </div>
           </div>
@@ -825,7 +849,7 @@
 
             <!-- Column 3: Description -->
             <div class="col-12 col-lg-5 order-lg-3 order-3">
-              <p class="jwu-p fs-6">
+              <p class="jwu-p fs-6 text-start">
                 Whether it's responding to queries or assisting with future requirements,
                 we ensure you stay informed and legally aligned at all times.
               </p>
@@ -953,7 +977,7 @@
                 style="text-decoration: none"
                 class="m-1"
               >
-                <div class="card-lt" data-aos="flip-right">
+                <div class="card-lt" data-aos="flip-right" style="height: 257px">
                   <div class="card-icon m-0 mb-5">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -983,7 +1007,7 @@
                 style="text-decoration: none"
                 class="m-1"
               >
-                <div class="card-lt" data-aos="flip-down">
+                <div class="card-lt" data-aos="flip-down" style="height: 257px">
                   <div class="card-icon m-0 mb-5">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -1006,7 +1030,7 @@
 
             <div class="col-lg-4 col-md-12 col-sm-12">
               <a style="text-decoration: none" class="m-1">
-                <div class="card-lt" data-aos="flip-left">
+                <div class="card-lt" data-aos="flip-left" style="height: 257px">
                   <div class="card-icon m-0 mb-5">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -1095,14 +1119,14 @@
                         id="subject"
                       >
                         <option selected disabled>Select from drop down *</option>
-                        <option value="Legal Compliances">Legal Compliances</option>
+                        <option value="Business management">Business management</option>
                         <option value="Property Management & Services">
                           Property Management & Services
                         </option>
-                        <option value="Business management">Business management</option>
                         <option value="Tax Compliance & Auditing">
                           Tax Compliance & Auditing
                         </option>
+                        <option value="Legal Compliances">Legal Compliances</option>
                       </select>
                     </div>
                     <div class="col-md-12">
@@ -1332,7 +1356,7 @@
             </li>
             <li class="nav-item mb-2">
               <a
-                href="https://maps.app.goo.gl/okPfD1yCMyjMivGu8"
+                href="https://www.google.com/maps/place//@9.935508,78.1315095,20z/data=!3m1!4b1!4m6!1m5!3m4!2zOcKwNTYnMDguMSJOIDc4wrAwNyc1My43IkU!8m2!3d9.9355833!4d78.1315833?entry=ttu&g_ep=EgoyMDI1MTAwMS4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 class="nav-link a-tag-link p-0 gray-txt"
                 ><svg
@@ -1346,7 +1370,7 @@
                   <path
                     d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
                   /></svg
-                >Address of the company goes here</a
+                >Chinna Chokkikulam, Madurai - 625009</a
               >
             </li>
           </ul>
@@ -1430,12 +1454,12 @@
     </div>
 
     <!-- scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./Scripts/index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./Scripts/index.js"></script>
   </body>
 </html>

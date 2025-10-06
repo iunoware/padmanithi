@@ -17,6 +17,10 @@
   --green-color: #22af00;
 }
 
+.navbar-nav {
+  font-size: 1.15rem;
+}
+
 .lora {
   font-family: "lora", sans;
 }
@@ -110,11 +114,13 @@
 }
 
 .collapse {
-  background-color: #f8f9fa;
-  border-radius: 1rem;
+  /* background-color: #f8f9fa; */
+  /* border-radius: 1rem; */
   /* padding: .5rem; */
   z-index: 10;
-  transition: all 0.3s ease;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  /* transition: all 0.3s ease; */
 }
 
 .navbar-nav> :first-child {
@@ -122,9 +128,15 @@
   padding-right: 24px !important;
 }
 
-.dropdown:hover .dropdown-menu {
-  display: block;
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
 }
+
+/* .dropdown:hover .dropdown-menu {
+  display: block;
+} */
 
 /* footer */
 footer {

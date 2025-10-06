@@ -25,6 +25,7 @@
 }
 
 @media (max-width: 3000px) {
+
   html,
   body {
     overflow-x: hidden;
@@ -35,22 +36,31 @@
 .my-nav {
   box-shadow: 0 0 10px black;
 }
+
 .collapse {
-  background-color: #f8f9fa;
-  border-radius: 1rem;
+  /* background-color: #f8f9fa; */
+  /* border-radius: 1rem; */
   /* padding: .5rem; */
   z-index: 10;
-  transition: all 0.3s ease;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  /* transition: all 0.3s ease; */
 }
 
-.navbar-nav > :first-child {
+.navbar-nav> :first-child {
   padding-left: 24px;
   padding-right: 24px;
 }
 
-.dropdown:hover .dropdown-menu {
-  display: block;
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
 }
+
+/* .dropdown:hover .dropdown-menu {
+  display: block;
+} */
 
 /* hero section */
 .img-container {
@@ -71,9 +81,13 @@
   /* margin-top: 70px; */
 }
 
+.navbar-nav {
+  font-size: 1.15rem;
+}
+
 .hero-text {
   font-family: "Lora";
-  font-size: 5rem;
+  font-size: 4rem;
   position: absolute;
   display: flex;
   justify-content: start;
@@ -81,6 +95,12 @@
   height: 100%;
   width: 100%;
   padding: 2rem;
+}
+
+@media (max-width: 500px) {
+  .hero-text {
+    font-size: 3rem;
+  }
 }
 
 /* form section ⬇️⬇️ */
@@ -91,7 +111,7 @@ input::-webkit-inner-spin-button {
 }
 
 .input-box {
-  padding: 1rem;
+  padding: .5rem;
   border-radius: 0.5rem;
   outline: none;
   border: 2px solid transparent;

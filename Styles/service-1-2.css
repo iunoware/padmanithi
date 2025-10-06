@@ -3,25 +3,31 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+
 @media (max-width: 3000px) {
+
   html,
   body {
     overflow-x: hidden;
   }
 }
+
 :root {
   --blue-color: #1d1dff;
   --green-color: #22af00;
 }
+
 .lora {
   font-family: "lora", sans;
 }
+
 /* cursor animation */
 #heading::after {
   content: "|";
   margin-left: 3px;
   animation: blink 0.7s step-end infinite;
 }
+
 @keyframes blink {
   50% {
     opacity: 0;
@@ -32,18 +38,33 @@
 .my-nav {
   box-shadow: 0 0 10px black;
 }
-.collapse {
-  background-color: #f8f9fa;
-  border-radius: 1rem;
-  /* padding: .5rem; */
-  z-index: 10;
-  transition: all 0.3s ease;
-}
-.dropdown:hover .dropdown-menu {
-  display: block;
+
+.navbar-nav {
+  font-size: 1.15rem;
 }
 
-.navbar-nav > :first-child {
+
+.collapse {
+  /* background-color: #f8f9fa; */
+  /* border-radius: 1rem; */
+  /* padding: .5rem; */
+  z-index: 10;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  /* transition: all 0.3s ease; */
+}
+
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+/* .dropdown:hover .dropdown-menu {
+  display: block;
+} */
+
+.navbar-nav> :first-child {
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -77,23 +98,28 @@ footer {
   color: white;
   filter: drop-shadow(0px 0px 5px white);
 }
+
 /* hero section */
 
 .hero-title {
   font-size: 3.5rem !important;
 }
+
 .landc-img {
   /* max-height: 20rem !important; */
   object-fit: cover;
   transition: all 0.5s ease;
 }
+
 .landc-img:hover {
   transform: scale(1.1);
 }
+
 .landc-sh {
   color: var(--blue-color) !important;
   font-weight: 600;
 }
+
 /* trusted legal council section  */
 .content {
   border-radius: 20px;
@@ -102,14 +128,17 @@ footer {
   width: 90%;
   z-index: 1;
 }
+
 @media (max-width: 768px) {
   .content {
     width: 150% !important;
   }
+
   .trusted-legal-sec {
     background-color: transparent;
     position: relative;
   }
+
   .trusted-legal-sec::before {
     content: "";
     position: absolute;
@@ -119,6 +148,7 @@ footer {
     background-color: var(--green-color);
     z-index: -1;
   }
+
   .trusted-legal-sec::after {
     content: "";
     position: absolute;
@@ -128,30 +158,38 @@ footer {
     background-color: var(--green-color);
     z-index: -1;
   }
+
   .trusted-legal-sec::before {
     top: 0;
   }
+
   .trusted-legal-sec::after {
     bottom: 0;
   }
+
   .img-container {
     overflow: hidden;
     border-radius: 1.5rem;
     width: 260px;
   }
+
   /* how we work section */
   .green-font {
     color: var(--green-color) !important;
   }
+
   .blue-font {
     color: var(--blue-color) !important;
   }
+
   .hww-img {
     transition: all 0.3s ease;
   }
+
   .hww-img:hover {
     transform: rotate(8deg) scale(1.05);
   }
+
   @media (max-width: 450px) {
     .hero-title {
       font-size: 4rem !important;
