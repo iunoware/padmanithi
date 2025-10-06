@@ -38,11 +38,13 @@
 }
 
 .collapse {
-  background-color: #f8f9fa;
-  border-radius: 1rem;
+  /* background-color: #f8f9fa; */
+  /* border-radius: 1rem; */
   /* padding: .5rem; */
   z-index: 10;
-  transition: all 0.3s ease;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  /* transition: all 0.3s ease; */
 }
 
 .navbar-nav> :first-child {
@@ -50,9 +52,15 @@
   padding-right: 24px;
 }
 
-.dropdown:hover .dropdown-menu {
-  display: block;
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
 }
+
+/* .dropdown:hover .dropdown-menu {
+  display: block;
+} */
 
 /* hero section */
 .img-container {
@@ -103,7 +111,7 @@ input::-webkit-inner-spin-button {
 }
 
 .input-box {
-  padding: 1rem;
+  padding: .5rem;
   border-radius: 0.5rem;
   outline: none;
   border: 2px solid transparent;

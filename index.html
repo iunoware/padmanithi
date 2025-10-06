@@ -61,7 +61,7 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item dropdown px-4">
+            <li class="nav-item dropdown px-4 w-full">
               <a
                 class="nav-link dropdown-toggle"
                 role="button"
@@ -104,24 +104,40 @@
       </div>
     </nav>
 
+    <!-- href="tel:+916381246377" -->
     <!-- .enquiry btn -->
-    <a
-      href="tel:+916381246377"
+    <div
       class="btn pb-5 btn-style5112 click-btn2"
       data-bs-toggle="tooltip"
       data-bs-placement="left"
       title="Enquiry"
       id="enq-btn"
+      onClick="openPopup()"
     >
       <span>Enquiry</span>
-    </a>
+    </div>
+
+    <!-- pop for enquiry -->
+    <div class="popup" id="popupForm">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+
+        <div>
+          <h4>We’re Just a Call or Message Away</h4>
+        </div>
+        <div>
+          <a href="tel:+916381246377" class="p-3 bg-success mt-2">phone</a>
+          <a href="https://wa.me/916381246377" class="p-3 bg-success mt-2">whatsapp</a>
+        </div>
+      </div>
+    </div>
 
     <!-- Hero Section -->
     <section
       class="hero-section"
       id="hero"
       style="
-        background-image: url('./Images/home-hero.jpg');
+        background-image: url('./Images/home-hero-2.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

@@ -136,3 +136,15 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// for popup
+function openPopup() {
+  document.getElementById("popupForm").style.display = "block";
+  // dateNotifier.textContent = info.dateStr;
+}
+
+function closePopup() {
+  document.getElementById("popupForm").style.display = "none";
+  document.querySelector(".warning-message").style.display = "none";
+  document.getElementById("name").value = "";
+  document.getElementById("phone").value = "";
+}
