@@ -8,6 +8,10 @@
   font-family: "lora";
 }
 
+.navbar-nav {
+  font-size: 1.15rem;
+}
+
 @media (max-width: 3000px) {
 
   html,
@@ -176,7 +180,7 @@
 /* hero section ⬇️⬇️ */
 .hero-text {
   font-family: "Lora";
-  font-size: 5rem;
+  font-size: 4rem;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -193,15 +197,14 @@
   min-height: 100vh;
 }
 
-.img-container::before {
+/* .img-container::before {
   content: "";
   inset: 0;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.521);
   height: 100%;
   width: 100%;
-  /* margin-top: 70px; */
-}
+} */
 
 /* what we do section */
 .ocs-box {
@@ -695,4 +698,35 @@ footer {
 .a-tag-link:hover {
   color: white;
   filter: drop-shadow(0px 0px 5px white);
+}
+
+
+@media (max-width: 768px) {
+  .wwd-content {
+    order: 2;
+  }
+
+  .wwd-img {
+    order: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .wwd-content {
+    order: 1;
+  }
+
+  .wwd-img {
+    order: 2;
+  }
+}
+
+@media (max-width: 1000px) {
+  .wws-heading-1 {
+    display: none !important;
+  }
+
+  .wws-heading-2 {
+    display: block !important;
+  }
 }

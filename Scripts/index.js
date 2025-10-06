@@ -48,7 +48,7 @@ window.addEventListener("resize", () => {
 // Auto-slide every 3 seconds
 let autoSlideInterval = setInterval(() => {
   slide(1); // move to the next card
-}, 6000);
+}, 7000);
 
 // Reset auto-slide timer when user clicks or swipes
 function resetAutoSlide() {
@@ -135,3 +135,4 @@ window.addEventListener("scroll", () => {
     enquiryBTn.style.zIndex = "-1000";
   }
 });
+

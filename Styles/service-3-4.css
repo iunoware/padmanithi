@@ -17,6 +17,10 @@
   --green-color: #22af00;
 }
 
+.navbar-nav {
+  font-size: 1.15rem;
+}
+
 .lora {
   font-family: "lora", sans;
 }
