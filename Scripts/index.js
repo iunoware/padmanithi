@@ -127,16 +127,26 @@ ${message}`;
 const enquiryBTn = document.getElementById("enq-btn");
 const hero = document.getElementById("hero");
 
-window.addEventListener("scroll", () => {
-  const heroBottom = hero.offsetTop + hero.offsetHeight;
-  if (window.scrollY > heroBottom) {
-    enquiryBTn.style.zIndex = "1000";
-  } else {
-    enquiryBTn.style.zIndex = "-1000";
-  }
-});
+// window.addEventListener("scroll", () => {
+//   const heroBottom = hero.offsetTop + hero.offsetHeight;
+//   if (window.scrollY > heroBottom) {
+//     enquiryBTn.style.zIndex = "1000";
+//   } else {
+//     enquiryBTn.style.zIndex = "-1000";
+//   }
+// });
 
 // enquiry button 2
-// function toggleIcons() {
-//   document.querySelector(".fab-wrapper").classList.toggle("active");
-// }
+function openPopup() {
+  let phoneIcon = document.querySelector(".phone-icon");
+  let whatsappIcon = document.querySelector(".whatsapp-icon");
+  // phoneIcon.style.top = "38%";
+
+  if (phoneIcon.style.top === "50%") {
+    phoneIcon.style.top = "38%";
+    whatsappIcon.style.top = "70%";
+  } else {
+    phoneIcon.style.top = "50%";
+    whatsappIcon.style.top = "50%";
+  }
+}
