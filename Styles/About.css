@@ -735,3 +735,39 @@ footer {
     display: block !important;
   }
 }
+
+/* enquiry button  */
+.phone-icon {
+  transition: all .3s ease;
+  background-color: blue;
+}
+
+.phone-icon:hover {
+  background-color: #22af00;
+}
+
+.whatsapp-icon {
+  transition: all .3s ease;
+  background-color: #22af00;
+}
+
+.whatsapp-icon:hover {
+  background-color: hsl(108, 100%, 40%);
+}
+
+.click-btn2 {
+  width: 150px !important;
+}
+
+/* navbar new */
+@media (max-width: 991px) {
+  .navbar .dropdown-menu {
+    position: absolute !important;
+    transition: all .3s ease;
+    width: 100%;
+  }
+}
+
+.dropdown-menu {
+  border-radius: 1rem;
+}

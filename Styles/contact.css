@@ -319,3 +319,17 @@ footer {
   color: white;
   filter: drop-shadow(0px 0px 5px white);
 }
+
+/* navbar new */
+@media (max-width: 991px) {
+  .navbar .dropdown-menu {
+    position: absolute !important;
+    transition: all .3s ease;
+    width: 100%;
+
+  }
+}
+
+.dropdown-menu {
+  border-radius: 1rem;
+}
