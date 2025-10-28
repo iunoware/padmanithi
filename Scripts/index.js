@@ -150,3 +150,18 @@ function openPopup() {
     whatsappIcon.style.top = "50%";
   }
 }
+
+// for closing navbar when clicked anywhere on the page
+document.addEventListener("click", function (event) {
+  const navbar = document.querySelector(".navbarNav");
+  const toggler = document.querySelector(".navbar-toggler");
+
+  const isClickInsideNavbar = navbar.contains(event.target);
+  const isClickOnToggler = toggler.contains(event.target);
+
+  // Close if clicking outside
+  if (!isClickInsideNavbar && !isClickOnToggler && navbar.classList.contains("show")) {
+    const bsCollapse = bootstrap.Collapse.getInstance(navbar);
+    bsCollapse.hide();
+  }
+});

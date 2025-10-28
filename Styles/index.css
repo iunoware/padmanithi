@@ -40,25 +40,23 @@
   padding-right: 24px;
 }
 
-/* #custom-dropdown {
-  position: absolute;
-  width: auto;
-  min-width: 10rem;
+#custom-dropdown {
+  /* position: absolute; */
+  /* width: auto; */
+  /* max-width: 10rem; */
+  width: 290px;
   border-radius: 0.5rem;
 }
 
 .nav-item.dropdown {
   position: relative;
-} */
+}
 
 @media (max-width: 991px) {
   .navbar-nav .dropdown-menu {
     position: static !important;
-    /* part of normal flow */
     display: none;
-    /* hide by default */
     width: 100%;
-    /* optional: match navbar width */
     margin-top: 0;
     border-radius: 0 0 1rem 1rem;
   }
@@ -68,6 +66,18 @@
     /* show when parent li has .show */
   }
 }
+
+/* @media (max-width: 991px) {
+  .navbar .dropdown-menu {
+    position: absolute !important;
+    transition: all .3s ease;
+    width: 100%;
+  }
+}
+
+.dropdown-menu {
+  border-radius: 1rem;
+} */
 
 
 .dropdown-menu {
@@ -81,6 +91,8 @@
     display: block;
   }
 }
+
+
 
 /* .dropdown:focus .dropdown-menu {
   display: block;
@@ -1225,16 +1237,4 @@ footer {
 
 .whatsapp-icon:hover {
   background-color: hsl(108, 100%, 40%);
-}
-
-@media (max-width: 991px) {
-  .navbar .dropdown-menu {
-    position: absolute !important;
-    transition: all .3s ease;
-    width: 100%;
-  }
-}
-
-.dropdown-menu {
-  border-radius: 1rem;
 }

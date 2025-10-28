@@ -760,7 +760,7 @@ footer {
 }
 
 /* navbar new */
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .navbar .dropdown-menu {
     position: absolute !important;
     transition: all .3s ease;
@@ -770,4 +770,16 @@ footer {
 
 .dropdown-menu {
   border-radius: 1rem;
+} */
+
+#custom-dropdown {
+  /* position: absolute; */
+  /* width: auto; */
+  /* max-width: 10rem; */
+  width: 290px;
+  border-radius: 0.5rem;
+}
+
+.nav-item.dropdown {
+  position: relative;
 }
