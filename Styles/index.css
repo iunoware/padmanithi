@@ -181,7 +181,7 @@
 }
 
 /* hero section */
-.hero-section {
+.hero-section-2 {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -1247,7 +1247,7 @@ footer {
 }
 
 /* blur for home hero */
-.hero-section::after {
+.hero-section-2::after {
   content: "";
   position: absolute;
   top: 0;
