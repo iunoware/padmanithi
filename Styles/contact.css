@@ -4,7 +4,8 @@
 
 :root {
   --blue-color: #1d1dff;
-  --green-color: #22af00;
+  /* --green-color: #22af00; */
+  --green-color: #198754;
 }
 
 .lora {
@@ -273,7 +274,7 @@ input::-webkit-inner-spin-button {
 .popup-content {
   background-color: #fff;
   transform: translateY(100px);
-  margin: 10% auto;
+  margin: 5% auto;
   padding: 2rem;
   border-radius: 10px;
   width: 90%;

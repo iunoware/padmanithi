@@ -14,7 +14,8 @@
 
 :root {
   --blue-color: #1d1dff;
-  --green-color: #22af00;
+  /* --green-color: #22af00; */
+  --green-color: #198754;
 }
 
 .navbar-nav {
@@ -42,7 +43,7 @@
 .btn-style5112 {
   position: relative;
   border-color: white;
-  background-color: #22af00;
+  background-color: #198754;
   color: white;
   overflow: hidden;
 
@@ -57,7 +58,7 @@
     height: 50%;
     position: absolute;
     left: 0;
-    background-color: #22af00;
+    background-color: #198754;
     transition: all 0.25s;
     content: "";
     z-index: 1;
@@ -313,11 +314,11 @@ footer {
 
 .whatsapp-icon {
   transition: all .3s ease;
-  background-color: #22af00;
+  background-color: #198754;
 }
 
 .whatsapp-icon:hover {
-  background-color: hsl(108, 100%, 40%);
+  background-color: #198754;
 }
 
 /* navbar new */
