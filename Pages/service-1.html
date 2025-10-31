@@ -3,7 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Legal Compliances</title>
+    <!-- <title>Legal Compliances</title> -->
+
+    <!-- meta SEO tags -->
+    <title>Legal Compliance | Padmanidhi Management Services</title>
+    <meta
+      name="description"
+      content="Padmanidhi Management Services provides expert legal compliance and advisory solutions to help businesses meet statutory, corporate, and regulatory requirements with confidence and accuracy."
+    />
+    <meta
+      name="keywords"
+      content="auditing services, tax compliance, legal compliance, business management, property management, audit, tax, service, auditor, Madurai, corporate compliance, accounting, Padmanidhi Management Services"
+    />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://padmanidhimanagementservices.com/" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta
+      property="og:title"
+      content="Legal Compliance & Advisory Services | Padmanidhi Management Services"
+    />
+    <meta
+      property="og:description"
+      content="Comprehensive auditing, tax, business, property, and legal compliance services for businesses and individuals in India and abroad."
+    />
+    <meta
+      property="og:image"
+      content="https://padmanidhimanagementservices.com/Images/logo.png"
+    />
+    <meta property="og:url" content="https://padmanidhimanagementservices.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:site_name" content="Padmanidhi Management Services" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Legal Compliance & Advisory Services | Padmanidhi Management Services"
+    />
+    <meta
+      name="twitter:description"
+      content="Delivering expert auditing, tax, business, property, and legal compliance services across India and globally."
+    />
+    <meta
+      name="twitter:image"
+      content="https://padmanidhimanagementservices.com/Images/logo.png"
+    />
+
+    <!-- Geo / Business Info -->
+    <meta name="geo.region" content="IN-TN" />
+    <meta name="geo.placename" content="Madurai" />
+    <meta name="geo.position" content="9.9345;78.1350" />
+    <meta name="ICBM" content="9.9345, 78.1350" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://padmanidhimanagementservices.com/Images/PadmanidhiLogo.png"
+    />
+
+    <!-- Schema.org (Structured Data for SEO) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Padmanidhi Management Services",
+        "url": "https://padmanidhimanagementservices.com/",
+        "logo": "https://padmanidhimanagementservices.com/Images/logo.png",
+        "description": "Padmanidhi Management Services offers professional auditing, tax compliance, property management, business consulting, and legal advisory services for clients in India and internationally.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Chinna Chokkikulam",
+          "addressLocality": "Madurai",
+          "postalCode": "625009",
+          "addressCountry": "India"
+        },
+        "areaServed": ["India", "International"],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91-6381246377",
+          "contactType": "Customer Service",
+          "areaServed": "IN"
+        }
+      }
+    </script>
+
     <link rel="stylesheet" href="../Styles/service-3-4.css" />
     <link rel="stylesheet" href="../Styles/index.css" />
     <link
@@ -710,6 +797,25 @@
           const bsCollapse = bootstrap.Collapse.getInstance(navbar);
           bsCollapse.hide();
         }
+      });
+
+      // navbar close on scroll
+      let lastScrollY = window.scrollY;
+
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbarNav");
+
+        if (!navbar) return; // safety
+
+        if (
+          navbar.classList.contains("show") &&
+          Math.abs(window.scrollY - lastScrollY) > 10
+        ) {
+          const bsCollapse = bootstrap.Collapse.getInstance(navbar);
+          bsCollapse.hide();
+        }
+
+        lastScrollY = window.scrollY;
       });
     </script>
   </body>
