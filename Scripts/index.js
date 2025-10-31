@@ -165,3 +165,19 @@ document.addEventListener("click", function (event) {
     bsCollapse.hide();
   }
 });
+
+// navbar close on scroll
+let lastScrollY = window.scrollY;
+
+window.addEventListener("scroll", function () {
+  const navbar = document.querySelector(".navbarNav");
+
+  if (!navbar) return; // safety
+
+  if (navbar.classList.contains("show") && Math.abs(window.scrollY - lastScrollY) > 10) {
+    const bsCollapse = bootstrap.Collapse.getInstance(navbar);
+    bsCollapse.hide();
+  }
+
+  lastScrollY = window.scrollY;
+});
