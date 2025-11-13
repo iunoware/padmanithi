@@ -392,7 +392,8 @@
 }
 
 .mission-box {
-  height: 320px;
+  /* height: 340px; */
+  height: auto;
   max-width: 420px;
   background-color: var(--blue-color);
   color: white;
