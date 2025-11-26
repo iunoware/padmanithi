@@ -46,8 +46,8 @@ function closePopup() {
 
 // for calender
 const messageBtn = document.getElementById("sendMessageBtn");
-const myNum = "918220442273";
-// const myNum = "916381246377";
+// const myNum = "918220442273"; // old number
+const myNum = "916381246377";
 let url;
 
 messageBtn.addEventListener("click", (event) => {
@@ -104,5 +104,3 @@ submitForm.addEventListener("click", (event) => {
     document.querySelector(".warning-message-form").style.display = "block";
   }
 });
-
-
