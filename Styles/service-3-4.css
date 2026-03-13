@@ -5,7 +5,6 @@
 }
 
 @media (max-width: 3000px) {
-
   html,
   body {
     overflow-x: hidden;
@@ -124,7 +123,7 @@
   /* transition: all 0.3s ease; */
 }
 
-.navbar-nav> :first-child {
+.navbar-nav > :first-child {
   padding-left: 24px !important;
   padding-right: 24px !important;
 }
@@ -249,7 +248,7 @@ footer {
   position: absolute;
   left: 0;
   width: 100%;
-  height: 700px;
+  height: 300px;
   background-color: var(--green-color);
   z-index: -1;
 }
@@ -259,7 +258,7 @@ footer {
   position: absolute;
   left: 0;
   width: 100%;
-  height: 600px;
+  height: 300px;
   background-color: var(--green-color);
   z-index: -1;
 }
@@ -304,7 +303,7 @@ footer {
 
 /* enquiry button  */
 .phone-icon {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   background-color: blue;
 }
 
@@ -313,7 +312,7 @@ footer {
 }
 
 .whatsapp-icon {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   background-color: #198754;
 }
 
